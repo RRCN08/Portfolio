@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 283.46 283.46">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+      }
+
+      .cls-2 {
+        font-size: 150px;
+        fill: #eb0029;
+        font-family: GoogleSans-Regular, Google Sans;
+      }
+
+      .cls-3 {
+        letter-spacing: -0.03em;
+      }
+
+      .cls-4 {
+        fill: #000;
+      }
+    </style>
+  </defs>
+  <g id="Layer_2" data-name="Layer 2">
+    <g id="Layer_1-2" data-name="Layer 1">
+      <rect class="cls-1" width="283.46" height="283.46" rx="67.07"/>
+      <text class="cls-2" transform="translate(28.93 183.63)">r<tspan class="cls-3" x="56.25" y="0">r</tspan><tspan class="cls-4" x="108" y="0">c.</tspan></text>
+    </g>
+  </g>
+</svg>
