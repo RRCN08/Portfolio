@@ -1,76 +1,48 @@
-@import url('https://fonts.googleapis.com/css2?family=Sen&display=swap');
+.navbar-bg { background-color: #1c1c1c !important; }
 
-@font-face {
-  font-family: 'Avenir-Light';
-  src: url('./font/Avenir-Light.eot');
-  src: url('./font/Avenir-Light.eot?#iefix') format('embedded-opentype'),
-       url('./font/Avenir-Light.svg#Avenir-Light') format('svg'),
-       url('./font/Avenir-Light.ttf') format('truetype'),
-       url('./font/Avenir-Light.woff') format('woff'),
-       url('./font/Avenir-Light.woff2') format('woff2');
-  font-weight: normal;
-  font-style: normal;
-}
+#logo {width: 5vh;}
 
 body {
     /* background-image: url("./bg.png"); */
-    background-color: #191919;
+    background-color: #1c1c1c;
     background-repeat: no-repeat;
     background-size: auto;
-    font-family: Avenir-Light;
-    font-size: 14px;
+    color: white;
+    font-family: 'Avenir Book';
+    font-weight: normal;
+    font-style: normal;
 }
 
-p {
+a{
+  color: white;
+  font-family: 'Avenir';
+    font-weight: 300;
+    font-style: normal;
+}
+
+h1, h2, h3 {
+  font-family: 'Avenir';
+   font-weight: 900;
+   font-style: normal;
+}
+
+h4, h5, h6 {
+  font-family: 'Avenir Book';
+    font-weight: normal;
+    font-style: normal;
+}
+
+a:hover{
+  transition: all .35s;
+  color: #67BBA6;
+}
+
+p, a {
   font-family: Avenir-Light;
-  font-size: 14px;
+  font-size: 1rem;
   color: white;
 }
 
-h1, h2, h3, h4, h5, h6, footer-copyright {
-  font-family: Avenir-Light;
-  color: white;
-}
-
-.btn {
-  position: relative;
-  border: 3px solid;
-  border-radius: 3px;
-  cursor: pointer;
-  transition: border 0.1s ease-in-out;
-  z-index: 1;
-  color: #fff;
-}
-
-.threebtn {
-  border: 1px solid;
-  border-radius: 8px;
-}
-
-.btngrid {
-  height: 60px;
-  min-width: 150px;
-  border: #358873 1px solid;
-  border-radius: 8px;
-  margin: -0.5px;
-}
-
-.btn-outliner {
-  border: 1px #eb0029 solid;
-}
-
-.btn-outlineg {
-  border: 1px #358873 solid;
-}
-
-.btn-outlineb {
-  border: 1px #2866c1 solid;
-}
-
-.btn12 {
-  position: absolute;
-  margin: 17% 0% 0% 45%;
-}
 
 .vertical-center {
   min-height: 100vh;
@@ -78,208 +50,118 @@ h1, h2, h3, h4, h5, h6, footer-copyright {
   align-items: center;
 }
 
+.btn {
+  position: relative;
+  border: 2px #67BBA6 solid;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: border 0.1s ease-in-out;
+  color: white;
+  font-family: 'Avenir';
+  font-weight: 500;
+  font-style: normal;
+}
 
-.varietiesmap {
-  width: 50%;
-  position: absolute;
-  right: -30%;
-  bottom: -5%;
+a:active{
+  color: #67BBA6;
+}
+
+.btn:hover, .btn:focus, .btn:active {
+  border-color: #67BBA6;
+  background-color: #67BBA6;
+  transition: all .35s;
+  color: white;
+}
+
+.table>tbody>tr>td,
+.table>tbody>tr>th {
+  border-top: none;
+}
+
+#herobg {
+  background-color: #67BBA6;
+  max-height: 93.5vh;
+  display: flex;
+  align-items: flex-end;
+  height: 100%;
+}
+
+#face {
+  max-height: 93.5vh;
+  position: relative;
+  right: 16vw;
+  z-index: 1;
+}
+
+.navbar-dark .navbar-toggler, .navbar-dark .navbar-toggler:focus, .navbar-dark .navbar-toggler:active, .navbar-dark .navbar-toggler-icon:focus {
+  border: none;
+  outline: 0;
+}
+
+@media only screen and (max-width: 992px) {
+
+    #face {
+          right: 25vh;
+          max-height: 75.5vh;
+    }
+
+    #herobg {
+      background-color: #67BBA6;
+      max-height: 50vh;
+      display: flex;
+      align-items: flex-end;
+      height: 100%;
+    }
+
+    #name {
+      font-size: 2rem !important;
+    }
+
+
+  .centermob
+  {
+    display: flex;
+    justify-content: center;
   }
 
-label {
-      margin-bottom: -0.5rem;
-}
-
-.modal-backdrop {
-     opacity:0.9 !important;
-}
-
-.modal-content {
-  background-color: rgba(0,0,0,.0001) !important;
-}
-
-.modal-header {
-  color: white !important;
-}
-
-.popover {
-  font-family: Avenir-Light;
-  color: white;
-  background-color: rgba(0,0,0,.0001);
-}
-
-.popover-body {
-      color: #fff;
-}
-
-.popover-header {
-    background-color: rgba(0,0,0,.0001);
-}
-
-.close {
-    color: #fff;
-    opacity: 1;
-    text-shadow: 0px 0px 0px !important;
-}
-
-.close:hover {
-    color: #eb0029;
-    opacity: 1;
-}
-
-.footer {
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  color: white;
-  text-align: center;
-}
-
-.btn-outliner:hover, .btn-outliner:focus, .btn-outliner:active, .btn-outliner.active {
-  border-color: #eb0029;
-  background-color: #eb0029;
-  transition: all .35s;
-}
-
-.btn-outlineg:hover, .btn-outlineg:focus, .btn-outlineg:active, .btn-outlineg.active {
-  border-color: #358873;
-  background-color: #358873;
-  transition: all .35s;
-}
-
-.btn-outlineb:hover, .btn-outlineb:focus, .btn-outlineb:active, .btn-outlineb.active {
-  border-color: #2866c1;
-  background-color: #2866c1;
-  transition: all .35s;
-}
-
-#info:hover, #gear:hover {
-  fill: #eb0029;
-  transition: 0.3s;
-}
-
-.popover .arrow {
-    display: none;
-}
-
-#South_Salmara_Mankachar:hover, #Bongaigaon:hover, #Maksa:hover, #Cachar:hover, #Hailakandi:hover, #Karimganj:hover, #Karbi_Anglong_West:hover, #Dima_Hassao:hover,
-#Majuli:hover {
-  cursor:pointer;
-  fill: #fff;
-  opacity: 0.3;
-  transition: 0.3s;
-}
-
-#Brahmaputra:hover {
-  cursor:default;
-  fill: #194e9c;
-  opacity: 0.1;
-  transition: 0.3s;
-}
-
-#Udalguri:hover, #Barpeta:hover,   #Chirang:hover, #Darrang:hover,  #Dhubri:hover,  #Goalpara:hover, #Kamrup:hover,
-#Kamrup_Metro:hover,  #Kokrajhar:hover, #Nalbari:hover {
-    cursor:pointer;
-    fill: #ff6cd8;
-    transition: 0.3s;
-}
-
-#Sonitpur:hover, #Biswanath:hover, #Golaghat:hover, #Morigaon:hover, #Nagaon:hover, #Karbi_Anglong:hover, #Hojai:hover {
-  cursor:pointer;
-  fill: #ff4d34;
-  transition: 0.3s;
-}
-
-#Lakhimpur:hover, #Sivasagar:hover, #Tinsukia:hover, #Dibrugarh:hover, #Dhemaji:hover, #Charaideo:hover, #Jorhat:hover {
-  cursor:pointer;
-  fill: #ffc721;
-  transition: 0.3s;
-}
-
-
-#info:hover, #gear:hover {
-    fill: #ffc721;
-    transition: 0.3s;
-  }
-
-.popover {
+  #Experience, #Leadership, #Education
+  {
     text-align: center;
   }
 
-.modal-body.dist1 {
-    position:relative; /* This avoids whatever it's absolute inside of it to go off the container */
-    height: 700px; /* let's imagine that your login box height is 250px . This height needs to be added, otherwise .img-responsive will be like "Oh no, I need to be vertically aligned?! but from which value I need to be aligned??" */
+  img {
+    margin-left: auto;
+  margin-right: auto;
+  }
+  .position {
+    margin-top: 5%;
+  }
+
+  .side-collapse-container{
+      width:100%;
+      position:relative;
+      left:0;
+      transition:left .4s;
+  }
+  .side-collapse-container.out{
+      left:200px;
+  }
+  .side-collapse {
+      top:50px;
+      bottom:0;
+      left:0;
+      width:200px;
+      position:fixed;
+      overflow:hidden;
+      transition:width .4s;
+  }
+  .side-collapse.in {
+      width:0;
+  }
 }
 
-.districtmap {
-    width:600px; /* This value will depend on what size you want for your loading image*/
-    height: 600px;
-    position:absolute;
-    left:50%;
-    top:50%;
-    margin-top:-300px; /* This needs to be half of the height */
-    margin-left:-300px; /* This needs to be half of the width */
-}
-
-.hundred {
-  fill: #207567 !important;
-  transition: 1s;
-}
-
-.eighty {
-  fill: #4e9c81 !important;
-  transition: 1s;
-}
-
-.sixty {
-  fill: #8dc3a7 !important;
-  transition: 1s;
-}
-
-.forty {
-  fill: #b4d6c1 !important;
-  transition: 1s;
-}
-
-.twenty {
-  fill: #dfeae2 !important;
-  transition: 1s;
-}
-
-.st13 {
- pointer-events: none;
-}
-
-#termsbtn {
-  position: absolute; top: 60%; right: 25%;
-}
-
-#intro {
-      background-image: url("./elements/intro.svg");
-      background-attachment: fixed;
-      background-position: 130%;
-      background-color: #191919;
-      background-repeat: no-repeat;
-      background-size: contain;
-}
-
-@media only screen and (max-width: 1450px) {
-  #termsbtn {top: 60%; right: 30%;}
-}
-
-@media only screen and (max-width: 1200px) {
-  #termsbtn {top: 60%; right: 36%;}
-}
-
-@media only screen and (max-width: 991px) {
-  .varietiesmap { position: relative; right: 0%; bottom: 0%; margin-top: 5%; width: auto;}
-}
-
-@media only screen and (max-width: 767px) {
-  #termsbtn { position: relative; top: 0%; right: 0%; margin-top: 5%;}
-}
-
-@media only screen and (max-width: 530px) {
-#buttongroup { margin-top: 20%;}
+@media only screen and (max-width: 767px){
+  #herobg {
+    display: none;
+  }
 }
