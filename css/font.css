@@ -1,12 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Sen&display=swap');
 @font-face {
     font-family: 'Avenir';
-    src: url('Avenir-Medium.eot');
-    src: url('Avenir-Medium.eot?#iefix') format('embedded-opentype'),
-        url('Avenir-Medium.woff2') format('woff2'),
-        url('Avenir-Medium.woff') format('woff'),
-        url('Avenir-Medium.ttf') format('truetype'),
-        url('Avenir-Medium.svg#Avenir-Medium') format('svg');
+    src: url('./font/Avenir-Medium.eot');
+    src: url('./font/Avenir-Medium.eot?#iefix') format('embedded-opentype'),
+        url('./font/Avenir-Medium.woff2') format('woff2'),
+        url('./font/Avenir-Medium.woff') format('woff'),
+        url('./font/Avenir-Medium.ttf') format('truetype'),
+        url('./font/Avenir-Medium.svg#Avenir-Medium') format('svg');
     font-weight: 500;
     font-style: normal;
     font-display: swap;
@@ -14,12 +14,12 @@
 
 @font-face {
     font-family: 'Avenir';
-    src: url('Avenir-Heavy.eot');
-    src: url('Avenir-Heavy.eot?#iefix') format('embedded-opentype'),
-        url('Avenir-Heavy.woff2') format('woff2'),
-        url('Avenir-Heavy.woff') format('woff'),
-        url('Avenir-Heavy.ttf') format('truetype'),
-        url('Avenir-Heavy.svg#Avenir-Heavy') format('svg');
+    src: url('./font/Avenir-Heavy.eot');
+    src: url('./font/Avenir-Heavy.eot?#iefix') format('embedded-opentype'),
+        url('./font/Avenir-Heavy.woff2') format('woff2'),
+        url('./font/Avenir-Heavy.woff') format('woff'),
+        url('./font/Avenir-Heavy.ttf') format('truetype'),
+        url('./font/Avenir-Heavy.svg#Avenir-Heavy') format('svg');
     font-weight: 900;
     font-style: normal;
     font-display: swap;
@@ -27,12 +27,12 @@
 
 @font-face {
     font-family: 'Avenir';
-    src: url('Avenir-Black.eot');
-    src: url('Avenir-Black.eot?#iefix') format('embedded-opentype'),
-        url('Avenir-Black.woff2') format('woff2'),
-        url('Avenir-Black.woff') format('woff'),
-        url('Avenir-Black.ttf') format('truetype'),
-        url('Avenir-Black.svg#Avenir-Black') format('svg');
+    src: url('./font/Avenir-Black.eot');
+    src: url('./font/Avenir-Black.eot?#iefix') format('embedded-opentype'),
+        url('./font/Avenir-Black.woff2') format('woff2'),
+        url('./font/Avenir-Black.woff') format('woff'),
+        url('./font/Avenir-Black.ttf') format('truetype'),
+        url('./font/Avenir-Black.svg#Avenir-Black') format('svg');
     font-weight: 900;
     font-style: normal;
     font-display: swap;
@@ -40,12 +40,12 @@
 
 @font-face {
     font-family: 'Avenir';
-    src: url('Avenir-Light.eot');
-    src: url('Avenir-Light.eot?#iefix') format('embedded-opentype'),
-        url('Avenir-Light.woff2') format('woff2'),
-        url('Avenir-Light.woff') format('woff'),
-        url('Avenir-Light.ttf') format('truetype'),
-        url('Avenir-Light.svg#Avenir-Light') format('svg');
+    src: url('./font/Avenir-Light.eot');
+    src: url('./font/Avenir-Light.eot?#iefix') format('embedded-opentype'),
+        url('./font/Avenir-Light.woff2') format('woff2'),
+        url('./font/Avenir-Light.woff') format('woff'),
+        url('./font/Avenir-Light.ttf') format('truetype'),
+        url('./font/Avenir-Light.svg#Avenir-Light') format('svg');
     font-weight: 300;
     font-style: normal;
     font-display: swap;
@@ -53,12 +53,12 @@
 
 @font-face {
     font-family: 'Avenir';
-    src: url('Avenir-HeavyOblique.eot');
-    src: url('Avenir-HeavyOblique.eot?#iefix') format('embedded-opentype'),
-        url('Avenir-HeavyOblique.woff2') format('woff2'),
-        url('Avenir-HeavyOblique.woff') format('woff'),
-        url('Avenir-HeavyOblique.ttf') format('truetype'),
-        url('Avenir-HeavyOblique.svg#Avenir-HeavyOblique') format('svg');
+    src: url('./font/Avenir-HeavyOblique.eot');
+    src: url('./font/Avenir-HeavyOblique.eot?#iefix') format('embedded-opentype'),
+        url('./font/Avenir-HeavyOblique.woff2') format('woff2'),
+        url('./font/Avenir-HeavyOblique.woff') format('woff'),
+        url('./font/Avenir-HeavyOblique.ttf') format('truetype'),
+        url('./font/Avenir-HeavyOblique.svg#Avenir-HeavyOblique') format('svg');
     font-weight: 900;
     font-style: italic;
     font-display: swap;
@@ -66,12 +66,12 @@
 
 @font-face {
     font-family: 'Avenir Book';
-    src: url('Avenir-BookOblique.eot');
-    src: url('Avenir-BookOblique.eot?#iefix') format('embedded-opentype'),
-        url('Avenir-BookOblique.woff2') format('woff2'),
-        url('Avenir-BookOblique.woff') format('woff'),
-        url('Avenir-BookOblique.ttf') format('truetype'),
-        url('Avenir-BookOblique.svg#Avenir-BookOblique') format('svg');
+    src: url('./font/Avenir-BookOblique.eot');
+    src: url('./font/Avenir-BookOblique.eot?#iefix') format('embedded-opentype'),
+        url('./font/Avenir-BookOblique.woff2') format('woff2'),
+        url('./font/Avenir-BookOblique.woff') format('woff'),
+        url('./font/Avenir-BookOblique.ttf') format('truetype'),
+        url('./font/Avenir-BookOblique.svg#Avenir-BookOblique') format('svg');
     font-weight: normal;
     font-style: italic;
     font-display: swap;
@@ -79,12 +79,12 @@
 
 @font-face {
     font-family: 'Avenir Black Oblique';
-    src: url('Avenir-BlackOblique.eot');
-    src: url('Avenir-BlackOblique.eot?#iefix') format('embedded-opentype'),
-        url('Avenir-BlackOblique.woff2') format('woff2'),
-        url('Avenir-BlackOblique.woff') format('woff'),
-        url('Avenir-BlackOblique.ttf') format('truetype'),
-        url('Avenir-BlackOblique.svg#Avenir-BlackOblique') format('svg');
+    src: url('./font/Avenir-BlackOblique.eot');
+    src: url('./font/Avenir-BlackOblique.eot?#iefix') format('embedded-opentype'),
+        url('./font/Avenir-BlackOblique.woff2') format('woff2'),
+        url('./font/Avenir-BlackOblique.woff') format('woff'),
+        url('./font/Avenir-BlackOblique.ttf') format('truetype'),
+        url('./font/Avenir-BlackOblique.svg#Avenir-BlackOblique') format('svg');
     font-weight: 900;
     font-style: italic;
     font-display: swap;
@@ -92,12 +92,12 @@
 
 @font-face {
     font-family: 'Avenir';
-    src: url('Avenir-MediumOblique.eot');
-    src: url('Avenir-MediumOblique.eot?#iefix') format('embedded-opentype'),
-        url('Avenir-MediumOblique.woff2') format('woff2'),
-        url('Avenir-MediumOblique.woff') format('woff'),
-        url('Avenir-MediumOblique.ttf') format('truetype'),
-        url('Avenir-MediumOblique.svg#Avenir-MediumOblique') format('svg');
+    src: url('./font/Avenir-MediumOblique.eot');
+    src: url('./font/Avenir-MediumOblique.eot?#iefix') format('embedded-opentype'),
+        url('./font/Avenir-MediumOblique.woff2') format('woff2'),
+        url('./font/Avenir-MediumOblique.woff') format('woff'),
+        url('./font/Avenir-MediumOblique.ttf') format('truetype'),
+        url('./font/Avenir-MediumOblique.svg#Avenir-MediumOblique') format('svg');
     font-weight: 500;
     font-style: italic;
     font-display: swap;
@@ -105,12 +105,12 @@
 
 @font-face {
     font-family: 'Avenir';
-    src: url('Avenir-Oblique.eot');
-    src: url('Avenir-Oblique.eot?#iefix') format('embedded-opentype'),
-        url('Avenir-Oblique.woff2') format('woff2'),
-        url('Avenir-Oblique.woff') format('woff'),
-        url('Avenir-Oblique.ttf') format('truetype'),
-        url('Avenir-Oblique.svg#Avenir-Oblique') format('svg');
+    src: url('./font/Avenir-Oblique.eot');
+    src: url('./font/Avenir-Oblique.eot?#iefix') format('embedded-opentype'),
+        url('./font/Avenir-Oblique.woff2') format('woff2'),
+        url('./font/Avenir-Oblique.woff') format('woff'),
+        url('./font/Avenir-Oblique.ttf') format('truetype'),
+        url('./font/Avenir-Oblique.svg#Avenir-Oblique') format('svg');
     font-weight: normal;
     font-style: italic;
     font-display: swap;
@@ -118,12 +118,12 @@
 
 @font-face {
     font-family: 'Avenir';
-    src: url('Avenir-Roman.eot');
-    src: url('Avenir-Roman.eot?#iefix') format('embedded-opentype'),
-        url('Avenir-Roman.woff2') format('woff2'),
-        url('Avenir-Roman.woff') format('woff'),
-        url('Avenir-Roman.ttf') format('truetype'),
-        url('Avenir-Roman.svg#Avenir-Roman') format('svg');
+    src: url('./font/Avenir-Roman.eot');
+    src: url('./font/Avenir-Roman.eot?#iefix') format('embedded-opentype'),
+        url('./font/Avenir-Roman.woff2') format('woff2'),
+        url('./font/Avenir-Roman.woff') format('woff'),
+        url('./font/Avenir-Roman.ttf') format('truetype'),
+        url('./font/Avenir-Roman.svg#Avenir-Roman') format('svg');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
@@ -131,12 +131,12 @@
 
 @font-face {
     font-family: 'Avenir Book';
-    src: url('Avenir-Book.eot');
-    src: url('Avenir-Book.eot?#iefix') format('embedded-opentype'),
-        url('Avenir-Book.woff2') format('woff2'),
-        url('Avenir-Book.woff') format('woff'),
-        url('Avenir-Book.ttf') format('truetype'),
-        url('Avenir-Book.svg#Avenir-Book') format('svg');
+    src: url('./font/Avenir-Book.eot');
+    src: url('./font/Avenir-Book.eot?#iefix') format('embedded-opentype'),
+        url('./font/Avenir-Book.woff2') format('woff2'),
+        url('./font/Avenir-Book.woff') format('woff'),
+        url('./font/Avenir-Book.ttf') format('truetype'),
+        url('./font/Avenir-Book.svg#Avenir-Book') format('svg');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
@@ -144,12 +144,12 @@
 
 @font-face {
     font-family: 'Avenir';
-    src: url('Avenir-LightOblique.eot');
-    src: url('Avenir-LightOblique.eot?#iefix') format('embedded-opentype'),
-        url('Avenir-LightOblique.woff2') format('woff2'),
-        url('Avenir-LightOblique.woff') format('woff'),
-        url('Avenir-LightOblique.ttf') format('truetype'),
-        url('Avenir-LightOblique.svg#Avenir-LightOblique') format('svg');
+    src: url('./font/Avenir-LightOblique.eot');
+    src: url('./font/Avenir-LightOblique.eot?#iefix') format('embedded-opentype'),
+        url('./font/Avenir-LightOblique.woff2') format('woff2'),
+        url('./font/Avenir-LightOblique.woff') format('woff'),
+        url('./font/Avenir-LightOblique.ttf') format('truetype'),
+        url('./font/Avenir-LightOblique.svg#Avenir-LightOblique') format('svg');
     font-weight: 300;
     font-style: italic;
     font-display: swap;
