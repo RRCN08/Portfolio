@@ -13,11 +13,12 @@ body {
     font-style: normal;
 }
 
-a{
+p, a{
   color: white;
   font-family: 'Avenir';
     font-weight: 300;
     font-style: normal;
+    font-size: 1rem;
 }
 
 h1, h2, h3 {
@@ -35,12 +36,6 @@ h4, h5, h6 {
 a:hover{
   transition: all .35s;
   color: #67BBA6;
-}
-
-p, a {
-  font-family: Avenir-Light;
-  font-size: 1rem;
-  color: white;
 }
 
 
