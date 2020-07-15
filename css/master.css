@@ -23,7 +23,7 @@ p, a{
 
 h1, h2, h3 {
   font-family: 'Avenir';
-   font-weight: 900;
+   font-weight: 500;
    font-style: normal;
 }
 
@@ -38,6 +38,31 @@ a:hover{
   color: #67BBA6;
 }
 
+.carousel-image {
+  height: 75vh;
+    object-fit: cover;
+}
+
+.carousel {
+    border-radius: 2vh 2vh 2vh 2vh;
+    overflow: hidden;
+}
+
+.carousel-item:after {
+  content:"";
+  display:block;
+  position:absolute;
+  top:0;
+  bottom:0;
+  left:0;
+  right:0;
+  background:rgba(0,0,0,0.7);
+  pointer-events: none;
+}
+
+.carousel-caption {
+    pointer-events: none;
+}
 
 .vertical-center {
   min-height: 100vh;
