@@ -107,15 +107,14 @@ a:active{
 
 #herobg {
   background-color: #67BBA6;
-  max-height: 93.5vh;
   display: flex;
   align-items: flex-end;
   height: 100%;
 }
 
 #face {
-  max-height: 93.5vh;
-  max-width: 50vw;
+  max-height: 51.5vw;
+  max-width: 51.5vw;
   position: relative;
   right: 16vw;
   z-index: 1;
@@ -129,8 +128,9 @@ a:active{
 @media only screen and (max-width: 992px) {
 
     #face {
-          right: 25vh;
-          max-height: 75.5vh;
+          right: 30vw;
+          max-height: 81.5vw;
+          max-width: 81.5vw;
     }
 
     #herobg {
