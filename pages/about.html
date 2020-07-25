@@ -26,6 +26,11 @@
 
 </head>
 <body>
+  
+  <!-- Preloader -->
+  <div id="preloader">
+  	<div id="status">&nbsp;</div>
+  </div>
 
       <nav class="navbar navbar-expand-lg navbar-dark navbar-bg smart-scroll" id="navbar">
         <a class="navbar-brand" href="#"> <h3>rrc.</h3> </a>
@@ -62,6 +67,17 @@
         <!-- Footer -->
         <div id="footer"></div>
         <!-- Footer -->
+
+        <!-- Preloader -->
+        <script type="text/javascript">
+            //<![CDATA[
+                $(window).on('load', function() { // makes sure the whole site is loaded
+                    $('#status').fadeOut(); // will first fade out the loading animation
+                    $('#preloader').delay(350).fadeOut('slow'); // will fade out the white DIV that covers the website.
+                    $('body').delay(350).css({'overflow':'visible'});
+                  })
+            //]]>
+        </script>
 
         <script src="https://code.jquery.com/jquery-3.2.1.min.js" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
