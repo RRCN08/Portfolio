@@ -11,12 +11,23 @@
         <base href="./" >
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
         <link rel="stylesheet" href="css/font.css">
-        <link rel="stylesheet" href="css/master.css">
+        <link rel="stylesheet" href="css/main.min.css">
         <link rel="stylesheet" href="css/navbar.css">
+
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-173549113-1"></script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+
+          gtag('config', 'UA-173549113-1');
+        </script>
+
     </head>
     <body>
 
-      <nav class="navbar navbar-expand-lg navbar-dark navbar-bg sticky-top">
+      <nav class="navbar navbar-expand-lg navbar-dark navbar-bg smart-scroll" id="navbar">
         <a class="navbar-brand" href="#"> <h3>rrc.</h3> </a>
         <button class="navbar-toggler third-button" type="button" data-toggle="collapse" data-target="#navbarSupportedContent22"
           aria-controls="navbarSupportedContent22" aria-expanded="false" aria-label="Toggle navigation">
@@ -24,8 +35,8 @@
         </button>
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent22">
-          <ul class="navbar-nav float-right text-right pr-3 ml-auto">
-            <li class="nav-item active nav-link">HOME</li>
+          <ul class="navbar-nav float-right text-right ml-auto">
+            <li class="nav-item active"> <a class="nav-link" href="#">HOME </a></li>
             <li class="nav-item">  <a class="nav-link" href="pages/resume.html">RESUME</a>  </li>
             <li class="nav-item">  <a class="nav-link" href="pages/about.html">ABOUT</a>  </li>
           </ul>
@@ -35,7 +46,7 @@
       <section id="Header">
         <div class="container-fluid h-100">
           <div class="row">
-            <div class="col-lg-7 align-self-center text-right" id="Hero" style="padding-right:10%; z-index: 2;">
+            <div class="col-lg-7 align-self-center text-right rellax" data-rellax-speed="7" id="Hero" style="padding-right:10%; z-index: 2;">
                 <h4 class="mt-5">HI, I AM</h4>
                 <h2 class="mt-3" id ="name" style="letter-spacing: 3px; font-size: 3rem;"><b>ROHIT RAMACHANDRAN.</b></h2>
                 <p class="mt-3">an interaction design student from IIT Guwahati.</p>
@@ -45,113 +56,69 @@
                 </div>
           </div>
           <div class="col-lg-5 align-items-end" id="herobg">
-            <img src="css/elements/face.png" class="noresize" id="face">
+            <img src="css/elements/face.png" id="face">
           </div>
         </div>
         </div>
       </div>
     </section>
 
-    <section >
+    <section>
       <div class="container-fluid" id="Projects-Carousel">
-        <div class="row mt-5 justify-content-center">
-          <div class="col-lg-12">
-              <h1 class="mt-5 text-center">PROJECTS</h1>
-              <p class="mt-3 mb-5 text-center">A collection of my best work so far. Feel free to explore.</p>
+        <div class="row mt-5 justify-content-center" style="margin-bottom:10%">
+          <div class="col-lg-12" style="margin-top:3%">
+              <h1 data-scroll class="text-center">PROJECTS</h1>
+              <p data-scroll class="mt-3 mb-5 text-center">A collection of my best work so far. Feel free to explore.</p>
         </div>
-          <div class="col-lg-12">
-            <!--Carousel Wrapper-->
-            <div id="projects-carousel" class="carousel slide carousel-fade" data-ride="carousel">
-              <!--Indicators-->
-              <ol class="carousel-indicators">
-                <li data-target="#projects-carousel" data-slide-to="0" class="active"></li>
-                <li data-target="#projects-carousel" data-slide-to="1"></li>
-                <li data-target="#projects-carousel" data-slide-to="2"></li>
-              </ol>
-              <!--/.Indicators-->
-              <!--Slides-->
-              <div class="carousel-inner" role="listbox">
-                <div class="carousel-item active">
-                  <div class="view">
-                    <a class="link" href="http://behance.net/rrc08/"><img class="d-block w-100 carousel-image" src="src/images/bg/OneStop.png" alt="First slide"></a>
-                    <div class="mask rgba-black-strong"></div>
-                  </div>
-                  <div class="carousel-caption">
-                    <h4 class="h3-responsive">OneStop</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
-                  </div>
-                </div>
-                <div class="carousel-item">
-                  <!--Mask color-->
-                  <div class="view">
-                    <img class="d-block w-100 carousel-image" src="src/images/bg/IshanDhvani.png"
-                      alt="Second slide">
-                    <div class="mask rgba-black-strong"></div>
-                  </div>
-                  <div class="carousel-caption">
-                    <h4 class="h3-responsive">Ishan Dhvani</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
-                  </div>
-                </div>
-                <div class="carousel-item">
-                  <!--Mask color-->
-                  <div class="view">
-                    <img class="d-block w-100 carousel-image" src="src/images/bg/link.png"
-                      alt="Third slide">
-                    <div class="mask rgba-black-slight"></div>
-                  </div>
-                  <div class="carousel-caption">
-                    <h4 class="h3-responsive">Link Magazine</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
-                  </div>
-                </div>
-              </div>
-              <!--/.Slides-->
-              <!--Controls-->
-              <a class="carousel-control-prev" href="#projects-carousel" role="button" data-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="sr-only">Previous</span>
-              </a>
-              <a class="carousel-control-next" href="#projects-carousel" role="button" data-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="sr-only">Next</span>
-              </a>
-              <!--/.Controls-->
+        <div class="container-fluid bg-3">
+          <div class="row justify-content-center mt-5">
+            <div class="col-lg-4">
+            <div class="hover hover-1 text-white rounded"> <a class="link" href="projects/onestop.html"> <img src="src/images/bg/OneStop.png"> </a>
+            <div class="hover-overlay"></div>
+            <div class="hover-1-content px-5 py-4">
+            <h3 class="hover-1-title text-uppercase font-weight-bold mb-0"> <span class="font-weight-light">OneStop </span>IITG</h3>
+            <p class="hover-1-description font-weight-light mb-0">The ultimate college companion.</p>
             </div>
-            <!--/.Carousel Wrapper-->
+            </div>
+            </div>
+            <div class="col-lg-4">
+            <div class="hover hover-1 text-white rounded"> <a class="link" href="projects/ishan.html"> <img src="src/images/bg/IshanDhvani.png"> </a>
+            <div class="hover-overlay"></div>
+            <div class="hover-1-content px-5 py-4">
+            <h3 class="hover-1-title text-uppercase font-weight-bold mb-0"> <span class="font-weight-light">Ishan </span>Dhvani</h3>
+            <p class="hover-1-description font-weight-light mb-0">a brief inquiry into the Assamese language.</p>
+            </div>
+            </div>
+            </div>
+            <div class="col-lg-4">
+            <div class="hover hover-1 text-white rounded"><a class="link" href="projects/link.html"> <img src="src/images/bg/link.png"> </a>
+            <div class="hover-overlay"></div>
+            <div class="hover-1-content px-5 py-4">
+            <h3 class="hover-1-title text-uppercase font-weight-bold mb-0"> <span class="font-weight-light">Link </span>Magazine</h3>
+            <p class="hover-1-description font-weight-light mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            </div>
+            </div>
+            </div>
+            </div>
           </div>
-
         </div>
+
 
       </div>
 
     </section>
 
       <!-- Footer -->
-      <footer class="page-footer">
-        <div class="container-fluid text-center">
-          <div class="row justify-content-center" style="margin-top:2%;">
-            <hr class="clearfix w-100">
-              <div class="col-lg-12 mb-1">
-
-              <a class="link pr-2" href="http://behance.net/rrc08/" target="_blank"><img src="css/elements/social/Behance.svg" width=30vw style="display:inline;"></a>
-              <a class="link pr-2" href="http://linkedin.com/in/rrcn08/" target="_blank"><img src="css/elements/social/LinkedIn.svg" width=30vw style="display:inline;"></a>
-              <a class="link pr-2" href="http://instagram.com/rrc08/" target="_blank"><img src="css/elements/social/Instagram.svg" width=30vw style="display:inline;"></a>
-              <a class="link" href="http://fb.me/rrcn08/" target="_blank"><img src="css/elements/social/Facebook.svg" width=30vw style="display:inline;"></a>
-
-              </div>
-          </div>
-        </div>
-
-        <div class="footer-copyright text-center py-3"> <p style="font-size: 0.8rem;">made with love, from scratch.</a> </div>
-      </footer>
+      <div id="footer"></div>
       <!-- Footer -->
 
       <script src="https://code.jquery.com/jquery-3.2.1.min.js" crossorigin="anonymous"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/rellax/1.12.1/rellax.min.js"></script>
+      <script src="https://unpkg.com/scroll-out/dist/scroll-out.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/lax.js" ></script>
       <script src="js/main.js"></script>
-      <script src="js/navbar.js"></script>
     </body>
 
 </html>
