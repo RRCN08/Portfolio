@@ -2,13 +2,10 @@ $(document).ready(function() {
 
             $("#footer").load("footer.html");
 
-            //venobox
+            //Venobox
             $(document).ready(function(){
                 $('.venobox').venobox();
             });
-
-            //ScrollOut
-            ScrollOut();
 
             //Rellax Parallax Effect
             var rellax = new Rellax('.rellax');
@@ -73,11 +70,9 @@ $(document).ready(function() {
             	window.requestAnimationFrame(updateLax)
             }
 
-            //Modal
-            $(document).ready(function () {
-                    $('#myModal').on('show.bs.modal', function (e) {
-                        var image = $(e.relatedTarget).attr('src');
-                        $(".img-responsive").attr("src", image);
-                    });
-            });
+            //ScrollOut
+            ScrollOut();
+
+            //AOS
+            AOS.init();
           });
