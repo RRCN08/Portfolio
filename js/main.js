@@ -2,6 +2,11 @@ $(document).ready(function() {
 
             $("#footer").load("footer.html");
 
+            //venobox
+            $(document).ready(function(){
+                $('.venobox').venobox();
+            });
+
             //ScrollOut
             ScrollOut();
 
