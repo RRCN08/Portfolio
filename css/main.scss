@@ -9,48 +9,25 @@ black: #000000
   @return map-get($colors, $color-name);
 }
 
-.centerel {
-  margin: auto; display: block;
+//Mixins
+@mixin tablet {
+  @media (max-width: 992px) { @content; }
 }
 
+@mixin phone {
+  @media (max-width: 767px) { @content; }
+}
+
+//Font
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,300;1,400&display=swap');
+
+
+//Projects-Tab
 .hover {
   overflow: hidden;
   position: relative;
   padding-bottom: 60%;
 }
-
-.modal-content {
-     background-color: rgba(0,0,0,.0001) !important;
-     display:inline-block;
-}
-
-.modal-body {
-    position:relative; /* This avoids whatever it's absolute inside of it to go off the container */
-    height: 250px; /* let's imagine that your login box height is 250px . This height needs to be added, otherwise .img-responsive will be like "Oh no, I need to be vertically aligned?! but from which value I need to be aligned??" */
-}
-
-.modal-header {
-  border-bottom: 0px;
-}
-
-.modal-header .close {
-  font-size: 40px; //bigger
-  color: color(white);
-  opacity: 1;
-  text-shadow: 0px 0px 0px !important;
-}
-
-.modal-header .close:hover {
-    color: color(primary);
-    opacity: 1;
-}
-
-.modal-backdrop
-{
-    opacity:1 !important;
-}
-
-.modal-dialog{text-align:center;}
 
 .hover-overlay {
   width: 100%;
@@ -75,8 +52,6 @@ black: #000000
   z-index: 99;
 }
 
-
-/* DEMO 1 ============================== */
 .hover-1 img {
   width: 105%;
   position: absolute;
@@ -122,28 +97,59 @@ black: #000000
 
   background: rgba(0, 0, 0, 0.5);
 }
+//!Projects-Tab
 
-.navbar-nav > li{
-  padding-left:1.5vw;
 
+//Image-Carousel
+.carousel-image {
+  height: 100%;
+  object-fit: cover;
 }
 
-#navbar {
-  background-color: color(black);
+.carousel {
+    border-radius: 2vh 2vh 2vh 2vh;
+    overflow: hidden;
 }
 
-#footer {
-  background: color(black);
+.carousel-item:after {
+  content:"";
+  display:block;
+  position:absolute;
+  top:0;
+  bottom:0;
+  left:0;
+  right:0;
+  background:rgba(0,0,0,0);
+  pointer-events: none;
 }
 
-#links {
-  background-color: color(bg);
+.carousel-caption {
+    pointer-events: none;
+}
+//!Image-Carousel
+
+
+//Status Links for Projects
+.status-link {
+  text-decoration: underline;
 }
 
-#Header {
-  background-color: color(black);
+.status-link:hover {
+  transition: all .35s;
+  color: color(white);
 }
 
+.sl-blue {
+  color: #4C81F6;
+}
+
+.sl-red {
+  color: #EB0029;
+}
+//!Status Links for Projects
+
+
+//Scroll to Section
 .smart-scroll{
   position: fixed;
   top: 0;
@@ -151,86 +157,101 @@ black: #000000
   left: 0;
   z-index: 1030;
 }
+
 .scrolled-down{
    transform:translateY(-100%); transition: all 0.3s ease-in-out;
 }
+
 .scrolled-up{
    transform:translateY(0); transition: all 0.3s ease-in-out;
 }
+//!Scroll to Section
+
+
+//Footer
+#footer {
+  background: color(black);
+}
+
+//Landing Page Header
+#Header {
+  background-color: color(black);
+}
+
+#herobg {
+  background-color: color(primary);
+  display: flex;
+  align-items: flex-end;
+  height: 100%;
+
+    @include tablet {
+      background-color: color(primary);
+      max-height: 50vw;
+      display: flex;
+      align-items: flex-end;
+      height: 100%;
+    }
+
+    @include phone {
+      display: none;
+    }
+}
+
+#face {
+  max-height: 100vh;
+  max-width: 100vh;
+  position: relative;
+  right: 16vw;
+  z-index: 1;
+
+    @include tablet {
+      right: 30vw;
+      max-height: 81.5vw;
+      max-width: 81.5vw;
+    }
+}
+//!Landing Page Header
 
 html {
   scroll-behavior: smooth;
 }
 
 body {
-    /* background-image: url("./bg.png"); */
     background-color: color(bg);
     background-repeat: no-repeat;
     background-size: auto;
     color: color(white);
-    font-family: 'Avenir Book';
-    font-weight: normal;
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
     font-style: normal;
 
     p, a{
       color: color(white);
-      font-family: 'Avenir';
-        font-weight: 300;
-        font-style: normal;
-        font-size: 1rem;
-    }
+      font-family: 'Lato', sans-serif;
+      font-weight: 300;
+      font-style: normal;
+      font-size: 1rem;
+      }
 
     h1, h2, h3 {
-      font-family: 'Avenir';
-       font-weight: 500;
+       font-family: 'Lato', sans-serif;
+       font-weight: 700;
        font-style: normal;
-    }
+      }
 
     h4, h5, h6 {
-      font-family: 'Avenir Book';
-        font-weight: normal;
-        font-style: normal;
+      font-family: 'Lato', sans-serif;
+      font-weight: 500;
+      font-style: normal;
     }
 
     a:hover{
       transition: all .35s;
       color: color(primary);
-    }
+      }
 
-    .carousel-image {
-      height: 100%;
-      object-fit: cover;
-    }
-
-    .carousel {
-        border-radius: 2vh 2vh 2vh 2vh;
-        overflow: hidden;
-    }
-
-    .carousel-item:after {
-      content:"";
-      display:block;
-      position:absolute;
-      top:0;
-      bottom:0;
-      left:0;
-      right:0;
-      background:rgba(0,0,0,0);
-      pointer-events: none;
-    }
-
-    .carousel-caption {
-        pointer-events: none;
-    }
-
-    .active.nav-item{
-        pointer-events: none;
-    }
-
-    .vertical-center {
-      min-height: 100vh;
-      display: flex;
-      align-items: center;
+    a:active{
+      color: color(primary);
     }
 
     .btn {
@@ -240,18 +261,9 @@ body {
       cursor: pointer;
       transition: border 0.1s ease-in-out;
       color: color(white);
-      font-family: 'Avenir';
+      font-family: 'Lato', sans-serif;
       font-weight: 500;
       font-style: normal;
-    }
-
-    .ishanbtn {
-      border: #EB0029;
-      background-color: #EB0029;
-    }
-
-    a:active{
-      color: color(primary);
     }
 
     .btn:hover, .btn:focus, .btn:active {
@@ -261,121 +273,54 @@ body {
       color: color(white);
     }
 
-    .table>tbody>tr>td,
-    .table>tbody>tr>th {
-      border-top: none;
-    }
-
-    #herobg {
-      background-color: color(primary);
-      display: flex;
-      align-items: flex-end;
-      height: 100%;
-    }
-
-    #face {
-      max-height: 100vh;
-      max-width: 100vh;
-      position: relative;
-      right: 16vw;
-      z-index: 1;
-    }
-
-    .navbar-dark .navbar-toggler, .navbar-dark .navbar-toggler:focus, .navbar-dark .navbar-toggler:active, .navbar-dark .navbar-toggler-icon:focus {
-      border: none;
-      outline: 0;
-    }
-
-
-
     @media only screen and (max-width: 992px) {
-
-        #face {
-              right: 30vw;
-              max-height: 81.5vw;
-              max-width: 81.5vw;
-        }
-
-        #herobg {
-          background-color: color(primary);
-          max-height: 50vw;
-          display: flex;
-          align-items: flex-end;
-          height: 100%;
-        }
 
         #name {
           font-size: 2rem !important;
         }
 
 
-      .centermob
-      {
-        display: flex;
-        justify-content: center;
-      }
+        .centermob
+        {
+          display: flex;
+          justify-content: center;
+        }
 
-      #Experience, #Leadership, #Education
-      {
-        text-align: center;
-      }
+        #Experience, #Leadership, #Education
+        {
+          text-align: center;
+        }
 
-      img {
-        margin-left: auto;
-      margin-right: auto;
-      }
-      .position {
-        margin-top: 5%;
-      }
-
-      .side-collapse-container{
-          width:100%;
-          position:relative;
-          left:0;
-          transition:left .4s;
-      }
-      .side-collapse-container.out{
-          left:200px;
-      }
-      .side-collapse {
-          top:50px;
-          bottom:0;
-          left:0;
-          width:200px;
-          position:fixed;
-          overflow:hidden;
-          transition:width .4s;
-      }
-      .side-collapse.in {
-          width:0;
-      }
+        img {
+          margin-left: auto;
+          margin-right: auto;
+        }
+        .position {
+          margin-top: 5%;
+        }
     }
-
-    @media only screen and (max-width: 767px){
-      #herobg {
-        display: none;
-      }
-    }
-
 }
 
-#OneStop-Banner {
-  background-image: url("../src/images/OneStop/Banner.png");
 
-}
-
+//Banner-Parallax
 .Banner {
   height: 50vh;
   background-position: left;
   background-repeat: no-repeat;
   background-size: cover;
-  background-attachment: fixed;
-}
+  background-attachment: fixed;}
 
 #Ishan-Banner {
   background-image: url("../src/images/Ishan/Banner.png");
 }
 
+#OneStop-Banner {
+  background-image: url("../src/images/OneStop/Banner.png");
+}
+//!Banner-Parallax
+
+
+//ScrollOut
 [data-scroll] {
   transition: opacity 0.5s;
 }

@@ -1,4 +1,19 @@
-/* Icon 1 */
+.navbar-nav > li{
+  padding-left:1.5vw;
+}
+
+#navbar {
+  background-color: #000000;
+}
+
+.navbar-dark .navbar-toggler, .navbar-dark .navbar-toggler:focus, .navbar-dark .navbar-toggler:active, .navbar-dark .navbar-toggler-icon:focus {
+  border: none;
+  outline: 0;
+}
+
+.active.nav-item{
+    pointer-events: none;
+}
 
 .animated-icon {
 width: 30px;
