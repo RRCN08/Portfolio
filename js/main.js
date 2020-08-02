@@ -3,9 +3,12 @@ $(document).ready(function() {
             $("#footer").load("footer.html");
 
             //Venobox
-            $(document).ready(function(){
-                $('.venobox').venobox();
+            $('.venobox').venobox();
+            $('.venobox_custom').venobox({
+                bgcolor    : '#1c1c1c',
+                spinner    : 'cube-grid'
             });
+
 
             //Rellax Parallax Effect
             var rellax = new Rellax('.rellax');

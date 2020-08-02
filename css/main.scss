@@ -15,7 +15,7 @@ black: #000000
 }
 
 @mixin phone {
-  @media (max-width: 767px) { @content; }
+  @media (max-width: 600px) { @content; }
 }
 
 //Font
@@ -139,12 +139,16 @@ black: #000000
   color: color(white);
 }
 
-.sl-blue {
+.sl-onestop {
   color: #4C81F6;
 }
 
-.sl-red {
+.sl-ishan {
   color: #EB0029;
+}
+
+.sl-roff {
+  color: #B9D053;
 }
 //!Status Links for Projects
 
@@ -198,8 +202,7 @@ black: #000000
 }
 
 #face {
-  max-height: 100vh;
-  max-width: 100vh;
+  max-width: 100%;
   position: relative;
   right: 16vw;
   z-index: 1;
@@ -316,6 +319,10 @@ body {
 
 #OneStop-Banner {
   background-image: url("../src/images/OneStop/Banner.png");
+}
+
+#Roff-Banner {
+  background-image: url("../src/images/Roff/Banner.png");
 }
 //!Banner-Parallax
 
