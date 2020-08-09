@@ -15,7 +15,7 @@ black: #000000
 }
 
 @mixin phone {
-  @media (max-width: 800px) { @content; }
+  @media (max-width: 720px) { @content; }
 }
 
 //Font
@@ -189,7 +189,6 @@ black: #000000
   box-sizing: border-box;
 }
 
-
 //Footer
 #footer {
   background: color(black);
@@ -199,6 +198,9 @@ black: #000000
 //Landing Page Header
 #Header {
   background-color: color(black);
+  background-image: url("../css/elements/memphis.png");
+  background-repeat: no-repeat;
+   background-attachment: fixed;
   position: fixed;
   z-index: 99;
   top: 0;
@@ -216,7 +218,7 @@ black: #000000
   }
 
   @include phone {
-    padding-bottom: 40vh;
+    padding-top: 20vh;
   }
 }
 
@@ -233,9 +235,7 @@ black: #000000
     }
 
     @include phone {
-      height: 50vh;
-      bottom: 0%;
-      position: fixed;
+      display: none;
     }
 }
 
@@ -247,13 +247,7 @@ black: #000000
 
     @include tablet {
       right: 30vw;
-      max-height: 81.5vh;
-      max-width: 81.5vh;
-    }
-
-    @include phone {
-      right: 0vw;
-      max-height: 50vh;
+      height: 81.5vh;
       max-width: 81.5vh;
     }
 }
