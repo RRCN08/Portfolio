@@ -183,12 +183,6 @@ black: #000000
 }
 //!Scroll to Section
 
-* {
-  margin:0;
-  padding:0;
-  box-sizing: border-box;
-}
-
 //Footer
 #footer {
   background: color(black);
@@ -265,7 +259,11 @@ body {
     font-family: 'Raleway', sans-serif;
     font-weight: 300;
 
-      a{
+      .container, .container-fluid {
+        overflow-x: hidden;
+      }
+
+      a {
         color: color(white);
         font-family: 'Raleway', sans-serif;
         font-weight: 900;
