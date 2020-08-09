@@ -15,11 +15,23 @@ black: #000000
 }
 
 @mixin phone {
-  @media (max-width: 600px) { @content; }
+  @media (max-width: 800px) { @content; }
 }
 
 //Font
-@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,300;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;700;900&display=swap');
+
+.parent {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+}
+
+.child {
+  position: relative;
+  z-index: 1000;
+  width: 100%;
+}
 
 
 //Projects-Tab
@@ -171,15 +183,42 @@ black: #000000
 }
 //!Scroll to Section
 
+* {
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+
 
 //Footer
 #footer {
   background: color(black);
+  color: #fff;
 }
 
 //Landing Page Header
 #Header {
   background-color: color(black);
+  position: fixed;
+  z-index: 99;
+  top: 0;
+  height: 100vh;
+}
+
+#Projects-Carousel {
+  margin-top: 100vh;
+  height: 70vh;
+  background: #1c1c1c;
+}
+
+#Hero {
+  @include tablet {
+    padding-bottom: 30vh;
+  }
+
+  @include phone {
+    padding-bottom: 40vh;
+  }
 }
 
 #herobg {
@@ -189,28 +228,34 @@ black: #000000
   height: 100%;
 
     @include tablet {
-      background-color: color(primary);
-      max-height: 50vw;
-      display: flex;
-      align-items: flex-end;
-      height: 100%;
+      max-height: 50vh;
+      bottom: 0%;
+      position: fixed;
     }
 
     @include phone {
-      display: none;
+      height: 50vh;
+      bottom: 0%;
+      position: fixed;
     }
 }
 
 #face {
-  max-width: 100%;
+  max-width: 60vh;
   position: relative;
   right: 16vw;
   z-index: 1;
 
     @include tablet {
       right: 30vw;
-      max-height: 81.5vw;
-      max-width: 81.5vw;
+      max-height: 81.5vh;
+      max-width: 81.5vh;
+    }
+
+    @include phone {
+      right: 0vw;
+      max-height: 50vh;
+      max-width: 81.5vh;
     }
 }
 //!Landing Page Header
@@ -224,28 +269,58 @@ body {
     background-repeat: no-repeat;
     background-size: auto;
     color: color(white);
-    font-family: 'Lato', sans-serif;
+    font-family: 'Raleway', sans-serif;
     font-weight: 300;
-    font-style: normal;
 
-    p, a{
-      color: color(white);
-      font-family: 'Lato', sans-serif;
-      font-weight: 300;
-      font-style: normal;
-      font-size: 1rem;
-      }
+      a{
+        color: color(white);
+        font-family: 'Raleway', sans-serif;
+        font-weight: 900;
+        font-size: 1rem;
+        }
 
-    h1, h2, h3 {
-       font-family: 'Lato', sans-serif;
-       font-weight: 700;
-       font-style: normal;
-      }
+      .btn{
+        color: color(white);
+        font-family: 'Raleway', sans-serif;
+        font-weight: 700;
+        }
 
-    h4, h5, h6 {
-      font-family: 'Lato', sans-serif;
-      font-weight: 500;
-      font-style: normal;
+      h1, h2, h3, {
+         font-family: 'Raleway', sans-serif;
+         font-weight: 900;
+        }
+
+      h4, h5, h6 {
+         font-family: 'Raleway', sans-serif;
+         font-weight: 700;
+        }
+
+    .section-title h3 {
+      margin-bottom: 20px;
+      padding-bottom: 20px;
+      position: relative;
+    }
+
+    .section-title h3::after {
+      content: '';
+      position: absolute;
+      display: block;
+      width: 70px;
+      height: 9px;
+      bottom: 0;
+      left: 5px;
+    }
+
+    .st-roff h3::after {
+      background: #B9D053;
+    }
+
+    .st-onestop h3::after {
+      background: #4C81F6;
+    }
+
+    .st-ishan h3::after {
+      background: #EB0029;
     }
 
     a:hover{
@@ -264,9 +339,6 @@ body {
       cursor: pointer;
       transition: border 0.1s ease-in-out;
       color: color(white);
-      font-family: 'Lato', sans-serif;
-      font-weight: 500;
-      font-style: normal;
     }
 
     .btn:hover, .btn:focus, .btn:active {

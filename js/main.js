@@ -1,6 +1,6 @@
 $(document).ready(function() {
 
-            $("#footer").load("footer.html");
+            //$("#footer").load("footer.html");
 
             //Venobox
             $('.venobox').venobox();
