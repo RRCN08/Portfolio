@@ -260,7 +260,8 @@ body {
     font-weight: 300;
 
       .container, .container-fluid {
-        overflow-x: hidden;
+        @include tablet {
+        overflow-y: hidden; }
       }
 
       a {
