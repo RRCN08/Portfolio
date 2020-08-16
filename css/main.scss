@@ -33,6 +33,10 @@ black: #000000
   width: 100%;
 }
 
+//Navigation bar
+.navbar {
+  background: rgba(0,0,0,0.7);
+}
 
 //Projects-Tab
 .hover {
@@ -236,7 +240,7 @@ black: #000000
 #face {
   max-width: 60vh;
   position: relative;
-  right: 16vw;
+  right: 12vw;
   z-index: 1;
 
     @include tablet {
