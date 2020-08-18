@@ -240,7 +240,7 @@ black: #000000
 #face {
   max-width: 60vh;
   position: relative;
-  right: 12vw;
+  right: 16vw;
   z-index: 1;
 
     @include tablet {
@@ -424,4 +424,12 @@ body {
 }
 [data-scroll="out"] {
   opacity: 0;
+}
+
+//Wireframes
+
+.homepage {
+  @include tablet {
+    margin-bottom: 5%;
+  }
 }
