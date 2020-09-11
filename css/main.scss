@@ -159,6 +159,10 @@ black: #000000
   color: #4C81F6;
 }
 
+.sl-link {
+  color: #F3B822;
+}
+
 .sl-ishan {
   color: #EB0029;
 }
@@ -333,6 +337,10 @@ body {
 
     .st-onestop h3::after {
       background: #4C81F6;
+    }
+
+    .st-link h3::after {
+      background: #F3B822;
     }
 
     .st-ishan h3::after {
