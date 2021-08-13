@@ -58,6 +58,4 @@ $(document).ready(function() {
             //ScrollOut
             ScrollOut();
 
-            //AOS
-            AOS.init();
           });
