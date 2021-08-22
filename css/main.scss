@@ -2,6 +2,7 @@ $colors: (
 primary: #03CEA9,
 bg: #1c1c1c,
 white: #ffffff,
+orange: #EC8539,
 black: #000000
 );
 
@@ -22,109 +23,158 @@ black: #000000
 //@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;700;900&display=swap');
 
 @font-face {
-    font-family: 'FreightSansProBold';
-    src: url('/src/fonts/FreightSansProBold-Regular.eot');
-    src: local('FreightSans Pro Bold'), local('FreightSansProBold-Regular'),
-        url('/src/fonts/FreightSansProBold-Regular.woff2') format('woff2'),
-        url('/src/fonts/FreightSansProBold-Regular.woff') format('woff');
-    font-weight: bold;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'FreightSansProLight';
-    src: url('/src/fonts/FreightSansProLight-Regular.eot');
-    src: local('FreightSans Pro Light'), local('FreightSansProLight-Regular'),
-        url('/src/fonts/FreightSansProLight-Regular.woff2') format('woff2'),
-        url('/src/fonts/FreightSansProLight-Regular.woff') format('woff');
+    font-family: 'Freight Sans Pro';
+    src: url('/src/fonts/FreightSansPro-Light.woff2') format('woff2'),
+        url('/src/fonts/FreightSansPro-Light.woff') format('woff');
     font-weight: 300;
     font-style: normal;
+    font-display: swap;
 }
 
 @font-face {
-    font-family: 'FreightSansProBook';
-    src: url('/src/fonts/FreightSansProBook-Regular.eot');
-    src: local('FreightSans Pro Book'), local('FreightSansProBook-Regular'),
-        url('/src/fonts/FreightSansProBook-Regular.woff2') format('woff2'),
-        url('/src/fonts/FreightSansProBook-Regular.woff') format('woff');
-    font-weight: normal;
+    font-family: 'Freight Sans Pro';
+    src: url('/src/fonts/FreightSansPro-Semibold.woff2') format('woff2'),
+        url('/src/fonts/FreightSansPro-Semibold.woff') format('woff');
+    font-weight: 600;
     font-style: normal;
+    font-display: swap;
 }
 
 @font-face {
-    font-family: 'FreightSansProBook';
-    src: url('/src/fonts/FreightSansProBook-Italic.eot');
-    src: local('FreightSans Pro Book Italic'), local('FreightSansProBook-Italic'),
-        url('/src/fonts/FreightSansProBook-Italic.woff2') format('woff2'),
-        url('/src/fonts/FreightSansProBook-Italic.woff') format('woff');
-    font-weight: normal;
+    font-family: 'Freight Sans Pro';
+    src: url('/src/fonts/FreightSansPro-SemiboldItalic.woff2') format('woff2'),
+        url('/src/fonts/FreightSansPro-SemiboldItalic.woff') format('woff');
+    font-weight: 600;
     font-style: italic;
+    font-display: swap;
 }
 
 @font-face {
-    font-family: 'FreightSansProLight';
-    src: url('/src/fonts/FreightSansProLight-Italic.eot');
-    src: local('FreightSans Pro Light Italic'), local('FreightSansProLight-Italic'),
-        url('/src/fonts/FreightSansProLight-Italic.woff2') format('woff2'),
-        url('/src/fonts/FreightSansProLight-Italic.woff') format('woff');
+    font-family: 'Freight Sans Pro';
+    src: url('/src/fonts/FreightSansPro-Medium.woff2') format('woff2'),
+        url('/src/fonts/FreightSansPro-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Freight Sans Pro';
+    src: url('/src/fonts/FreightSansPro-LightItalic.woff2') format('woff2'),
+        url('/src/fonts/FreightSansPro-LightItalic.woff') format('woff');
     font-weight: 300;
     font-style: italic;
+    font-display: swap;
 }
 
 @font-face {
-    font-family: 'FreightSansProMedium';
-    src: url('/src/fonts/FreightSansProMedium-Italic.eot');
-    src: local('FreightSans Pro Medium Italic'), local('FreightSansProMedium-Italic'),
-        url('/src/fonts/FreightSansProMedium-Italic.woff2') format('woff2'),
-        url('/src/fonts/FreightSansProMedium-Italic.woff') format('woff');
+    font-family: 'Freight Sans Pro';
+    src: url('/src/fonts/FreightSansPro-MediumItalic.woff2') format('woff2'),
+        url('/src/fonts/FreightSansPro-MediumItalic.woff') format('woff');
     font-weight: 500;
     font-style: italic;
+    font-display: swap;
 }
 
 @font-face {
-    font-family: 'FreightSansProSemibold';
-    src: url('/src/fonts/FreightSansProSemibold-Italic.eot');
-    src: local('FreightSans Pro Semibold Italic'), local('FreightSansProSemibold-Italic'),
-        url('/src/fonts/FreightSansProSemibold-Italic.woff2') format('woff2'),
-        url('/src/fonts/FreightSansProSemibold-Italic.woff') format('woff');
-    font-weight: 600;
+    font-family: 'Freight Sans Pro';
+    src: url('/src/fonts/FreightSansPro-BookItalic.woff2') format('woff2'),
+        url('/src/fonts/FreightSansPro-BookItalic.woff') format('woff');
+    font-weight: normal;
     font-style: italic;
+    font-display: swap;
 }
 
 @font-face {
-    font-family: 'FreightSansProBold';
-    src: url('/src/fonts/FreightSansProBold-Italic.eot');
-    src: local('FreightSans Pro Bold Italic'), local('FreightSansProBold-Italic'),
-        url('/src/fonts/FreightSansProBold-Italic.woff2') format('woff2'),
-        url('/src/fonts/FreightSansProBold-Italic.woff') format('woff');
+    font-family: 'Freight Sans Pro';
+    src: url('/src/fonts/FreightSansPro-Bold.woff2') format('woff2'),
+        url('/src/fonts/FreightSansPro-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Freight Sans Pro';
+    src: url('/src/fonts/FreightSansPro-Book.woff2') format('woff2'),
+        url('/src/fonts/FreightSansPro-Book.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Freight Sans Pro';
+    src: url('/src/fonts/FreightSansPro-BoldItalic.woff2') format('woff2'),
+        url('/src/fonts/FreightSansPro-BoldItalic.woff') format('woff');
     font-weight: bold;
     font-style: italic;
+    font-display: swap;
 }
 
 @font-face {
-    font-family: 'FreightSansProSemibold';
-    src: url('/src/fonts/FreightSansProSemibold-Regular.eot');
-    src: local('FreightSans Pro Semibold'), local('FreightSansProSemibold-Regular'),
-        url('/src/fonts/FreightSansProSemibold-Regular.woff2') format('woff2'),
-        url('/src/fonts/FreightSansProSemibold-Regular.woff') format('woff');
-    font-weight: 600;
-    font-style: normal;
+    font-family: 'Freight Sans Pro';
+    src: url('/src/fonts/FreightSansPro-BlackItalic.woff2') format('woff2'),
+        url('/src/fonts/FreightSansPro-BlackItalic.woff') format('woff');
+    font-weight: 900;
+    font-style: italic;
+    font-display: swap;
 }
 
 @font-face {
-    font-family: 'FreightSansProMedium';
-    src: url('/src/fonts/FreightSansProMedium-Regular.eot');
-    src: local('FreightSans Pro Medium'), local('FreightSansProMedium-Regular'),
-        url('/src/fonts/FreightSansProMedium-Regular.woff2') format('woff2'),
-        url('/src/fonts/FreightSansProMedium-Regular.woff') format('woff');
-    font-weight: 500;
+    font-family: 'Freight Sans Pro';
+    src: url('/src/fonts/FreightSansPro-Black.woff2') format('woff2'),
+        url('/src/fonts/FreightSansPro-Black.woff') format('woff');
+    font-weight: 900;
     font-style: normal;
+    font-display: swap;
 }
 
 .parent {
   position: absolute;
   width: 100%;
   height: 100vh;
+}
+
+.vl {
+  border-left: 4px solid #EC8539;
+  height: 150px;
+  border-radius: 3px;
+}
+
+.glass {
+  backdrop-filter: blur(16px) saturate(101%);
+  -webkit-backdrop-filter: blur(16px) saturate(101%);
+  background-color: rgba(74, 74, 77, 0.76);
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.125);
+}
+
+.title {
+
+    font-family: Freight Sans Pro;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 50px;
+    text-align: center;
+
+    color: #FBFBFB;
+}
+
+.subtitle {
+    position: absolute;
+    font-family: Freight Sans Pro;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 120px;
+    text-align: center;
+    line-height: 0.01;
+
+    color: rgba(229, 229, 229, 0.12);
+}
+
+b, strong {
+    font-weight: 500;
 }
 
 .child {
@@ -271,6 +321,10 @@ black: #000000
   color: #B9D053;
 }
 
+.sl-genefit {
+  color: #EE843E;
+}
+
 .sl-nutanix {
   color: #034EA2;
 }
@@ -388,7 +442,8 @@ body {
     background-repeat: no-repeat;
     background-size: auto;
     color: color(white);
-    font-family: 'FreightSansProBook', sans-serif;
+    font-family: 'Freight Sans Pro', sans-serif;
+    font-weight: normal;
     font-size: 1.1rem;
     letter-spacing: 0.02rem;
 
@@ -399,20 +454,36 @@ body {
 
       a {
         color: color(white);
-        font-family: 'FreightSansProBook', sans-serif;
+        font-family: 'Freight Sans Pro', sans-serif;
+        font-weight: 500;
         }
 
       .btn{
         color: color(white);
-        font-family: 'FreightSansProMedium', sans-serif;
+        font-family: 'Freight Sans Pro', sans-serif;
+        font-weight: 500;
         }
 
-      h1, h2, h3, {
-         font-family: 'FreightSansProBold', sans-serif;
+      .btn-genefit{
+        color: color(white);
+        font-family: 'Freight Sans Pro', sans-serif;
+        font-weight: 500;
         }
 
-      h4, h5, h6 {
-        font-family: 'FreightSansProSemibold', sans-serif;
+      h1 {
+         font-family: 'Freight Sans Pro', sans-serif;
+         font-weight: 900;
+        }
+
+      h2, h3, h4, h5, h6 {
+        font-family: 'Freight Sans Pro', sans-serif;
+        font-weight: bold;
+      }
+
+      .process h5 {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 36px;
       }
 
     .section-title h3 {
@@ -469,9 +540,26 @@ body {
       color: color(white);
     }
 
-    .btn:hover, .btn:focus, .btn:active {
+    .btn-genefit {
+      position: relative;
+      border: 1px #fbfbfb solid;
+      border-radius: 15px;
+      cursor: pointer;
+      transition: border 0.1s ease-in-out;
+      color: color(white);
+      padding: 0.5rem 2rem;
+    }
+
+    .btn:hover, .btn:focus {
       border-color: color(primary);
       background-color: color(primary);
+      transition: all .35s;
+      color: color(white);
+    }
+
+    .btn-genefit:hover, .btn-genefit:focus {
+      border-color: color(orange);
+      background-color: color(orange);
       transition: all .35s;
       color: color(white);
     }
@@ -532,6 +620,10 @@ body {
 #Nutanix-Banner {
   background-image: url("../src/images/Nutanix/Banner.jpg");
 }
+
+#GeneFit-Banner {
+  background-image: url("../src/images/GeneFit/Banner.jpg");
+}
 //!Banner-Parallax
 
 
@@ -555,5 +647,6 @@ body {
 }
 
 .font-weight-light {
-  font-family: 'FreightSansProBook';
+  font-family: 'Freight Sans Pro';
+  font-weight: 300;
 }
