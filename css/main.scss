@@ -130,6 +130,24 @@ black: #000000
     font-display: swap;
 }
 
+.carousel-item{
+    height: 650px;
+}
+.carousel-item img{
+    height: 650px;
+}
+
+.carousel-indicators li {
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+}
+
+.carousel-indicators {
+  position: static;
+  margin-top: 20px;
+}
+
 .parent {
   position: absolute;
   width: 100%;
@@ -142,6 +160,10 @@ black: #000000
   border-radius: 3px;
 }
 
+.VerticalLine {
+  border-right: 1px solid rgba(251, 251, 251, 0.4);
+}
+
 .glass {
   backdrop-filter: blur(16px) saturate(101%);
   -webkit-backdrop-filter: blur(16px) saturate(101%);
@@ -150,12 +172,17 @@ black: #000000
   border: 1px solid rgba(255, 255, 255, 0.125);
 }
 
+.orangeglass {
+  background: linear-gradient(175.94deg, rgba(236, 133, 57, 0.55) 1.37%, rgba(155, 106, 70, 0) 95.42%);
+  border-radius: 10px;
+}
+
 .title {
 
     font-family: Freight Sans Pro;
     font-style: normal;
     font-weight: bold;
-    font-size: 50px;
+    font-size: 3.3rem;
     text-align: center;
 
     color: #FBFBFB;
@@ -166,7 +193,7 @@ black: #000000
     font-family: Freight Sans Pro;
     font-style: normal;
     font-weight: bold;
-    font-size: 120px;
+    font-size: 7.5rem;
     text-align: center;
     line-height: 0.01;
 
