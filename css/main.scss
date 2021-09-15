@@ -3,7 +3,9 @@ primary: #03CEA9,
 bg: #1c1c1c,
 white: #ffffff,
 orange: #EC8539,
+roffgreen: #B9D053,
 black: #000000
+
 );
 
 @function color($color-name) {
@@ -177,6 +179,11 @@ black: #000000
   border-radius: 10px;
 }
 
+.roffglass {
+  background: linear-gradient(175.94deg, rgba(185, 208, 83, 0.55) 13.62%, rgba(132, 146, 73, 0.176) 87.09%);
+  border-radius: 10px;
+}
+
 .title {
 
     font-family: Freight Sans Pro;
@@ -213,6 +220,63 @@ b, strong {
 //Navigation bar
 .navbar {
   background: rgba(0,0,0,0.7);
+}
+
+//Hover_Image
+#roff_homepage {
+  background: url(../src/images/Roff/Heuristic1.png) center center no-repeat;
+  background-size: contain;
+  height: 1535px;
+
+  -webkit-transition: all .3s ease-in-out;
+  -moz-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+
+#roff_homepage:hover {
+  background-image: url("../src/images/Roff/Heuristic1_Hover.png");
+}
+
+#roff_whyroff {
+  background: url(../src/images/Roff/Heuristic2.png) center center no-repeat;
+  background-size: contain;
+  height: 648px;
+
+  -webkit-transition: all .3s ease-in-out;
+  -moz-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+
+#roff_whyroff:hover {
+  background-image: url("../src/images/Roff/Heuristic2_Hover.png");
+}
+
+#roff_solutions {
+  background: url(../src/images/Roff/Heuristic3.png) center center no-repeat;
+  background-size: contain;
+  height: 1080px;
+
+  -webkit-transition: all .3s ease-in-out;
+  -moz-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+
+#roff_solutions:hover {
+  background-image: url("../src/images/Roff/Heuristic3_Hover.png");
+}
+
+#roff_products {
+  background: url(../src/images/Roff/Heuristic4.png) center center no-repeat;
+  background-size: contain;
+  height: 646px;
+
+  -webkit-transition: all .3s ease-in-out;
+  -moz-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+
+#roff_products:hover {
+  background-image: url("../src/images/Roff/Heuristic4_Hover.png");
 }
 
 //Projects-Tab
@@ -497,6 +561,12 @@ body {
         font-weight: 500;
         }
 
+      .btn-roff{
+        color: color(white);
+        font-family: 'Freight Sans Pro', sans-serif;
+        font-weight: 500;
+        }
+
       h1 {
          font-family: 'Freight Sans Pro', sans-serif;
          font-weight: 900;
@@ -560,15 +630,6 @@ body {
 
     .btn {
       position: relative;
-      border: 2px #67BBA6 solid;
-      border-radius: 3px;
-      cursor: pointer;
-      transition: border 0.1s ease-in-out;
-      color: color(white);
-    }
-
-    .btn-genefit {
-      position: relative;
       border: 1px #fbfbfb solid;
       border-radius: 15px;
       cursor: pointer;
@@ -587,6 +648,13 @@ body {
     .btn-genefit:hover, .btn-genefit:focus {
       border-color: color(orange);
       background-color: color(orange);
+      transition: all .35s;
+      color: color(white);
+    }
+
+    .btn-roff:hover, .btn-roff:focus {
+      border-color: color(roffgreen);
+      background-color: color(roffgreen);
       transition: all .35s;
       color: color(white);
     }
