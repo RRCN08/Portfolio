@@ -342,7 +342,7 @@ b, strong {
 .hover {
   overflow: hidden;
   position: relative;
-  padding-bottom: 60%;
+  padding-bottom: 55%;
   border-radius: 20px!important;
 }
 
@@ -354,14 +354,6 @@ b, strong {
   left: 0;
   z-index: 90;
   transition: all 0.4s;
-}
-
-.hover img {
-  width: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  transition: all 0.3s;
 }
 
 .hover-content {
@@ -509,7 +501,7 @@ b, strong {
 //Landing Page Header
 #Header {
   background-color: #9183C1;
-  background-image: url("../css/elements/circles.svg");
+  background-image: url("../css/elements/circles.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
