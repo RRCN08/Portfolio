@@ -1,5 +1,14 @@
 $(document).ready(function() {
 
+            $(function () {
+            $(document).scroll(function () {
+              var $nav = $(".navbar-fixed-top");
+              var offsetHeight = document.getElementById('Header').offsetHeight+$nav.height();
+              console.log(offsetHeight);
+              $nav.toggleClass('scrolled', $(this).scrollTop() > offsetHeight);
+            });
+            });
+
             $("#footer").load("footer.html");
 
             //Venobox
@@ -41,19 +50,6 @@ $(document).ready(function() {
 
             $("div.progress").css("width", percentage + "%")
             })
-
-
-            //lax.js
-            window.onload = function() {
-            	lax.setup() // init
-
-            	const updateLax = () => {
-            		lax.update(window.scrollY)
-            		window.requestAnimationFrame(updateLax)
-            	}
-
-            	window.requestAnimationFrame(updateLax)
-            }
 
             //ScrollOut
             ScrollOut();

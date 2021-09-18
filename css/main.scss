@@ -1,9 +1,10 @@
 $colors: (
-primary: #03CEA9,
+primary: #2D283E,
 bg: #1c1c1c,
 white: #ffffff,
 orange: #EC8539,
 roffgreen: #B9D053,
+ishan: #EB0029,
 black: #000000
 
 );
@@ -218,11 +219,69 @@ b, strong {
 }
 
 //Navigation bar
-.navbar {
-  background: rgba(0,0,0,0.7);
+@media (min-width: 768px) {
+.navbar-brand.abs
+    {
+        position: absolute;
+        width: auto;
+        left: 50%;
+        transform: translateX(-50%);
+        text-align: center;
+    }
 }
 
-//Hover_Image
+.navbar {
+  background: rgba(0,0,0,0.0);
+}
+
+.nav-link{
+  color: #ECF2FB;
+}
+
+.nav-link:hover{
+  transition: all .35s;
+  color: color(primary);
+  }
+
+.navbar-fixed-top.scrolled {
+  background: rgba(0,0,0,0.7) !important;
+  transition: background-color 200ms linear;
+}
+
+.navbar-fixed-top.scrolled .nav-link {
+  color:#ECF2FB;
+}
+
+//Ishan_Hover
+#soundsslike {
+  background: url(../src/images/Ishan/Soundsslike.png) center center no-repeat;
+  background-size: contain;
+  height: 590px;
+
+  -webkit-transition: all .3s ease-in-out;
+  -moz-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+
+#soundsslike:hover {
+  background-image: url("../src/images/Ishan/Soundsslike_Hover.png");
+}
+
+#soundscapeworld {
+  background: url(../src/images/Ishan/SoundscapeWorld.png) center center no-repeat;
+  background-size: contain;
+  height: 590px;
+
+  -webkit-transition: all .3s ease-in-out;
+  -moz-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+
+#soundscapeworld:hover {
+  background-image: url("../src/images/Ishan/SoundscapeWorld_Hover.png");
+}
+
+//Roff_Hover
 #roff_homepage {
   background: url(../src/images/Roff/Heuristic1.png) center center no-repeat;
   background-size: contain;
@@ -284,6 +343,7 @@ b, strong {
   overflow: hidden;
   position: relative;
   padding-bottom: 60%;
+  border-radius: 20px!important;
 }
 
 .hover-overlay {
@@ -442,25 +502,26 @@ b, strong {
 
 //Footer
 #footer {
-  background: color(black);
+  background: #100F12;
   color: #fff;
 }
 
 //Landing Page Header
 #Header {
-  background-color: color(black);
-  background-image: url("../css/elements/memphis.png");
+  background-color: #9183C1;
+  background-image: url("../css/elements/circles.svg");
+  background-position: center;
   background-repeat: no-repeat;
-   background-attachment: fixed;
+  background-size: cover;
   position: fixed;
   z-index: 99;
   top: 0;
-  height: 100vh;
+  height: 100%;
 }
 
 #Projects-Carousel {
   padding-bottom: 1vh;
-  background: #1c1c1c;
+  background: #201D29;
 }
 
 #Hero {
@@ -474,7 +535,6 @@ b, strong {
 }
 
 #herobg {
-  background-color: color(primary);
   display: flex;
   align-items: flex-end;
   height: 100%;
@@ -552,19 +612,8 @@ body {
       .btn{
         color: color(white);
         font-family: 'Freight Sans Pro', sans-serif;
-        font-weight: 500;
-        }
-
-      .btn-genefit{
-        color: color(white);
-        font-family: 'Freight Sans Pro', sans-serif;
-        font-weight: 500;
-        }
-
-      .btn-roff{
-        color: color(white);
-        font-family: 'Freight Sans Pro', sans-serif;
-        font-weight: 500;
+        font-weight: 300;
+        font-size: 1.25rem;
         }
 
       h1 {
@@ -575,6 +624,10 @@ body {
       h2, h3, h4, h5, h6 {
         font-family: 'Freight Sans Pro', sans-serif;
         font-weight: bold;
+      }
+
+      h6 {
+        font-size: 1.1rem;
       }
 
       .process h5 {
@@ -643,7 +696,7 @@ body {
       background-color: color(primary);
       transition: all .35s;
       color: color(white);
-    } 
+    }
 
     .btn-genefit:hover, .btn-genefit:focus {
       border-color: color(orange);
@@ -655,6 +708,13 @@ body {
     .btn-roff:hover, .btn-roff:focus {
       border-color: color(roffgreen);
       background-color: color(roffgreen);
+      transition: all .35s;
+      color: color(white);
+    }
+
+    .btn-ishan:hover, .btn-ishan:focus {
+      border-color: color(ishan);
+      background-color: color(ishan);
       transition: all .35s;
       color: color(white);
     }
