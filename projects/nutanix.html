@@ -1,23 +1,24 @@
-<!DOCTYPE html>
-<html>
-<head profile="http://www.w3.org/2005/10/profile">
-
-    <link rel="icon" type="image/svg" href="css/elements/logo.png">
-    <title>Nutanix | Rohit Ramachandran</title>
-
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Portfolio of Rohit Ramachandran, Design student at IIT Guwahati."/>
     <meta name="keywords" content="rohit,design,portfolio,ramachandran,internship"/>
     <meta name="author" content="Rohit Ramachandran"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no"/>
+    <meta property="og:type" content="Portfolio">
+    <meta name="image" property="og:image" content="css/elements/hotlink-ok/Snapshot.jpg">
 
+    <link rel="icon" type="image/svg" href="css/elements/logo.png">
+    <title>Nutanix | Rohit Ramachandran</title>
     <base href="../" >
 
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <!-- CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
     <link rel="stylesheet" href="css/main.min.css">
     <link rel="stylesheet" href="css/navbar.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/venobox/1.9.0/venobox.min.css">
-
+    <link rel="stylesheet" href="css/venobox.css">
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-173549113-1"></script>
@@ -25,44 +26,40 @@
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
+
       gtag('config', 'UA-173549113-1');
     </script>
+  </head>
 
-</head>
 
-<header>
-  <nav class="navbar navbar-expand-lg navbar-dark navbar-bg smart-scroll" id="navbar">
+  <body class="no-top-padding">
 
-    <a class="navbar-brand" href="#"> <h2 style="font-weight: 700;"><span style="font-weight:700; color:#034EA2;">rr</span>c.</h2> </a>
-
-    <button class="navbar-toggler third-button" type="button" data-toggle="collapse" data-target="#navbarSupportedContent22" aria-controls="navbarSupportedContent22" aria-expanded="false" aria-label="Toggle navigation">
-      <div class="animated-icon"><span></span><span></span><span></span></div>
-    </button>
-
-    <div class="collapse navbar-collapse" id="navbarSupportedContent22">
-
-      <ul class="navbar-nav float-right text-right ml-auto">
-        <li class="nav-item">  <a class="nav-link" href="">HOME</a>  </li>
-        <li class="nav-item">  <a class="nav-link" href="pages/resume">RESUME</a>  </li>
-        <li class="nav-item"><a class="nav-link" href="pages/about">ABOUT</a></li>
-      </ul>
-
-    </div>
-
-    <div class="progress-container">
-      <div style="background-color: #034EA2;" class="progress">
-    </div>
-
-  </nav>
-</header>
-
-<body>
+    <nav class="navbar navbar-expand-md navbar-dark smart-scroll navbar-fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand abs" href="#"><h2 style="color: #ECF2FB; font-weight: 700;">rrc.</h2></a>
+            <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#collapseNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="navbar-collapse collapse" id="collapseNavbar">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="pages/resume">RESUME</a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="pages/about">ABOUT</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 
   <section class="Banner" id="Nutanix-Banner">
 
-    <div class="container h-100">
+    <div class="container h-100" id="NavStart">
       <div class="row h-100">
-        <div class="col-lg-8 align-self-center" style="color: #ffffff;">
+        <div class="col-lg-8 align-self-center rellax" data-rellax-speed="7" style="color: #ffffff;">
           <h1 style="font-size:3.5rem;">Nutanix <b>Summer Internship</b></h1>
           <h5 class="mt-2" style="letter-spacing: 1.5px; font-size:1.5rem;">Dashboard design for troubleshooting and monitoring server clusters in a large-scale enterprise.</h5>
         </div>
@@ -75,8 +72,10 @@
 
     <div class="container">
       <div class="row h-100" style="margin-top: 5rem;">
-        <h1 class="title">THE CHALLENGE</h1>
-        <h3 class="subtitle">what</h3>
+        <div class="col-lg-12">
+          <h3 class="subtitle">what</h3>
+          <h1 class="title">THE CHALLENGE</h1>
+        </div>
       </div>
 
       <div class="row justify-content-center">
@@ -99,16 +98,24 @@
         <div class="col-lg-10 text-center mt-3">
           <h3 class="mt-5"style="font-size: 25px; font-style: italic; font-weight: 300;">To create a <b style="color: #034EA2;">dashboard</b> and redesign a section to give IT administrators more visibility into their entire IT ecosystem beyond just infrastructure.</h3>
         </div>
+      </div>
+    </div>
 
-        </div>
+      </section>
 
-        <div class="row">
+      <div class="container">
+        <div class="row justify-content-center">
+
+
 
         </div>
 
         <div class="row h-100" style="margin-top: 5rem;">
-          <h1 class="title">THE DESIGN PROCESS</h1>
-          <h3 class="subtitle">how</h3>
+          <div class="col-lg-12">
+            <h3 class="subtitle">how</h3>
+            <h1 class="title">THE DESIGN PROCESS</h1>
+          </div>
+
         </div>
 
         <div class="row justify-content-center text-center">
@@ -140,8 +147,10 @@
         </div>
 
         <div class="row h-100" style="margin-top: 5rem;">
-          <h1 class="title">LEARNINGS</h1>
-          <h3 class="subtitle">my</h3>
+          <div class="col-lg-12">
+            <h3 class="subtitle">my</h3>
+            <h1 class="title">LEARNINGS</h1>
+          </div>
         </div>
 
         <div class="row">
@@ -155,7 +164,7 @@
             <a class="venobox_custom" href="src/images/Nutanix/zoom.png"><img width="100%" src="src/images/Nutanix/zoom.png" alt="image alt"/></a>
           </div>
 
-          <div class="col-lg-10 mt-5">
+          <div class="col-lg-9 mt-5">
             <h6 style="color: #be4d55;">Unfortunately, due to nondisclosure agreements with Nutanix, I cannot share further information about what I worked on. In case you are interested in knowing more, do drop me an <a style="font-weight: 600;  text-decoration: underline;" href="mailto:rrcn08@gmail.com?cc=ramachan@iitg.ac.in&subject=Request%20for%20Access%20to%20Nutanix%20Internship%20work">e-mail</a> and we can get in touch.</h6>
 
           </div>
@@ -166,14 +175,17 @@
   </section>
 
       <!-- Footer -->
-      <div class="mt-5" id="footer"></div>
+      <div id="footer"></div>
       <!-- Footer -->
-      <script src="https://code.jquery.com/jquery-3.2.1.min.js" crossorigin="anonymous"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/rellax/1.12.1/rellax.min.js"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/venobox/1.9.0/venobox.min.js"></script>
-      <script src="js/main.js"></script>
-  </body>
 
+    </div>
+
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+      <script src="https://code.jquery.com/jquery-3.2.1.min.js" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/venobox/1.9.0/venobox.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/gh/dixonandmoe/rellax@master/rellax.min.js"></script>
+      <script src="js/main.js"></script>
+
+
+    </body>
   </html>

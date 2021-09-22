@@ -34,9 +34,9 @@
 
   <body>
 
-    <nav class="navbar navbar-expand-lg navbar-dark smart-scroll navbar-fixed-top">
+    <nav class="navbar navbar-expand-md navbar-dark smart-scroll navbar-fixed-top">
         <div class="container-fluid">
-            <a class="navbar-brand abs" href="#"><h2 style="font-weight: 700;">rrc.</h2></a>
+            <a class="navbar-brand abs" href="#"><h2 style="color: #ECF2FB; font-weight: 700;">rrc.</h2></a>
             <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#collapseNavbar">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -48,7 +48,7 @@
                 </ul>
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
-                        <a class="nav-link me-4" href="pages/about">ABOUT</a>
+                        <a class="nav-link" href="pages/about">ABOUT</a>
                     </li>
                 </ul>
             </div>
@@ -56,7 +56,7 @@
     </nav>
 
     <div class="parent">
-      <div class="container-fluid h-100" >
+      <div class="container-fluid h-100" id="NavStart">
         <div class="row child" id="Header">
           <div class="col-lg-1"></div>
           <div class="col-lg-8 align-self-center rellax" data-rellax-speed="7" id="Hero">
@@ -64,30 +64,28 @@
               <h1 id ="name" style="color: #2D283E; letter-spacing: 0.085em; font-weight: bold; font-size: 4rem;">ROHIT RAMACHANDRAN</h1>
               <p class="mt-3" style="color: #ECF2FB; font-weight: 300; font-size: 1.5rem;">an interaction design student from IIT Guwahati.</p>
               <div class="mt-5 mb-5">
-                <a class="btn js-scroll-trigger" id="projects" href=#Projects-Carousel>view projects</a>
-                <a class="btn js-scroll-trigger ms-2" id="resume" href="pages/resume">view resume</a>
+                <a class="btn btn-index js-scroll-trigger" id="projects" href=#Projects>view projects</a>
+                <a class="btn btn-index js-scroll-trigger ms-2" id="resume" href="pages/resume">view resume</a>
               </div>
         </div>
       </div>
       </div>
 
-    <div class="container-fluid child" id="Projects-Carousel">
+    <div class="container-fluid child" id="Projects">
 
       <div class="row mt-5 justify-content-center">
 
         <div class="col-lg-12" style="margin-top:5%">
-            <h1 data-scroll class="text-center">PROJECTS</h1>
-            <p data-scroll class="mb-5 text-center">A collection of my best work so far. Feel free to explore.</p>
+            <h1 style="color: #9183C1;" class="text-center">PROJECTS</h1>
+            <p class="mb-5 text-center">A collection of my best work so far. Feel free to explore.</p>
       </div>
 
     </div>
 
     <div class="row justify-content-center" style="margin-bottom:5%">
 
-      <!-- GeneFit
-
       <div class="col-lg-5 mt-3">
-        <div class="hover hover-1 text-white rounded"> <a class="link" href="projects/genefit"> <img src="src/images/bg/GeneFit.png"> </a>
+        <div class="hover hover-1" style="color: #3C3E40;"> <a class="link" href="projects/genefit"> <img src="src/images/bg/GeneFit.jpg"> </a>
           <div class="hover-overlay"></div>
           <div class="hover-1-content px-5 py-4">
           <h3 class="hover-1-title text-uppercase font-weight-bold mb-0">Gene<span class="font-weight-light">Fit</span></h3>
@@ -97,10 +95,8 @@
         </div>
       </div>
 
-       GeneFit -->
-
       <div class="col-lg-5 mt-3">
-        <div class="hover hover-1 text-white rounded"> <a class="link" href="projects/nutanix"> <img src="src/images/bg/Nutanix.jpg"> </a>
+        <div class="hover hover-1"> <a class="link" href="projects/nutanix"> <img src="src/images/bg/Nutanix.jpg"> </a>
           <div class="hover-overlay"></div>
           <div class="hover-1-content px-5 py-4">
           <h3 class="hover-1-title text-uppercase font-weight-bold mb-0"> <span class="font-weight-light">Nutanix </span>Prism</h3>
@@ -111,7 +107,7 @@
       </div>
 
       <div class="col-lg-5 mt-3">
-        <div class="hover hover-1 text-white rounded"><a class="link" href="projects/roff"> <img src="src/images/bg/Roff.png"> </a>
+        <div class="hover hover-1" style="color: #3C3E40;"><a class="link" href="projects/roff"> <img src="src/images/bg/Roff.png"> </a>
           <div class="hover-overlay"></div>
           <div class="hover-1-content px-5 py-4">
           <h3 class="hover-1-title text-uppercase font-weight-bold mb-0"> <span class="font-weight-light">Roff </span>Adhesives</h3>
@@ -122,7 +118,7 @@
       </div>
 
       <div class="col-lg-5 mt-3">
-        <div class="hover hover-1 text-white rounded"> <a class="link" href="projects/ishan"> <img src="src/images/bg/IshanDhvani.png"> </a>
+        <div class="hover hover-1"> <a class="link" href="projects/ishan"> <img src="src/images/bg/IshanDhvani.png"> </a>
           <div class="hover-overlay"></div>
           <div class="hover-1-content px-5 py-4">
           <h3 class="hover-1-title text-uppercase font-weight-bold mb-0"> <span class="font-weight-light">Ishan </span>Dhwani</h3>
@@ -132,8 +128,12 @@
         </div>
       </div>
 
-      <div class="col-lg-5 mt-3">
-        <div class="hover hover-1 text-white rounded"> <a class="link" href="projects/onestop"> <img src="src/images/bg/OneStop.jpg"> </a>
+      <div class="col-lg-12 text-center mt-5 mb-5 hiddenproject">
+        <a class="btn js-scroll-trigger" id="viewmore">view more</a>
+      </div>
+
+      <div class="col-lg-5 mt-3 hiddenproject" style="display: none;">
+        <div class="hover hover-1"> <a class="link" href="projects/onestop"> <img src="src/images/bg/OneStop.jpg"> </a>
           <div class="hover-overlay"></div>
           <div class="hover-1-content px-5 py-4">
           <h3 class="hover-1-title text-uppercase font-weight-bold mb-0"> <span class="font-weight-light">OneStop </span>IITG</h3>
@@ -143,8 +143,8 @@
         </div>
       </div>
 
-      <div class="col-lg-5 mt-3">
-        <div class="hover hover-1 text-white rounded"> <a class="link" href="projects/link"> <img src="src/images/bg/Link.jpg"> </a>
+      <div class="col-lg-5 mt-3 hiddenproject" style="display: none;">
+        <div class="hover hover-1"> <a class="link" href="projects/link"> <img src="src/images/bg/Link.jpg"> </a>
           <div class="hover-overlay"></div>
           <div class="hover-1-content px-5 py-4">
           <h3 class="hover-1-title text-uppercase font-weight-bold mb-0"> <span class="font-weight-light">Link </span>Magazine</h3>
@@ -157,18 +157,16 @@
     </div>
     </div>
 
-
     <!-- Footer -->
-    <div id="footer"></div>
+    <div id="footer" style="margin-top: -3rem!important;"></div>
     <!-- Footer -->
 
   </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.2.1.min.js" crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/venobox/1.9.0/venobox.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/venobox/1.9.0/venobox.min.js"></script>
     <script src="https://cdn.jsdelivr.net/gh/dixonandmoe/rellax@master/rellax.min.js"></script>
-    <script src="https://unpkg.com/scroll-out/dist/scroll-out.min.js"></script>
     <script src="js/main.js"></script>
 
 

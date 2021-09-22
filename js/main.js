@@ -3,7 +3,7 @@ $(document).ready(function() {
             $(function () {
             $(document).scroll(function () {
               var $nav = $(".navbar-fixed-top");
-              var offsetHeight = document.getElementById('Header').offsetHeight+$nav.height();
+              var offsetHeight = document.getElementById('NavStart').offsetHeight+$nav.height();
               console.log(offsetHeight);
               $nav.toggleClass('scrolled', $(this).scrollTop() > offsetHeight);
             });
@@ -22,16 +22,16 @@ $(document).ready(function() {
             //Rellax Parallax Effect
             var rellax = new Rellax('.rellax');
 
-            //Hamburger Menu
-            $('.third-button').on('click', function () {
-
-              $('.animated-icon').toggleClass('open');
+            //View More
+            $("#viewmore").click(function() {
+                // assumes element with id='button'
+                $(".hiddenproject").fadeToggle();
             });
 
             // Add smooth scrolling to all links
             $("#projects").click(function() {
                 $('html,body').animate({
-                    scrollTop: $("#Projects-Carousel").offset().top},
+                    scrollTop: $("#Projects").offset().top},
                     'slow');
             });
 
@@ -50,8 +50,5 @@ $(document).ready(function() {
 
             $("div.progress").css("width", percentage + "%")
             })
-
-            //ScrollOut
-            ScrollOut();
 
           });

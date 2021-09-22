@@ -1,22 +1,24 @@
-<!DOCTYPE html>
-<html>
-<head profile="http://www.w3.org/2005/10/profile">
-
-    <link rel="icon" type="image/svg" href="css/elements/logo.png">
-    <title>Resume | Rohit Ramachandran</title>
-
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Portfolio of Rohit Ramachandran, Design student at IIT Guwahati."/>
     <meta name="keywords" content="rohit,design,portfolio,ramachandran,internship"/>
     <meta name="author" content="Rohit Ramachandran"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no"/>
+    <meta property="og:type" content="Portfolio">
+    <meta name="image" property="og:image" content="css/elements/hotlink-ok/Snapshot.jpg">
 
+    <link rel="icon" type="image/svg" href="css/elements/logo.png">
+    <title>Resume | Rohit Ramachandran</title>
     <base href="../" >
 
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <!-- CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
     <link rel="stylesheet" href="css/main.min.css">
     <link rel="stylesheet" href="css/navbar.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/venobox/1.9.0/venobox.min.css">
+    <link rel="stylesheet" href="css/venobox.css">
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-173549113-1"></script>
@@ -24,38 +26,40 @@
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
+
       gtag('config', 'UA-173549113-1');
     </script>
+  </head>
 
-</head>
 
-<body>
+  <body>
 
-  <nav class="navbar navbar-expand-lg navbar-dark navbar-bg smart-scroll" id="navbar">
-
-    <a class="navbar-brand" href="#"> <h2 style="font-weight: 700;"><span style="font-weight:700; color:#03CEA9;">rr</span>c.</h2> </a>
-
-    <button class="navbar-toggler third-button" type="button" data-toggle="collapse" data-target="#navbarSupportedContent22" aria-controls="navbarSupportedContent22" aria-expanded="false" aria-label="Toggle navigation">
-      <div class="animated-icon"><span></span><span></span><span></span></div>
-    </button>
-
-    <div class="collapse navbar-collapse" id="navbarSupportedContent22">
-
-      <ul class="navbar-nav float-right text-right ml-auto">
-        <li class="nav-item">  <a class="nav-link" href="">HOME</a>  </li>
-        <li class="nav-item">  <a class="nav-link active" href="pages/resume">RESUME</a>  </li>
-        <li class="nav-item"><a class="nav-link" href="pages/about">ABOUT</a></li>
-      </ul>
-
-    </div>
-
-  </nav>
+    <nav class="navbar navbar-expand-md navbar-dark smart-scroll navbar-fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand abs" href="#"><h2 style="color: #ECF2FB; font-weight: 700;">rrc.</h2></a>
+            <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#collapseNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="navbar-collapse collapse" id="collapseNavbar">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="pages/resume">RESUME</a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="pages/about">ABOUT</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 
       <section>
         <div class="container-fluid h-100">
           <div class="row justify-content-center">
             <div class="col-lg-12">
-                <h1 class="mt-5 text-center">RESUME</h1>
+                <h1 id="NavStart" class="mt-5 text-center">RESUME</h1>
                 <p class="mt-3 text-center">A brief summary of my background, skills, and accomplishments.</p>
           </div>
         </div>
@@ -64,7 +68,7 @@
 
         <div class="container-fluid">
           <div class="row justify-content-center mt-3">
-        <a class="btn btn-outline js-scroll-trigger" target="_blank" href="src/Rohit_Resume.pdf">View Print Friendly Resume</a>
+        <a class="col-lg-2 btn btn-outline js-scroll-trigger" target="_blank" href="src/Rohit_Resume.pdf">View Print Friendly Resume</a>
           </div>
         </div>
 
@@ -78,7 +82,7 @@
                       <img src="css/elements/resume/Nutanix.svg" width=150vh>
                     </div>
                     <div class="col-lg-4 position">
-                      <h5> <b style="color: #67BBA6; font-size: 1.6rem;">UX INTERN</b><br>Nutanix, Bangalore </h5> <br><p> May 2021 - July 2021</p>
+                      <h5> <b style="color: #9183C1; font-size: 1.6rem;">UX INTERN</b><br>Nutanix, Bangalore </h5> <br><p> May 2021 - July 2021</p>
                     </div>
                     <div class="col-lg-5">
                       <p>Worked on their flagship product, redesigning the troubleshooting experience and worked on a section to let IT administrators gain visibility of their entire IT ecosystem beyond just infrastructure.</p>
@@ -90,7 +94,7 @@
                       <img src="css/elements/resume/IO.svg" width=150vh>
                     </div>
                     <div class="col-lg-4 position">
-                      <h5> <b style="color: #67BBA6; font-size: 1.6rem;">UX INTERN</b><br>Interaction One, Bangalore </h5> <br><p> May 2020 - July 2020</p>
+                      <h5> <b style="color: #9183C1; font-size: 1.6rem;">UX INTERN</b><br>Interaction One, Bangalore </h5> <br><p> May 2020 - July 2020</p>
                     </div>
                     <div class="col-lg-5">
                       <p>Researched and designed a Traffic Management System prioritizing Emergency vehicles. Researched and presented a pitch on a website redesign for Roff, by Pidilite. </p>
@@ -102,7 +106,7 @@
                       <img src="css/elements/resume/SWC.svg" width=150vh>
                     </div>
                     <div class="col-lg-4 position">
-                      <h5> <b style="color: #67BBA6; font-size: 1.6rem;">UX DESIGNER</b><br>Students' Web Committee, <br>IIT Guwahati </h5> <br><p> Sept 2019 - Dec 2020</p>
+                      <h5> <b style="color: #9183C1; font-size: 1.6rem;">UX DESIGNER</b><br>Students' Web Committee, <br>IIT Guwahati </h5> <br><p> Sept 2019 - Dec 2020</p>
                     </div>
                     <div class="col-lg-5">
                       <p>Researched and designed an add-on for a campus app for the students of IIT Guwahati which showcased the time-table in an intelligent manner.</p>
@@ -119,7 +123,7 @@
 
               <div class="row" style="margin-top:5%;">
                 <div class="col-lg-6 position">
-                  <h5> <b style="color: #67BBA6; font-size: 1.6rem;">BACHELOR'S DEGREE IN DESIGN</b><br>IIT Guwahati</h5> <br><p> July 2018 - present </p>
+                  <h5> <b style="color: #9183C1; font-size: 1.6rem;">BACHELOR'S DEGREE IN DESIGN</b><br>IIT Guwahati</h5> <br><p> July 2018 - present </p>
                 </div>
                 <div class="col-lg-6">
                   <p> CPI - 7.81 (as of Sem 6)</p>
@@ -128,7 +132,7 @@
 
               <div class="row" style="margin-top:5%;">
                 <div class="col-lg-6 position">
-                  <h5> <b style="color: #67BBA6; font-size: 1.6rem;">CBSE, GRADE 12</b><br>Rajagiri Public School</h5> <br><p> May 2018 </p>
+                  <h5> <b style="color: #9183C1; font-size: 1.6rem;">CBSE, GRADE 12</b><br>Rajagiri Public School</h5> <br><p> May 2018 </p>
                 </div>
                 <div class="col-lg-6">
                   <p> Computer Science with Mathematics <br>83%</p>
@@ -137,7 +141,7 @@
 
               <div class="row" style="margin-top:5%;">
                 <div class="col-lg-6 position">
-                  <h5> <b style="color: #67BBA6; font-size: 1.6rem;">CBSE, GRADE 10</b><br>Kendriya Vidyalaya, NAD</h5> <br><p> May 2016 </p>
+                  <h5> <b style="color: #9183C1; font-size: 1.6rem;">CBSE, GRADE 10</b><br>Kendriya Vidyalaya, NAD</h5> <br><p> May 2016 </p>
                 </div>
                 <div class="col-lg-6">
                   <p>9.8 CGPA</p>
@@ -157,7 +161,7 @@
                       <img src="css/elements/resume/Techniche.svg" width=150vh>
                     </div>
                     <div class="col-lg-4 position">
-                      <h5> <b style="color: #67BBA6; font-size: 1.6rem;">HEAD OF EVENTS</b><br>Techniche 2021, <br>IIT Guwahati </h5> <br><p> Sept 2019 - present </p>
+                      <h5> <b style="color: #9183C1; font-size: 1.6rem;">HEAD OF EVENTS</b><br>Techniche 2021, <br>IIT Guwahati </h5> <br><p> Sept 2019 - present </p>
                     </div>
                     <div class="col-lg-5">
                       <p>Headed a team of 250+ members and remotely coordinated the experience and execution of events for the largest virtual techno-management festival at IIT Guwahati. <br>(see <a target="_blank" href="http://techniche.org">techniche.org</a>) </p>
@@ -169,7 +173,7 @@
                       <img src="css/elements/resume/IxDA.svg" width=150vh>
                     </div>
                     <div class="col-lg-4 position">
-                      <h5> <b style="color: #67BBA6; font-size: 1.6rem;">LOCAL LEADER</b><br>IxDA Guwahati</h5> <br><p> July 2020 - present</p>
+                      <h5> <b style="color: #9183C1; font-size: 1.6rem;">LOCAL LEADER</b><br>IxDA Guwahati</h5> <br><p> July 2020 - present</p>
                     </div>
                     <div class="col-lg-5">
                       <p>Responsible for conducting events of The Interaction Design Association of Guwahati, including keynotes and workshops.</p>
@@ -228,18 +232,18 @@
       </div>
     </section>
 
-
     <!-- Footer -->
     <div id="footer"></div>
     <!-- Footer -->
-    <script src="https://code.jquery.com/jquery-3.2.1.min.js" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/rellax/1.12.1/rellax.min.js"></script>
-    <script src="https://unpkg.com/scroll-out/dist/scroll-out.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/lax.js" ></script>
-    <script src="js/main.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/venobox/1.9.0/venobox.min.js"></script>
-</body>
 
+  </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/venobox/1.9.0/venobox.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/dixonandmoe/rellax@master/rellax.min.js"></script>
+    <script src="js/main.js"></script>
+
+
+  </body>
 </html>

@@ -1,23 +1,24 @@
-<!DOCTYPE html>
-<html>
-<head profile="http://www.w3.org/2005/10/profile">
-
-    <link rel="icon" type="image/svg" href="css/elements/logo.png">
-    <title>Roff | Rohit Ramachandran</title>
-
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Portfolio of Rohit Ramachandran, Design student at IIT Guwahati."/>
     <meta name="keywords" content="rohit,design,portfolio,ramachandran,internship"/>
     <meta name="author" content="Rohit Ramachandran"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no"/>
+    <meta property="og:type" content="Portfolio">
+    <meta name="image" property="og:image" content="css/elements/hotlink-ok/Snapshot.jpg">
 
+    <link rel="icon" type="image/svg" href="css/elements/logo.png">
+    <title>Roff | Rohit Ramachandran</title>
     <base href="../" >
 
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <!-- CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
     <link rel="stylesheet" href="css/main.min.css">
     <link rel="stylesheet" href="css/navbar.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/venobox/1.9.0/venobox.min.css">
-
+    <link rel="stylesheet" href="css/venobox.css">
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-173549113-1"></script>
@@ -25,44 +26,40 @@
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
+
       gtag('config', 'UA-173549113-1');
     </script>
+  </head>
 
-</head>
 
-<header>
-  <nav class="navbar navbar-expand-lg navbar-dark navbar-bg smart-scroll" id="navbar">
+  <body class="no-top-padding">
 
-    <a class="navbar-brand" href="#"> <h2 style="font-weight: 700;"><span style="font-weight:700; color:#B9D053;">rr</span>c.</h2> </a>
-
-    <button class="navbar-toggler third-button" type="button" data-toggle="collapse" data-target="#navbarSupportedContent22" aria-controls="navbarSupportedContent22" aria-expanded="false" aria-label="Toggle navigation">
-      <div class="animated-icon"><span></span><span></span><span></span></div>
-    </button>
-
-    <div class="collapse navbar-collapse" id="navbarSupportedContent22">
-
-      <ul class="navbar-nav float-right text-right ml-auto">
-        <li class="nav-item">  <a class="nav-link" href="">HOME</a>  </li>
-        <li class="nav-item">  <a class="nav-link" href="pages/resume">RESUME</a>  </li>
-        <li class="nav-item"><a class="nav-link" href="pages/about">ABOUT</a></li>
-      </ul>
-
-    </div>
-
-    <div class="progress-container">
-      <div style="background-color: #B9D053;" class="progress">
-    </div>
-
-  </nav>
-</header>
-
-<body>
+    <nav class="navbar navbar-expand-md navbar-dark smart-scroll navbar-fixed-top scrolled">
+        <div class="container-fluid">
+            <a class="navbar-brand abs" href="#"><h2 style="color: #ECF2FB; font-weight: 700;">rrc.</h2></a>
+            <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#collapseNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="navbar-collapse collapse" id="collapseNavbar">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="pages/resume">RESUME</a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="pages/about">ABOUT</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 
   <section class="Banner" id="Roff-Banner">
 
     <div class="container h-100">
       <div class="row h-100">
-        <div class="col-lg-8 align-self-center" style="color: #1c1c1c;">
+        <div class="col-lg-8 align-self-center rellax" data-rellax-speed="-10" style="color: #1c1c1c;">
           <h1 style="font-size:3.5rem;">Roff</h1>
           <h5 class="mt-2" style="letter-spacing: 1.5px; font-size:1.5rem;">Website Redesign for a subsidiary of Pidilite.</h5>
         </div>
@@ -75,8 +72,10 @@
 
     <div class="container">
       <div class="row h-100" style="margin-top: 5rem;">
-        <h1 class="title">THE CHALLENGE</h1>
-        <h3 class="subtitle">what</h3>
+        <div class="col-lg-12">
+          <h3 class="subtitle">what</h3>
+          <h1 class="title">THE CHALLENGE</h1>
+        </div>
       </div>
 
       <div class="row">
@@ -112,8 +111,10 @@
       <section>
       <div class="container">
         <div class="row h-100" style="margin-top: 5rem;">
-          <h1 class="title">THE DESIGN PROCESS</h1>
-          <h3 class="subtitle">how</h3>
+          <div class="col-lg-12">
+            <h3 class="subtitle">how</h3>
+            <h1 class="title">THE DESIGN PROCESS</h1>
+          </div>
         </div>
 
         <div class="row justify-content-center">
@@ -150,8 +151,10 @@
       <div class="container">
 
         <div class="row h-100" style="margin-top: 5rem;">
-          <h1 class="title">SECONDARY RESEARCH</h1>
-          <h3 class="subtitle">why</h3>
+          <div class="col-lg-12">
+            <h3 class="subtitle">why</h3>
+            <h1 class="title">SECONDARY RESEARCH</h1>
+          </div>
         </div>
 
         <div class="row">
@@ -164,22 +167,22 @@
               <h5 style="font-style: italic; font-weight: normal; font-size: 1.5rem;">Target Audience</h5>
           </div>
 
-          <div class="col-lg-3 pr-4 mt-4 text-center">
+          <div class="col-lg-3 pe-4 mt-4 text-center">
             <img class="mb-4 img-fluid" style="border-radius: 20px;" height="70%" src="src/images/Roff/Consumers.jpg" alt="image alt"/>
               <p><b>Consumers</b></p>
           </div>
 
-          <div class="col-lg-3 pr-4 mt-4 text-center">
+          <div class="col-lg-3 pe-4 mt-4 text-center">
             <img class="mb-4 img-fluid" style="border-radius: 20px;" height="70%" src="src/images/Roff/Influencers.jpg" alt="image alt"/>
               <p><b>Influencers</b></p>
           </div>
 
-          <div class="col-lg-3 pr-4 mt-4 text-center">
+          <div class="col-lg-3 pe-4 mt-4 text-center">
             <img class="mb-4 img-fluid" style="border-radius: 20px;" height="70%" src="src/images/Roff/Contractors.jpg" alt="image alt"/>
               <p><b>Contractors</b></p>
           </div>
 
-          <div class="col-lg-3 pr-4 mt-4 text-center">
+          <div class="col-lg-3 pe-4 mt-4 text-center">
             <img class="mb-4 img-fluid" style="border-radius: 20px;" height="70%" src="src/images/Roff/Dealers.jpg" alt="image alt"/>
               <p><b>Dealers</b></p>
           </div>
@@ -204,13 +207,13 @@
 
         <div class="row">
         <div class="col-lg-12">
-            <img class="mt-5 img-fluid" width="15%" src="src/images/Roff/Saint.png" alt="image alt"/>
+            <img class="mt-5 mb-3 img-fluid" width="15%" src="src/images/Roff/Saint.png" alt="image alt"/>
         </div>
 
         <div class="col-lg-7">
-          <a class="venobox_custom" href="src/images/Roff/Weber.jpg"><img width="100%" src="src/images/Roff/Weber.jpg" alt="image alt"/></a>
+          <a class="venobox_custom" href="src/images/Roff/Weber_page.png"><img width="100%" src="src/images/Roff/Weber_page.png" alt="image alt"/></a>
         </div>
-        <div class="col-lg-4 pl-5 mt-4">
+        <div class="col-lg-4 ps-5 mt-4">
           <p class="mt-3">• The website looks clean and aesthetic.  </p>
           <p>• Usage of keywords to identify the products is an excellent way to highlight its features and sell it to the user. </p>
           <p>• Inclusion of disadvantages tells the user that they care about all the aspects of the product and helps them make an informed decision.   </p>
@@ -220,12 +223,12 @@
 
         <div class="row">
           <div class="col-lg-12">
-              <img class="mt-5 img-fluid" width="30%" src="src/images/Roff/MYK.png" alt="image alt"/>
+              <img class="mt-5 mb-3 img-fluid" width="30%" src="src/images/Roff/MYK.png" alt="image alt"/>
           </div>
         <div class="col-lg-7">
-          <a class="venobox_custom" href="src/images/Roff/MYK.jpg"><img width="100%" src="src/images/Roff/MYK.jpg" alt="image alt"/></a>
+          <a class="venobox_custom" href="src/images/Roff/MYK_page.png"><img width="100%" src="src/images/Roff/MYK_page.png" alt="image alt"/></a>
         </div>
-        <div class="col-lg-4 pl-5 mt-4 mb-5">
+        <div class="col-lg-4 ps-5 mt-4 mb-5">
           <p class="mt-3">• The Information Architecture of the website makes it very easy for users to navigate it.  </p>
           <p>• The catalogue of products is divided into sections and cater to specific problems, which helps with the cognitive load for the user. </p>
           <p>• Every product is approached via a particular issue and solution. Hence the user has a clear idea of the product and its usage.   </p>
@@ -242,7 +245,7 @@
           </div>
 
           <div class="col-lg-12 mt-3">
-            <table style="border-radius: 15px;" class="table table-dark mt-3">
+            <table style="border-radius: 10px; overflow: hidden;" class="table table-dark mt-3">
               <thead>
                 <tr class="text-center">
                   <th style="border-top: 0px;" class="text-left" scope="col"> &#8595; Usability Criterias</th>
@@ -346,8 +349,10 @@
     <div class="container">
 
       <div class="row h-100" style="margin-top: 6rem;">
-        <h1 class="title">PRIMARY RESEARCH</h1>
-        <h3 class="subtitle">who</h3>
+        <div class="col-lg-12">
+          <h3 class="subtitle">who</h3>
+          <h1 class="title">PRIMARY RESEARCH</h1>
+        </div>
       </div>
 
         <div class="row mb-5">
@@ -395,53 +400,51 @@
             <p class="mt-4">Once I figured out the user base and what I was focussing on, I did a user flow with the existing pages as Pidilite did not want any additional pages or tools.</p>
           </div>
 
-          <div class="col-lg-12" data-aos-once="true" data-aos="fade-up">
+          <div class="col-lg-12">
+
             <!--Carousel Wrapper-->
-            <div data-scroll id="UF" class="carousel slide mt-5" data-ride="carousel" data-aos-once="true" data-aos="fade-up">
+            <div id="UF" class="carousel slide mt-5" data-ride="carousel">
+
               <!--Slides-->
-              <div class="carousel-inner" role="listbox">
+              <div class="carousel-inner">
                 <div class="carousel-item active">
-                  <div class="view">
-                    <a class="venobox_custom" href="src/images/Roff/Homepage.svg"><img width="100%" src="src/images/Roff/Homepage.svg" alt="image alt"/></a>
-                  </div>
+                  <a class="venobox_custom" href="src/images/Roff/Homepage.svg"><img class="d-block w-100" src="src/images/Roff/Homepage.svg" alt="image alt"/></a>
                 </div>
                 <div class="carousel-item">
-                  <div class="view">
-                    <a class="venobox_custom" href="src/images/Roff/RepairRenovate.svg"><img width="100%" src="src/images/Roff/RepairRenovate.svg" alt="image alt"/></a>
-                  </div>
+                  <a class="venobox_custom" href="src/images/Roff/RepairRenovate.svg"><img class="d-block w-100" src="src/images/Roff/RepairRenovate.svg" alt="image alt"/></a>
                 </div>
                 <div class="carousel-item">
-                  <div class="view">
-                    <a class="venobox_custom" href="src/images/Roff/HomeownersProfessionals.svg"><img width="100%" src="src/images/Roff/HomeownersProfessionals.svg" alt="image alt"/></a>
-                  </div>
+                  <a class="venobox_custom" href="src/images/Roff/HomeownersProfessionals.svg"><img class="d-block w-100" src="src/images/Roff/HomeownersProfessionals.svg" alt="image alt"/></a>
                 </div>
                 <div class="carousel-item">
-                  <div class="view">
-                    <a class="venobox_custom" href="src/images/Roff/Menu.svg"><img width="100%" src="src/images/Roff/Menu.svg" alt="image alt"/></a>
-                  </div>
+                  <a class="venobox_custom" href="src/images/Roff/Menu.svg"><img class="d-block w-100" src="src/images/Roff/Menu.svg" alt="image alt"/></a>
                 </div>
               </div>
-              <!--/.Slides-->
+              <!--Slides-->
+
               <!--Indicators-->
-              <ol class="carousel-indicators">
-                <li data-target="#UF" data-slide-to="0" class="active"></li>
-                <li data-target="#UF" data-slide-to="1"></li>
-                <li data-target="#UF" data-slide-to="2"></li>
-                <li data-target="#UF" data-slide-to="3"></li>
-              </ol>
+              <div class="carousel-indicators">
+                <button type="button" data-bs-target="#UF" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#UF" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#UF" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#UF" data-bs-slide-to="3" aria-label="Slide 4"></button>
+              </div>
               <!--/.Indicators-->
+
               <!--Controls-->
-              <a class="carousel-control-prev" href="#UF" role="button" data-slide="prev">
-                <span style="margin-right: 80%;" class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="sr-only">Previous</span>
-              </a>
-              <a class="carousel-control-next" href="#UF" role="button" data-slide="next">
-                <span style="margin-left: 80%;" class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="sr-only">Next</span>
-              </a>
+              <button class="carousel-control-prev" type="button" data-bs-target="#UF" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" style="margin-right: 70%;" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#UF" data-bs-slide="next">
+                <span class="carousel-control-next-icon" style="margin-left: 70%;" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
               <!--/.Controls-->
+
             </div>
             <!--/.Carousel Wrapper-->
+
           </div>
   </section>
 
@@ -449,8 +452,10 @@
     <div class="container">
 
       <div class="row h-100" style="margin-top: 6rem;">
-        <h1 class="title">SETTING THE PREMISE</h1>
-        <h3 class="subtitle">create</h3>
+        <div class="col-lg-12">
+          <h3 class="subtitle">create</h3>
+          <h1 class="title">SETTING THE PREMISE</h1>
+        </div>
       </div>
 
       <div class="row">
@@ -460,14 +465,14 @@
           <p class="mt-2">Deriving from the target audience, I created two personae, let's take a look at them.</p>
        </div>
 
-       <div class="col-lg-4 mt-4 pr-4 VerticalLine">
+       <div class="col-lg-4 mt-4 pe-4 VerticalLine">
          <img class="mt-4 img-fluid mb-4" width="70%" src="src/images/Roff/Priyal.png" alt="image alt"/>
          <h3 style="font-weight:300;">Priyal Kapoor, 34</h5>
          <p style="font-weight:300; font-size: 1rem;">Bangalore | Software Engineer</p>
          <p class="mt-4" style="font-weight:300; font-style: italic;">“I am currently building a new home and torn between the amount of decisions. The opinions I get from people are varied and adds more to my confusion.”</p>
       </div>
 
-      <div class="col-lg-7 mt-4 pl-4 pr-4">
+      <div class="col-lg-7 mt-4 ps-4 pe-4">
         <p class="mt-5" style="font-style: 500; font-size: 1.3rem;">User Goals</p>
         <p>• Get informed about various products and what they do<br>• See the competition and compare them<br>• Futureproof her new home</p>
 
@@ -475,14 +480,14 @@
         <p>She is building a new house, and she wants the best of materials to keep it long lasting for generations to come. She is confused about new trends and doesn't know where to start. Her elders advice her to stick with cement and marbles, because that's what they have used, but she is skeptic and wants to do her own research.</p>
       </div>
 
-       <div class="col-lg-4 mt-5 pr-4 VerticalLine">
+       <div class="col-lg-4 mt-5 pe-4 VerticalLine">
          <img class="mt-4 img-fluid mb-4" width="70%" src="src/images/Roff/Roshan.png" alt="image alt"/>
          <h3 style="font-weight:300;">Roshan Khan, 41</h5>
          <p style="font-weight:300; font-size: 1rem;">Bangalore | Constructions Dealer</p>
          <p class="mt-4" style="font-weight:300; font-style: italic;">“I own a hardware store and am also a Pidilite authorised seller. When new customers come in, its hard to sell them products which they don't have any idea about.”</p>
       </div>
 
-      <div class="col-lg-7 mt-4 pl-4 pr-4">
+      <div class="col-lg-7 mt-4 ps-4 pe-4">
         <p class="mt-5" style="font-style: 500; font-size: 1.3rem;">User Goals</p>
         <p>• Help customers sell pick what they exactly need, not necessarily what they want<br>• Showcase the latest products, to make his sales easier<br>• Latest trends and designs to showcase in his store</p>
 
@@ -495,27 +500,27 @@
           <p class="mt-4">As I converge on to my final design, it was essential that I set a design language to be followed throughout the entire website.</p>
        </div>
 
-       <div class="col-lg-4 pl-5 mt-5">
+       <div class="col-lg-4 ps-5 mt-5">
          <h5>Font</h5>
        </div>
 
-       <div class="col-lg-6 mt-5 mb-3" data-aos-once="true" data-aos="fade-left">
+       <div class="col-lg-6 mt-5 mb-3">
        <img width="100%"  src='src/images/Roff/Font.svg' />
        </div>
 
-       <div class="col-lg-4 pl-5 mt-5">
+       <div class="col-lg-4 ps-5 mt-5">
          <h5>Colour Pallete</h5>
        </div>
 
-       <div class="col-lg-8 mt-5 mb-3" data-aos-once="true" data-aos="fade-left">
+       <div class="col-lg-8 mt-5 mb-3">
        <img width="50%"  src='src/images/Roff/Colour.svg' />
        </div>
 
-       <div class="col-lg-4 pl-5 mt-5">
+       <div class="col-lg-4 ps-5 mt-5">
          <h5>UI Elements</h5>
        </div>
 
-       <div class="col-lg-8 mt-5" data-aos-once="true" data-aos="fade-left">
+       <div class="col-lg-8 mt-5">
        <img width="90%"  src='src/images/Roff/UI.svg' />
        </div>
 
@@ -523,63 +528,60 @@
 
       <div class="row mt-5">
 
-      <div class="col-lg-12 mt-5">
         <h5 style="font-style: italic; font-weight: normal; font-size: 1.5rem;">Information Architecture</h5>
-        <div class="col-lg-12" data-aos-once="true" data-aos="fade-up">
+        <div class="col-lg-12 mt-5">
           <!--Carousel Wrapper-->
-          <div data-scroll id="IA" class="carousel slide mt-5" data-ride="carousel" data-aos-once="true" data-aos="fade-up">
+          <div id="IA" class="carousel slide mt-5" data-ride="carousel">
+
             <!--Slides-->
-            <div class="carousel-inner" role="listbox">
+            <div class="carousel-inner">
               <div class="carousel-item active">
-                <div class="view">
-                  <a class="venobox_custom" href="src/images/Roff/IA1.svg"><img width="100%" src="src/images/Roff/IA1.svg" alt="image alt"/></a>
-                </div>
+                <a class="venobox_custom" href="src/images/Roff/IA1.svg"><img class="d-block w-100" src="src/images/Roff/IA1.svg" alt="image alt"/></a>
               </div>
               <div class="carousel-item">
-                <div class="view">
-                  <a class="venobox_custom" href="src/images/Roff/IA2.svg"><img width="100%" src="src/images/Roff/IA2.svg" alt="image alt"/></a>
-                </div>
+                <a class="venobox_custom" href="src/images/Roff/IA2.svg"><img class="d-block w-100" src="src/images/Roff/IA2.svg" alt="image alt"/></a>
               </div>
               <div class="carousel-item">
-                <div class="view">
-                  <a class="venobox_custom" href="src/images/Roff/IA3.svg"><img width="100%" src="src/images/Roff/IA3.svg" alt="image alt"/></a>
-                </div>
+                <a class="venobox_custom" href="src/images/Roff/IA3.svg"><img class="d-block w-100" src="src/images/Roff/IA3.svg" alt="image alt"/></a>
               </div>
               <div class="carousel-item">
-                <div class="view">
-                  <a class="venobox_custom" href="src/images/Roff/IA4.svg"><img width="100%" src="src/images/Roff/IA4.svg" alt="image alt"/></a>
-                </div>
+                <a class="venobox_custom" href="src/images/Roff/IA4.svg"><img class="d-block w-100" src="src/images/Roff/IA4.svg" alt="image alt"/></a>
               </div>
             </div>
-            <!--/.Slides-->
+            <!--Slides-->
+
             <!--Indicators-->
-            <ol class="carousel-indicators">
-              <li data-target="#IA" data-slide-to="0" class="active"></li>
-              <li data-target="#IA" data-slide-to="1"></li>
-              <li data-target="#IA" data-slide-to="2"></li>
-              <li data-target="#IA" data-slide-to="3"></li>
-            </ol>
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#IA" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#IA" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#IA" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              <button type="button" data-bs-target="#IA" data-bs-slide-to="3" aria-label="Slide 4"></button>
+            </div>
             <!--/.Indicators-->
+
             <!--Controls-->
-            <a class="carousel-control-prev" href="#IA" role="button" data-slide="prev">
-              <span style="margin-right: 80%;" class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="sr-only">Previous</span>
-            </a>
-            <a class="carousel-control-next" href="#IA" role="button" data-slide="next">
-              <span style="margin-left: 80%;" class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="sr-only">Next</span>
-            </a>
+            <button class="carousel-control-prev" type="button" data-bs-target="#IA" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" style="margin-right: 70%;" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#IA" data-bs-slide="next">
+              <span class="carousel-control-next-icon" style="margin-left: 70%;" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
             <!--/.Controls-->
+
           </div>
           <!--/.Carousel Wrapper-->
+
         </div>
-     </div>
    </div>
 
    <a id="solution" style="display: block; position: relative; top: -50px; visibility: hidden;"></a>
    <div class="row h-100" style="margin-top: 5rem;">
-     <h1 class="title">FINAL DESIGNS</h1>
-     <h3 class="subtitle">create</h3>
+     <div class="col-lg-12">
+       <h3 class="subtitle">create</h3>
+       <h1 class="title">FINAL DESIGNS</h1>
+     </div>
    </div>
 
    <div class="row">
@@ -589,7 +591,7 @@
        <p>This colour scheme was chosen to showcase the brand identity throughout the website.</p>
      </div>
 
-     <div class="col-lg-8 my-auto mt-5" data-aos-once="true" data-aos="fade-right">
+     <div class="col-lg-8 my-auto mt-5">
        <a class="venobox_custom" href="src/images/Roff/Homepage1.jpg"><img width="100%" src="src/images/Roff/Homepage1.jpg" alt="image alt"/></a>
      </div>
 
@@ -600,7 +602,7 @@
        <p>The header video grabs the attention of the user, which is also the <span style="font-weight:900; color:#B9D053;">primary message</span> to be conveyed.</p>
      </div>
 
-     <div class="col-lg-8" data-aos-once="true" data-aos="fade-right">
+     <div class="col-lg-8">
        <a class="venobox_custom" href="src/images/Roff/Homepage2.jpg"><img width="100%" src="src/images/Roff/Homepage2.jpg" alt="image alt"/></a>
      </div>
 
@@ -608,7 +610,7 @@
        <p>The preview for the <span style="font-weight:900; color:#B9D053;">Tile Grout Matcher</span> gives the user a sneak peek of the colour selector. It showcases the variety of grout solutions Roff has to provide.</p>
      </div>
 
-     <div class="col-lg-8" data-aos-once="true" data-aos="fade-right">
+     <div class="col-lg-8">
        <a class="venobox_custom" href="src/images/Roff/Homepage3.jpg"><img width="100%" src="src/images/Roff/Homepage3.jpg" alt="image alt"/></a>
      </div>
 
@@ -616,7 +618,7 @@
        <p><span style="font-weight:900; color:#B9D053;">Blogs and Current Trends</span> show the latest trends in tiles, categorised by Living Spaces. Designed such that influencers can show the latest trends to consumers with ease. The blog showcases posts from curators at Roff.</p>
      </div>
 
-     <div class="col-lg-8" data-aos-once="true" data-aos="fade-right">
+     <div class="col-lg-8">
        <a class="venobox_custom" href="src/images/Roff/Homepage4.jpg"><img width="100%" src="src/images/Roff/Homepage4.jpg" alt="image alt"/></a>
      </div>
 
@@ -624,7 +626,7 @@
        <p><span style="font-weight:900; color:#B9D053;">Testimonials</span> show the completed projects using Roff products, along with what the customer says.</p>
      </div>
 
-    <div class="col-lg-8" data-aos-once="true" data-aos="fade-right">
+    <div class="col-lg-8">
       <a class="venobox_custom" href="src/images/Roff/Homepage5.jpg"><img width="100%" src="src/images/Roff/Homepage5.jpg" alt="image alt"/></a>
     </div>
 
@@ -645,7 +647,7 @@
       <p>The <span style="font-weight:900; color:#B9D053;">application video</span> informs the user on how to apply the given product.</p>
     </div>
 
-    <div class="col-lg-8" data-aos-once="true" data-aos="fade-left">
+    <div class="col-lg-8">
       <a class="venobox_custom" href="src/images/Roff/DiscoverSolutions.jpg"><img width="100%" class="mt-5" src="src/images/Roff/DiscoverSolutions.jpg" alt="image alt"/></a>
     </div>
 
@@ -653,7 +655,7 @@
       <hr style="border-color: white; width:100%; text-align:center; margin-left:0">
     </div>
 
-    <div class="col-lg-8" data-aos-once="true" data-aos="fade-right">
+    <div class="col-lg-8">
       <a class="venobox_custom" href="src/images/Roff/ExploreProducts.jpg"><img width="100%" style="margin-top: 6%;" src="src/images/Roff/ExploreProducts.jpg" alt="image alt"/></a>
     </div>
 
@@ -674,7 +676,7 @@
       <p>The <span style="font-weight:900; color:#B9D053;">Coverage Calculator</span> provides an idea of how much quantity a user should buy.</p>
     </div>
 
-    <div class="col-lg-8" data-aos-once="true" data-aos="fade-left">
+    <div class="col-lg-8">
       <a class="venobox_custom" href="src/images/Roff/Product.jpg"><img width="100%" class="mt-5" src="src/images/Roff/Product.jpg" alt="image alt"/></a>
     </div>
 
@@ -682,7 +684,7 @@
       <hr style="border-color: white; width:100%; text-align:center; margin-left:0">
     </div>
 
-    <div class="col-lg-6 text-center" data-aos-once="true" data-aos="fade-left">
+    <div class="col-lg-6 text-center">
       <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="355" height="740" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FgWi2iEMP8QBtwMh0uzK2ch%2FROFF-High-Fidelity%3Fpage-id%3D122%253A3%26node-id%3D122%253A316%26viewport%3D265%252C48%252C0.36%26scaling%3Dscale-down%26hotspot-hints%3D0%26hide-ui=1" allowfullscreen></iframe>
     </div>
 
@@ -714,9 +716,12 @@
   </div>
 
   <div class="row h-100" style="margin-top: 5rem;">
-    <h1 class="title">REVIEW</h1>
-    <h3 class="subtitle">final</h3>
+    <div class="col-lg-12">
+      <h3 class="subtitle">final</h3>
+      <h1 class="title">REVIEW</h1>
+    </div>
   </div>
+
   <div class="row">
       <div class="col-lg-9 mt-3">
         <p>Roff was the first project I did for a client and it taught me a multitude of things, including how to collaborate with a team, dealing with clients, and also gave me a small insight into how the corporate world works.
@@ -727,15 +732,19 @@
 
   </section>
 
-      <!-- Footer -->
-      <div class="mt-5" id="footer"></div>
-      <!-- Footer -->
-      <script src="https://code.jquery.com/jquery-3.2.1.min.js" crossorigin="anonymous"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/rellax/1.12.1/rellax.min.js"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/venobox/1.9.0/venobox.min.js"></script>
-      <script src="js/main.js"></script>
-  </body>
 
-  </html>
+        <!-- Footer -->
+        <div id="footer"></div>
+        <!-- Footer -->
+
+      </div>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/venobox/1.9.0/venobox.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/gh/dixonandmoe/rellax@master/rellax.min.js"></script>
+        <script src="js/main.js"></script>
+
+
+      </body>
+    </html>

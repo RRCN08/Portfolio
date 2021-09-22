@@ -1,7 +1,8 @@
 $colors: (
 primary: #2D283E,
-bg: #1c1c1c,
-white: #ffffff,
+violet: #9183C1,
+bg: #111115,
+white: #ECF2FB,
 orange: #EC8539,
 roffgreen: #B9D053,
 ishan: #EB0029,
@@ -196,7 +197,7 @@ grammarly-btn {display:none!important;}
     font-size: 3.3rem;
     text-align: left;
 
-    color: #FBFBFB;
+    color: #ECF2FB;
 }
 
 .subtitle {
@@ -222,6 +223,13 @@ b, strong {
 }
 
 //Navigation bar
+.navbar-nav > li {
+    padding-right: 1.5vw;
+}
+.nav-item{
+   text-align: right;
+}
+
 @media (min-width: 768px) {
 .navbar-brand.abs
     {
@@ -359,6 +367,16 @@ b, strong {
   transition: all 0.4s;
 }
 
+.hover-1:hover {
+  color: #ECF2FB !important;
+}
+
+.hover-1-description {
+  color: #ECF2FB;
+}
+
+
+
 .hover-content {
   position: relative;
   z-index: 99;
@@ -411,6 +429,12 @@ b, strong {
 }
 //!Projects-Tab
 
+//Dots
+.carousel-indicators button {
+  width: 10px !important;
+  height: 10px !important;
+  border-radius: 100%;
+}
 
 //Image-Carousel
 .carousel-image {
@@ -497,9 +521,11 @@ b, strong {
 
 //Footer
 #footer {
-  background: #100F12;
-  color: #fff;
+  background: #0A0A0B;
 }
+
+.no-top-padding
+{padding-top: 0 !important}
 
 //Landing Page Header
 #Header {
@@ -514,9 +540,15 @@ b, strong {
   height: 100%;
 }
 
-#Projects-Carousel {
+#Header {
+  @include tablet {
+    background-image: url("../css/elements/circlessans.png");
+  }
+}
+
+#Projects {
   padding-bottom: 1vh;
-  background: #201D29;
+  background: #111115;
 }
 
 #Hero {
@@ -529,20 +561,8 @@ b, strong {
   }
 }
 
-#herobg {
-  display: flex;
-  align-items: flex-end;
-  height: 100%;
-
-    @include tablet {
-      max-height: 50vh;
-      bottom: 0%;
-      position: fixed;
-    }
-
-    @include phone {
-      display: none;
-    }
+#NavStart {
+  color: #9183C1;
 }
 
 #face {
@@ -678,7 +698,7 @@ body {
 
     .btn {
       position: relative;
-      border: 1px #fbfbfb solid;
+      border: 1px #ECF2FB solid;
       border-radius: 15px;
       cursor: pointer;
       transition: border 0.1s ease-in-out;
@@ -687,31 +707,30 @@ body {
     }
 
     .btn:hover, .btn:focus {
-      border-color: color(primary);
-      background-color: color(primary);
+      border-color: color(violet);
+      background-color: color(violet);
       transition: all .35s;
       color: color(white);
+    }
+
+    .btn-index:hover, .btn-index:focus {
+      border-color: color(primary);
+      background-color: color(primary);
     }
 
     .btn-genefit:hover, .btn-genefit:focus {
       border-color: color(orange);
       background-color: color(orange);
-      transition: all .35s;
-      color: color(white);
     }
 
     .btn-roff:hover, .btn-roff:focus {
       border-color: color(roffgreen);
       background-color: color(roffgreen);
-      transition: all .35s;
-      color: color(white);
     }
 
     .btn-ishan:hover, .btn-ishan:focus {
       border-color: color(ishan);
       background-color: color(ishan);
-      transition: all .35s;
-      color: color(white);
     }
 
     @media only screen and (max-width: 992px) {
@@ -745,14 +764,14 @@ body {
 
 //Banner-Parallax
 .Banner {
-  height: 50vh;
+  height: 55vh;
   background-position: left;
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;}
 
 #Ishan-Banner {
-  background-image: url("../src/images/Ishan/Banner.png");
+  background-image: url("../src/images/bg/IshanDhvani.png");
 }
 
 #OneStop-Banner {
@@ -772,7 +791,7 @@ body {
 }
 
 #GeneFit-Banner {
-  background-image: url("../src/images/GeneFit/Banner.jpg");
+  background-image: url("../src/images/GeneFit/Banner.png");
 }
 //!Banner-Parallax
 
