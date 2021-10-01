@@ -14,7 +14,7 @@ $(document).ready(function() {
             //Venobox
             $('.venobox').venobox();
             $('.venobox_custom').venobox({
-                bgcolor    : '#1c1c1c',
+                bgcolor    : '#111115',
                 spinner    : 'cube-grid'
             });
 
