@@ -528,9 +528,9 @@ b, strong {
 {padding-top: 0 !important}
 
 //Landing Page Header
+
 #Header {
   background-color: #9183C1;
-  background-image: url("../css/elements/circles.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -539,6 +539,10 @@ b, strong {
   top: 0;
   height: 100%;
 }
+
+.no-webp #Header {     background-image: url("../css/elements/circles.png"); }
+
+.webp #Header {     background-image: url("../css/elements/circles.webp"); }
 
 #Header {
   @include tablet {
