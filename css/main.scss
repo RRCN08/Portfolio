@@ -210,6 +210,10 @@ grammarly-btn {display:none!important;}
     line-height: 0.01;
 
     color: rgba(229, 229, 229, 0.12);
+
+    @include phone {
+      font-size: 4.5rem;
+    }
 }
 
 b, strong {
@@ -546,7 +550,7 @@ b, strong {
 
 #Header {
   @include tablet {
-    background-image: url("../css/elements/circlessans.png");
+    background-image: url("../css/elements/circlessans.png") !important;
   }
 }
 
