@@ -28,6 +28,20 @@ $(document).ready(function() {
                 $(".hiddenproject").fadeToggle();
             });
 
+            var pro = 0;
+
+            //Easter Egg
+            $('#Hero').click(function() {
+              if (pro == 0) {
+                  $('#Hero > h1 > #prohit').text("PROHIT");
+                  pro = 1;
+              } else {
+                  $('#Hero > h1 > #prohit').text("ROHIT");
+                  pro = 0;
+              }
+            });
+
+
             // Add smooth scrolling to all links
             $("#projects").click(function() {
                 $('html,body').animate({
