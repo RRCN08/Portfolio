@@ -31,7 +31,6 @@
   --bodytext: var(--black);
   --btncolor: var(--violet1light);
   --projectbackground: var(--white);
-  --title: var(--violet1dark);
   --footer: var(--footerlight);
 
   --behance: url("elements/social/Behance_dark.svg");
@@ -67,7 +66,6 @@
   --bodytext: var(--white);
   --btncolor: var(--violet2dark);
   --projectbackground: var(--black);
-  --title: var(--violet3light);
   --footer: var(--footerdark);
 
   --behance: url("elements/social/Behance.svg");
@@ -152,10 +150,6 @@ body {
 
 #Projects {
   background-color: var(--projectbackground);
-}
-
-.projecttitle {
-  color: var(--title);
 }
 
 .resume_title {
