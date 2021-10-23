@@ -45,7 +45,6 @@
   --ixda: url("elements/resume/IxDA_dark.svg");
 
   --circles: url("elements/circles.png");
-  --circleswebp: url("elements/circles.webp");
   --circlessans: url("elements/circlessans.png");
   --switch: var(--violet1dark);
   --slider: var(--white);
@@ -80,7 +79,6 @@
   --ixda: url("elements/resume/IxDA.svg");
 
   --circles: url("elements/circles_dark.png");
-  --circleswebp: url("elements/circles_dark.webp");
   --circlessans: url("elements/circlessans_dark.png");
   --switch: var(--white);
   --slider: var(--violet1dark);
@@ -198,9 +196,7 @@ body {
   content:var(--wearablegraph);
 }
 
-.no-webp #Header { background-image: var(--circles); }
-
-.webp #Header { background-image: var(--circleswebp); }
+#Header { background-image: var(--circles); }
 
 #roffui {
   content: var(--roffui);
