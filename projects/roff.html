@@ -16,9 +16,11 @@
 
     <!-- CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
     <link rel="stylesheet" href="css/main.min.css">
     <link rel="stylesheet" href="css/navbar.css">
     <link rel="stylesheet" href="css/venobox.css">
+    <link rel="stylesheet" href="css/light.min.css">
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-173549113-1"></script>
@@ -32,23 +34,29 @@
   </head>
 
 
-  <body class="no-top-padding">
+  <body id="body" class="no-top-padding light-theme">
 
-    <nav class="navbar navbar-expand-md navbar-dark smart-scroll navbar-fixed-top scrolled">
+    <nav class="navbar navbar-expand-md navbar-dark smart-scroll navbar-fixed-top navbar-main">
         <div class="container-fluid">
-            <a class="navbar-brand abs" href="#"><h2 style="color: #ECF2FB; font-weight: 700;">rrc.</h2></a>
+            <a class="navbar-brand navmode abs" href="#"><h2 style="font-weight: 700;">rrc.</h2></a>
+              <label class="switch switch-main ms-3">
+                <i class="fas fas-main fa-adjust" id="fas-id" style="margin-right: 5px;"></i>
+                <div>
+                  <input type="checkbox" id="checkBox"  />
+                  <span class="slider slider-main round"></span>
+                </div>
+              </label>
+
             <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#collapseNavbar">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="navbar-collapse collapse" id="collapseNavbar">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link" href="pages/resume">RESUME</a>
-                    </li>
-                </ul>
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="pages/about">ABOUT</a>
+                        <a class="nav-link nav-link-main" href="pages/about">ABOUT</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link nav-link-main" href="pages/resume">RESUME</a>
                     </li>
                 </ul>
             </div>
@@ -57,7 +65,7 @@
 
   <section class="Banner" id="Roff-Banner">
 
-    <div class="container h-100">
+    <div id="NavStart" class="container h-100">
       <div class="row h-100">
         <div class="col-lg-8 align-self-center rellax" data-rellax-speed="7" style="color: #1c1c1c;">
           <h1 style="font-size:3.5rem;">Roff</h1>
@@ -100,7 +108,7 @@
 
         <div class="row float-center justify-content-center">
           <div class="col-lg-10 mt-5 text-center">
-            <h3 style="font-size: 25px; font-style: italic; font-weight: 300;">To redesign their current <b style="color: #B9D053;">website</b> to reflect the needs and connect with their target audience, which is also responsive and works on a wide variety of devices.</h3>
+            <h3 style="font-size: 25px; font-style: italic; font-weight: 300;">To redesign their current <b style="color: #799400;">website</b> to reflect the needs and connect with their target audience, which is also responsive and works on a wide variety of devices.</h3>
             <a class="btn btn-roff btn-lg mt-4 mb-5 js-scroll-trigger" href="/projects/roff#solution">skip to solution</a>
           </div>
 
@@ -192,7 +200,7 @@
         <div class="row">
           <div class="col-lg-10 mt-5 mb-5">
               <h5 style="font-style: italic; font-weight: normal; font-size: 1.5rem;">What we will be conveying</h5>
-              <p class="mt-4">Pidilite acquired Roff in 2004. Since then, they have been catering to a wide variety of people. <br>One overarching question everyone always has is <b style="color:#B9D053;">why they should use Roff</b> over regular cement while tile fixing? <br>Even if they were to pick an adhesive over cement, why should they choose <b style="color:#B9D053;">Roff over other competitors</b> out there?</p>
+              <p class="mt-4">Pidilite acquired Roff in 2004. Since then, they have been catering to a wide variety of people. <br>One overarching question everyone always has is <b style="color:#799400;">why they should use Roff</b> over regular cement while tile fixing? <br>Even if they were to pick an adhesive over cement, why should they choose <b style="color:#799400;">Roff over other competitors</b> out there?</p>
               <p class="mt-4">I intended to answer all of these questions through my designs.</p>
           </div>
 
@@ -207,7 +215,7 @@
 
         <div class="row">
         <div class="col-lg-3">
-            <img class="mt-5 mb-3" height="50%" src="src/images/Roff/Saint.png" alt="image alt"/>
+            <img class="mt-5 mb-3" width="300" src="src/images/Roff/Saint.svg" onload="SVGInject(this)" alt="image alt"/>
         </div>
       </div>
 
@@ -226,7 +234,7 @@
 
         <div class="row">
           <div class="col-lg-12">
-              <img class="mt-5 mb-3" height="50%" src="src/images/Roff/MYK.png" alt="image alt"/>
+              <img class="mt-5 mb-3" height="150" src="src/images/Roff/MYK.svg" alt="image alt"/>
           </div>
         </div>
 
@@ -323,7 +331,7 @@
 
           <div class="col-lg-12 mt-5">
             <h5 style="font-style: italic; font-weight: normal; font-size: 1.5rem;">Heuristics Evaluation</h5>
-            <p style="font-size: 1rem;">(Hover to see the key points)</p>
+            <p class="text-center" style="color: #799400; font-weight: 500; font-size: 1.3rem;">(Hover to see the key points)</p>
             <h5 class="mt-4 text-center" style="font-weight: normal; font-size: 1.2rem;">Homepage</h5>
           </div>
 
@@ -412,23 +420,6 @@
             <!--Carousel Wrapper-->
             <div id="UF" class="carousel slide mt-5" data-ride="carousel">
 
-              <!--Slides-->
-              <div class="carousel-inner">
-                <div class="carousel-item active">
-                  <a class="venobox_custom" href="src/images/Roff/Homepage.svg"><img class="d-block w-100" src="src/images/Roff/Homepage.svg" alt="image alt"/></a>
-                </div>
-                <div class="carousel-item">
-                  <a class="venobox_custom" href="src/images/Roff/RepairRenovate.svg"><img class="d-block w-100" src="src/images/Roff/RepairRenovate.svg" alt="image alt"/></a>
-                </div>
-                <div class="carousel-item">
-                  <a class="venobox_custom" href="src/images/Roff/HomeownersProfessionals.svg"><img class="d-block w-100" src="src/images/Roff/HomeownersProfessionals.svg" alt="image alt"/></a>
-                </div>
-                <div class="carousel-item">
-                  <a class="venobox_custom" href="src/images/Roff/Menu.svg"><img class="d-block w-100" src="src/images/Roff/Menu.svg" alt="image alt"/></a>
-                </div>
-              </div>
-              <!--Slides-->
-
               <!--Indicators-->
               <div class="carousel-indicators">
                 <button type="button" data-bs-target="#UF" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -438,13 +429,31 @@
               </div>
               <!--/.Indicators-->
 
+              <!--Slides-->
+              <div class="carousel-inner carousel-inner-roff">
+                <div class="carousel-item active">
+                  <a class="venobox_custom" href="src/images/Roff/Homepage.svg"><img class="d-block w-100" src="src/images/Roff/Homepage.svg" onload="SVGInject(this)" alt="image alt"/></a>
+                </div>
+                <div class="carousel-item">
+                  <a class="venobox_custom" href="src/images/Roff/RepairRenovate.svg"><img class="d-block w-100" src="src/images/Roff/RepairRenovate.svg" onload="SVGInject(this)" alt="image alt"/></a>
+                </div>
+                <div class="carousel-item">
+                  <a class="venobox_custom" href="src/images/Roff/HomeownersProfessionals.svg"><img class="d-block w-100" src="src/images/Roff/HomeownersProfessionals.svg" onload="SVGInject(this)" alt="image alt"/></a>
+                </div>
+                <div class="carousel-item">
+                  <a class="venobox_custom" href="src/images/Roff/Menu.svg"><img class="d-block w-100" src="src/images/Roff/Menu.svg" onload="SVGInject(this)" alt="image alt"/></a>
+                </div>
+              </div>
+              <!--Slides-->
+
+
               <!--Controls-->
               <button class="carousel-control-prev" type="button" data-bs-target="#UF" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" style="margin-right: 70%;" aria-hidden="true"></span>
+                <i class="fas fa-arrow-left" aria-hidden="true"></i>
                 <span class="visually-hidden">Previous</span>
               </button>
               <button class="carousel-control-next" type="button" data-bs-target="#UF" data-bs-slide="next">
-                <span class="carousel-control-next-icon" style="margin-left: 70%;" aria-hidden="true"></span>
+                <i class="fas fa-arrow-right" aria-hidden="true"></i>
                 <span class="visually-hidden">Next</span>
               </button>
               <!--/.Controls-->
@@ -483,7 +492,7 @@
         <p class="mt-5" style="font-style: 500; font-size: 1.3rem;">User Goals</p>
         <p>• Get informed about various products and what they do<br>• See the competition and compare them<br>• Futureproof her new home</p>
 
-        <p class="mt-5" style="font-style: bold; font-size: 1.3rem;">Why should Malvika take a look at Roff?</p>
+        <p class="mt-5" style="font-style: bold; font-size: 1.3rem;">Why should Priyal take a look at Roff?</p>
         <p>She is building a new house, and she wants the best of materials to keep it long-lasting for generations to come. She is confused about new trends and doesn't know where to start. Her elders advise her to stick with cement and marbles because they have used them, but she is sceptical and wants to do her research.</p>
       </div>
 
@@ -512,7 +521,7 @@
        </div>
 
        <div class="col-lg-6 mt-5 mb-3">
-       <img width="100%"  src='src/images/Roff/Font.svg' />
+       <img width="100%"  src='src/images/Roff/Font.svg' onload="SVGInject(this)" />
        </div>
 
        <div class="col-lg-4 ps-5 mt-5">
@@ -520,7 +529,7 @@
        </div>
 
        <div class="col-lg-8 mt-5 mb-3">
-       <img width="50%"  src='src/images/Roff/Colour.svg' />
+       <img width="50%"  src='src/images/Roff/Colour.svg' onload="SVGInject(this)" />
        </div>
 
        <div class="col-lg-4 ps-5 mt-5">
@@ -528,7 +537,7 @@
        </div>
 
        <div class="col-lg-8 mt-5">
-       <img width="90%"  src='src/images/Roff/UI.svg' />
+       <img width="90%"  src='src/images/Roff/UI.svg' id="roffui" />
        </div>
 
       </div>
@@ -543,16 +552,16 @@
             <!--Slides-->
             <div class="carousel-inner">
               <div class="carousel-item active">
-                <a class="venobox_custom" href="src/images/Roff/IA1.svg"><img class="d-block w-100" src="src/images/Roff/IA1.svg" alt="image alt"/></a>
+                <a class="venobox_custom" href="src/images/Roff/IA1.svg"><img class="d-block w-100" src="src/images/Roff/IA1.svg" onload="SVGInject(this)" alt="image alt"/></a>
               </div>
               <div class="carousel-item">
-                <a class="venobox_custom" href="src/images/Roff/IA2.svg"><img class="d-block w-100" src="src/images/Roff/IA2.svg" alt="image alt"/></a>
+                <a class="venobox_custom" href="src/images/Roff/IA2.svg"><img class="d-block w-100" src="src/images/Roff/IA2.svg" onload="SVGInject(this)" alt="image alt"/></a>
               </div>
               <div class="carousel-item">
-                <a class="venobox_custom" href="src/images/Roff/IA3.svg"><img class="d-block w-100" src="src/images/Roff/IA3.svg" alt="image alt"/></a>
+                <a class="venobox_custom" href="src/images/Roff/IA3.svg"><img class="d-block w-100" src="src/images/Roff/IA3.svg" onload="SVGInject(this)" alt="image alt"/></a>
               </div>
               <div class="carousel-item">
-                <a class="venobox_custom" href="src/images/Roff/IA4.svg"><img class="d-block w-100" src="src/images/Roff/IA4.svg" alt="image alt"/></a>
+                <a class="venobox_custom" href="src/images/Roff/IA4.svg"><img class="d-block w-100" src="src/images/Roff/IA4.svg" onload="SVGInject(this)" alt="image alt"/></a>
               </div>
             </div>
             <!--Slides-->
@@ -568,11 +577,11 @@
 
             <!--Controls-->
             <button class="carousel-control-prev" type="button" data-bs-target="#IA" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" style="margin-right: 70%;" aria-hidden="true"></span>
+              <i class="fas fa-arrow-left" aria-hidden="true"></i>
               <span class="visually-hidden">Previous</span>
             </button>
             <button class="carousel-control-next" type="button" data-bs-target="#IA" data-bs-slide="next">
-              <span class="carousel-control-next-icon" style="margin-left: 70%;" aria-hidden="true"></span>
+              <i class="fas fa-arrow-right" aria-hidden="true"></i>
               <span class="visually-hidden">Next</span>
             </button>
             <!--/.Controls-->
@@ -604,9 +613,9 @@
 
      <div class="col-lg-4 homepage" style="margin-top:3%;">
        <h5>Homepage</h5>
-       <p><span style="font-weight:900; color:#B9D053;">Navigation Bar</span> concise and clear. The 'Find a Dealer' CTA is in bold to draw attention.</p>
-       <p>The primary target audience is the <span style="font-weight:900; color:#B9D053;">home-owners</span>, so we categorised Roff's products to be approached through typical problems.</p>
-       <p>The header video grabs the user's attention, which is also the <span style="font-weight:900; color:#B9D053;">primary message</span> to be conveyed.</p>
+       <p><span style="font-weight:900; color:#799400;">Navigation Bar</span> concise and clear. The 'Find a Dealer' CTA is in bold to draw attention.</p>
+       <p>The primary target audience is the <span style="font-weight:900; color:#799400;">home-owners</span>, so we categorised Roff's products to be approached through typical problems.</p>
+       <p>The header video grabs the user's attention, which is also the <span style="font-weight:900; color:#799400;">primary message</span> to be conveyed.</p>
      </div>
 
      <div class="col-lg-8">
@@ -614,7 +623,7 @@
      </div>
 
      <div class="col-lg-4 homepage" style="margin-top:5%;">
-       <p>The preview for the <span style="font-weight:900; color:#B9D053;">Tile Grout Matcher</span> gives the user a sneak peek of the colour selector. It showcases the variety of grout solutions Roff has to provide.</p>
+       <p>The preview for the <span style="font-weight:900; color:#799400;">Tile Grout Matcher</span> gives the user a sneak peek of the colour selector. It showcases the variety of grout solutions Roff has to provide.</p>
      </div>
 
      <div class="col-lg-8">
@@ -622,7 +631,7 @@
      </div>
 
      <div class="col-lg-4 homepage" style="margin-top:25%;">
-       <p><span style="font-weight:900; color:#B9D053;">Blogs and Current Trends</span> show the latest trends in tiles, categorised by Living Spaces. Designed such that influencers can offer the latest trends to consumers with ease. The blog showcases posts from curators at Roff.</p>
+       <p><span style="font-weight:900; color:#799400;">Blogs and Current Trends</span> show the latest trends in tiles, categorised by Living Spaces. Designed such that influencers can offer the latest trends to consumers with ease. The blog showcases posts from curators at Roff.</p>
      </div>
 
      <div class="col-lg-8">
@@ -630,7 +639,7 @@
      </div>
 
      <div class="col-lg-4 homepage" style="margin-top:20%;">
-       <p><span style="font-weight:900; color:#B9D053;">Testimonials</span> show the completed projects using Roff products, along with what the customer says.</p>
+       <p><span style="font-weight:900; color:#799400;">Testimonials</span> show the completed projects using Roff products, along with what the customer says.</p>
      </div>
 
     <div class="col-lg-8">
@@ -638,7 +647,7 @@
     </div>
 
     <div class="col-lg-4 homepage" style="margin-top:3%;">
-      <p>The <span style="font-weight:900; color:#B9D053;">footer</span> contains the sitemap of the website along with Social Links for quick access.</p>
+      <p>The <span style="font-weight:900; color:#799400;">footer</span> contains the sitemap of the website along with Social Links for quick access.</p>
     </div>
      <div class="col-lg-12 mt-5">
        <hr style="border-color: white; width:100%; text-align:center; margin-left:0">
@@ -649,9 +658,9 @@
   <div class="row justify-content-center">
     <div class="col-lg-4" style="margin-top:5%;">
       <h5>Discover Solutions</h5>
-      <p style="margin-top:7%;"> The five essential <span style="font-weight:900; color:#B9D053;">solutions</span> for consumers are tabbed for the ease of switching between the problems.</p>
-      <p>All <span style="font-weight:900; color:#B9D053;">product recommendations</span> are up-front, so the user doesn't have to scroll down to find them.</p>
-      <p>The <span style="font-weight:900; color:#B9D053;">application video</span> informs the user on how to apply the given product.</p>
+      <p style="margin-top:7%;"> The five essential <span style="font-weight:900; color:#799400;">solutions</span> for consumers are tabbed for the ease of switching between the problems.</p>
+      <p>All <span style="font-weight:900; color:#799400;">product recommendations</span> are up-front, so the user doesn't have to scroll down to find them.</p>
+      <p>The <span style="font-weight:900; color:#799400;">application video</span> informs the user on how to apply the given product.</p>
     </div>
 
     <div class="col-lg-8">
@@ -668,9 +677,9 @@
 
     <div class="col-lg-4" style="margin-top:5%;">
       <h5>Explore Products</h5>
-      <p style="margin-top:7%;">This page is intended for <span style="font-weight:900; color:#B9D053;">professionals</span> who knows what they are looking for.</p>
-      <p>The <span style="font-weight:900; color:#B9D053;">Filter By</span> option of products is based on the user journey provided to us. It quickly helps the user break down the product selection to what they need.</p>
-      <p>An adequate <span style="font-weight:900; color:#B9D053;">description</span> is provided to better understand the product before viewing the page.</p>
+      <p style="margin-top:7%;">This page is intended for <span style="font-weight:900; color:#799400;">professionals</span> who knows what they are looking for.</p>
+      <p>The <span style="font-weight:900; color:#799400;">Filter By</span> option of products is based on the user journey provided to us. It quickly helps the user break down the product selection to what they need.</p>
+      <p>An adequate <span style="font-weight:900; color:#799400;">description</span> is provided to better understand the product before viewing the page.</p>
     </div>
 
     <div class="col-lg-12 mt-5">
@@ -679,8 +688,8 @@
 
     <div class="col-lg-4" style="margin-top:5%;">
       <h5>Product Page</h5>
-      <p style="margin-top:7%;">The features and application areas of the product are shown upfront. The <span style="font-weight:900; color:#B9D053;">tabs</span> describe the use-cases, benefits, and tech specifications of the product.</p>
-      <p>The <span style="font-weight:900; color:#B9D053;">Coverage Calculator</span> provides an idea of how much quantity a user should buy.</p>
+      <p style="margin-top:7%;">The features and application areas of the product are shown upfront. The <span style="font-weight:900; color:#799400;">tabs</span> describe the use-cases, benefits, and tech specifications of the product.</p>
+      <p>The <span style="font-weight:900; color:#799400;">Coverage Calculator</span> provides an idea of how much quantity a user should buy.</p>
     </div>
 
     <div class="col-lg-8">
@@ -692,28 +701,28 @@
     </div>
 
     <div class="col-lg-6 text-center">
-      <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="355" height="740" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FgWi2iEMP8QBtwMh0uzK2ch%2FROFF-High-Fidelity%3Fpage-id%3D122%253A3%26node-id%3D122%253A316%26viewport%3D265%252C48%252C0.36%26scaling%3Dscale-down%26hotspot-hints%3D0%26hide-ui=1" allowfullscreen></iframe>
+      <iframe width="400" height="750" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FgWi2iEMP8QBtwMh0uzK2ch%2FROFF-High-Fidelity%3Fpage-id%3D122%253A3%26node-id%3D122%253A316%26viewport%3D265%252C48%252C0.36%26scaling%3Dscale-down%26hotspot-hints%3D0%26hide-ui=1" allowfullscreen></iframe>
     </div>
 
     <div class="col-lg-4" style="margin-top:10%;">
       <h5>Mobile screens</h5>
-      <p style="margin-top:7%;">Pidilite wanted a <span style="font-weight:900; color:#B9D053;">responsive</span> design, so I also took it up to create the mobile designs.</p>
+      <p style="margin-top:7%;">Pidilite wanted a <span style="font-weight:900; color:#799400;">responsive</span> design, so I also took it up to create the mobile designs.</p>
       <p>The whole design is created so that no critical information was truncated for the user, keeping the original message intact.</p>
-      <p style="color: #B9D053; font-style: italic; font-weight: 500;">The screen is interactive; you may scroll to see the rest of the page.</p>
+      <p style="color: #799400; font-style: italic; font-weight: 500;">The screen is interactive; you may scroll to see the rest of the page.</p>
     </div>
 
     <div class="col-lg-4 text-center">
-      <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="355" height="740" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FgWi2iEMP8QBtwMh0uzK2ch%2FROFF-High-Fidelity%3Fpage-id%3D122%253A3%26node-id%3D122%253A4%26viewport%3D265%252C48%252C0.24%26scaling%3Dscale-down%26starting-point-node-id%3D122%253A4%26hotspot-hints%3D0%26hide-ui=1" allowfullscreen></iframe>
+      <iframe width="400" height="750" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FgWi2iEMP8QBtwMh0uzK2ch%2FROFF-High-Fidelity%3Fpage-id%3D122%253A3%26node-id%3D122%253A4%26viewport%3D265%252C48%252C0.24%26scaling%3Dscale-down%26starting-point-node-id%3D122%253A4%26hotspot-hints%3D0%26hide-ui=1" allowfullscreen></iframe>
       <p>No information has been truncated on this screen.</p>
     </div>
 
     <div class="col-lg-4 text-center">
-      <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="355" height="740" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FgWi2iEMP8QBtwMh0uzK2ch%2FROFF-High-Fidelity%3Fpage-id%3D122%253A3%26node-id%3D122%253A190%26viewport%3D265%252C48%252C0.24%26scaling%3Dscale-down%26starting-point-node-id%3D122%253A190%26hotspot-hints%3D0%26hide-ui=1" allowfullscreen></iframe>
+      <iframe width="400" height="750" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FgWi2iEMP8QBtwMh0uzK2ch%2FROFF-High-Fidelity%3Fpage-id%3D122%253A3%26node-id%3D122%253A190%26viewport%3D265%252C48%252C0.24%26scaling%3Dscale-down%26starting-point-node-id%3D122%253A190%26hotspot-hints%3D0%26hide-ui=1" allowfullscreen></iframe>
       <p>The Filter has been made into a button; try clicking on it.</p>
     </div>
 
     <div class="col-lg-4 text-center">
-      <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="355" height="740" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FgWi2iEMP8QBtwMh0uzK2ch%2FROFF-High-Fidelity%3Fpage-id%3D122%253A3%26node-id%3D122%253A244%26viewport%3D265%252C48%252C0.24%26scaling%3Dscale-down%26starting-point-node-id%3D122%253A244%26hotspot-hints%3D0%26hide-ui=1" allowfullscreen></iframe>
+      <iframe width="400" height="750" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FgWi2iEMP8QBtwMh0uzK2ch%2FROFF-High-Fidelity%3Fpage-id%3D122%253A3%26node-id%3D122%253A244%26viewport%3D265%252C48%252C0.24%26scaling%3Dscale-down%26starting-point-node-id%3D122%253A244%26hotspot-hints%3D0%26hide-ui=1" allowfullscreen></iframe>
       <p>The product page has a slightly different layout, but the content is intact.</p>
     </div>
 
@@ -725,7 +734,7 @@
   <div class="row h-100" style="margin-top: 5rem;">
     <div class="col-lg-12">
       <h3 class="subtitle">final</h3>
-      <h1 class="title">REVIEW</h1>
+      <h1 class="title">REFLECTIONS</h1>
     </div>
   </div>
 
@@ -751,6 +760,7 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/venobox/1.9.0/venobox.min.js"></script>
         <script src="https://cdn.jsdelivr.net/gh/dixonandmoe/rellax@master/rellax.min.js"></script>
         <script src="js/main.js"></script>
+        <script src="js/svg-inject.min.js"></script>
 
 
       </body>

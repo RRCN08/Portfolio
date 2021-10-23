@@ -4,17 +4,39 @@ $(document).ready(function() {
             $(document).scroll(function () {
               var $nav = $(".navbar-fixed-top");
               var offsetHeight = document.getElementById('NavStart').offsetHeight+$nav.height();
-              console.log(offsetHeight);
               $nav.toggleClass('scrolled', $(this).scrollTop() > offsetHeight);
             });
             });
 
             $("#footer").load("footer.html");
 
+            //Color Mode
+            const themeSwitch = document.querySelector('input');
+            $('#body').toggleClass(window.localStorage.toggled);
+
+            themeSwitch.addEventListener('change', () => {
+
+              if (window.localStorage.toggled != "dark-theme" ) {
+                    $('#body').toggleClass("dark-theme", true )
+                    window.localStorage.toggled = "dark-theme";
+                 } else {
+                    $('#body').toggleClass("dark-theme", false );
+                    window.localStorage.toggled = "";
+                 }
+            });
+
+            if ($('body').hasClass('dark-theme')) {
+                  $( '#checkBox' ).prop( "checked", true )
+                  $('#fas-id').toggleClass("rotate", false )
+            } else {
+                  $( '#checkBox' ).prop( "checked", false )
+                  $('#fas-id').toggleClass("rotate", true )
+            }
+
             //Venobox
             $('.venobox').venobox();
             $('.venobox_custom').venobox({
-                bgcolor    : '#111115',
+                bgcolor    : '#efefef',
                 spinner    : 'cube-grid'
             });
 
@@ -31,12 +53,12 @@ $(document).ready(function() {
             var pro = 0;
 
             //Easter Egg
-            $('#Hero').click(function() {
+            $('#prohit').click(function() {
               if (pro == 0) {
-                  $('#Hero > h1 > #prohit').text("PROHIT");
+                  $('#Hero > h1 > #prohit').text("PROHIT RAMACHANDRAN");
                   pro = 1;
               } else {
-                  $('#Hero > h1 > #prohit').text("ROHIT");
+                  $('#Hero > h1 > #prohit').text("ROHIT RAMACHANDRAN");
                   pro = 0;
               }
             });

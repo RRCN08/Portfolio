@@ -2,9 +2,9 @@ $colors: (
 primary: #2D283E,
 violet: #9183C1,
 bg: #111115,
-white: #ECF2FB,
+white: #EFEFEF,
 orange: #EC8539,
-roffgreen: #B9D053,
+roffgreen: #799400,
 ishan: #EB0029,
 black: #000000
 
@@ -13,6 +13,61 @@ black: #000000
 @function color($color-name) {
   @return map-get($colors, $color-name);
 }
+
+//Footer links
+#behance:hover{
+	content:url("elements/social/Behance_Colored.svg"); width: 35px;}
+
+#facebook:hover{
+	content:url("elements/social/Facebook_Colored.svg"); width: 35px;}
+
+#linkedin:hover{
+	content:url("elements/social/LinkedIn_Colored.svg"); width: 35px;}
+
+#instagram:hover{
+	content:url("elements/social/Instagram_Colored.svg"); width: 35px;}
+
+//Color Mode
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.switch {
+  width: 65px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.switch div {
+  position: relative;
+  display: block;
+  background: #eee;
+  width: 100%;
+  border-radius: 50px;
+  padding: 0 5px;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+
+.switch input {
+  display: none;
+}
+
+.slider {
+  transition: 0.4s;
+  border-radius: 34px;
+  height: 12px;
+  width: 12px;
+  display: inline-block;
+  position: relative;
+}
+
+input:checked + .slider {
+  transform: translateX(20px);
+}
+
 
 //Mixins
 @mixin tablet {
@@ -138,11 +193,12 @@ grammarly-btn {display:none!important;}
 }
 
 .carousel-item{
-    height: 650px;
+    width: 100%;
 }
 .carousel-item img{
-    height: 650px;
+    width: 100%;
 }
+
 
 .carousel-indicators li {
     width: 10px;
@@ -153,6 +209,12 @@ grammarly-btn {display:none!important;}
 .carousel-indicators {
   position: static;
   margin-top: 20px;
+}
+
+.carousel-inner-roff {
+    position: relative;
+    height: 790px;
+    overflow: visible;
 }
 
 .parent {
@@ -168,24 +230,23 @@ grammarly-btn {display:none!important;}
 }
 
 .VerticalLine {
-  border-right: 1px solid rgba(251, 251, 251, 0.4);
+  border-right: 1px solid;
 }
 
 .glass {
   backdrop-filter: blur(16px) saturate(101%);
   -webkit-backdrop-filter: blur(16px) saturate(101%);
-  background-color: rgba(74, 74, 77, 0.76);
   border-radius: 12px;
   border: 1px solid rgba(255, 255, 255, 0.125);
 }
 
 .orangeglass {
-  background: linear-gradient(175.94deg, rgba(236, 133, 57, 0.55) 1.37%, rgba(155, 106, 70, 0) 95.42%);
+  background: linear-gradient(180deg, #EC8539 0%, rgba(155, 106, 70, 0) 95.45%);
   border-radius: 10px;
 }
 
 .roffglass {
-  background: linear-gradient(175.94deg, rgba(185, 208, 83, 0.55) 13.62%, rgba(132, 146, 73, 0.176) 87.09%);
+  background: linear-gradient(180deg, #799400 0%, rgba(155,106,70,0) 95.45%);
   border-radius: 10px;
 }
 
@@ -196,8 +257,6 @@ grammarly-btn {display:none!important;}
     font-weight: bold;
     font-size: 3.3rem;
     text-align: left;
-
-    color: #ECF2FB;
 }
 
 .subtitle {
@@ -208,8 +267,7 @@ grammarly-btn {display:none!important;}
     font-size: 7.5rem;
     text-align: left;
     line-height: 0.01;
-
-    color: rgba(229, 229, 229, 0.12);
+    opacity: 0.12;
 
     @include phone {
       font-size: 4.5rem;
@@ -234,7 +292,6 @@ b, strong {
    text-align: right;
 }
 
-@media (min-width: 768px) {
 .navbar-brand.abs
     {
         position: absolute;
@@ -243,14 +300,13 @@ b, strong {
         transform: translateX(-50%);
         text-align: center;
     }
-}
 
 .navbar {
   background: rgba(0,0,0,0.0);
 }
 
 .nav-link{
-  color: #ECF2FB;
+  color: #EFEFEF;
 }
 
 .nav-link:hover{
@@ -259,12 +315,15 @@ b, strong {
   }
 
 .navbar-fixed-top.scrolled {
-  background: rgba(0,0,0,0.7) !important;
   transition: background-color 200ms linear;
 }
 
+.navbar-index.scrolled {
+  background: rgba(0,0,0,0.7);
+}
+
 .navbar-fixed-top.scrolled .nav-link {
-  color:#ECF2FB;
+  color:#EFEFEF;
 }
 
 //Ishan_Hover
@@ -361,6 +420,10 @@ b, strong {
   border-radius: 20px!important;
 }
 
+.hover-white {
+  color: #EFEFEF !important;
+}
+
 .hover-overlay {
   width: 100%;
   height: 100%;
@@ -372,11 +435,11 @@ b, strong {
 }
 
 .hover-1:hover {
-  color: #ECF2FB !important;
+  color: #EFEFEF !important;
 }
 
 .hover-1-description {
-  color: #ECF2FB;
+  color: #EFEFEF !important;
 }
 
 
@@ -433,11 +496,27 @@ b, strong {
 }
 //!Projects-Tab
 
+//rotate
+.rotate {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.nav-link-main:hover { opacity: 1;}
+
 //Dots
 .carousel-indicators button {
   width: 10px !important;
   height: 10px !important;
   border-radius: 100%;
+}
+
+.carousel-control-prev {
+    left: -75px !important;
+}
+
+.carousel-control-next {
+    right: -75px !important;
 }
 
 //Image-Carousel
@@ -492,7 +571,7 @@ b, strong {
 }
 
 .sl-roff {
-  color: #B9D053;
+  color: #799400;
 }
 
 .sl-genefit {
@@ -523,11 +602,6 @@ b, strong {
 }
 //!Scroll to Section
 
-//Footer
-#footer {
-  background: #0A0A0B;
-}
-
 .no-top-padding
 {padding-top: 0 !important}
 
@@ -544,19 +618,8 @@ b, strong {
   height: 100%;
 }
 
-.no-webp #Header {     background-image: url("../css/elements/circles.png"); }
-
-.webp #Header {     background-image: url("../css/elements/circles.webp"); }
-
-#Header {
-  @include tablet {
-    background-image: url("../css/elements/circlessans.png") !important;
-  }
-}
-
 #Projects {
   padding-bottom: 1vh;
-  background: #111115;
 }
 
 #Hero {
@@ -567,10 +630,6 @@ b, strong {
   @include phone {
     padding-top: 20vh;
   }
-}
-
-#NavStart {
-  color: #9183C1;
 }
 
 #face {
@@ -627,13 +686,11 @@ body {
       }
 
       a {
-        color: color(white);
         font-family: 'Freight Sans Pro', sans-serif;
         font-weight: 500;
         }
 
       .btn{
-        color: color(white);
         font-family: 'Freight Sans Pro', sans-serif;
         font-weight: 300;
         font-size: 1.25rem;
@@ -676,7 +733,7 @@ body {
     }
 
     .st-roff h3::after {
-      background: #B9D053;
+      background: #799400;
     }
 
     .st-nutanix h3::after {
@@ -706,24 +763,14 @@ body {
 
     .btn {
       position: relative;
-      border: 1px #ECF2FB solid;
       border-radius: 15px;
       cursor: pointer;
       transition: border 0.1s ease-in-out;
-      color: color(white);
       padding: 0.5rem 2rem;
     }
 
-    .btn:hover, .btn:focus {
-      border-color: color(violet);
-      background-color: color(violet);
+    .btn:hover {
       transition: all .35s;
-      color: color(white);
-    }
-
-    .btn-index:hover, .btn-index:focus {
-      border-color: color(primary);
-      background-color: color(primary);
     }
 
     .btn-genefit:hover, .btn-genefit:focus {
