@@ -21,9 +21,12 @@ if ($('body').hasClass('dark-theme')) {
       $('#fas-id').toggleClass("rotate", true )
 }
 
-$(document).ready(function() {
+$(window).load(function() {
+	$(".loader").delay(2000).fadeOut("slow");
+  $("#overlayer").delay(2000).fadeOut("slow");
+})
 
-            document.getElementsByTagName("html")[0].style.visibility = "visible";
+$(document).ready(function() {
 
             $(function () {
             $(document).scroll(function () {
