@@ -1,3 +1,26 @@
+//Color Mode
+const themeSwitch = document.querySelector('input');
+$('#body').toggleClass(window.localStorage.toggled);
+
+themeSwitch.addEventListener('change', () => {
+
+  if (window.localStorage.toggled != "dark-theme" ) {
+        $('#body').toggleClass("dark-theme", true )
+        window.localStorage.toggled = "dark-theme";
+     } else {
+        $('#body').toggleClass("dark-theme", false );
+        window.localStorage.toggled = "";
+     }
+});
+
+if ($('body').hasClass('dark-theme')) {
+      $( '#checkBox' ).prop( "checked", true )
+      $('#fas-id').toggleClass("rotate", false )
+} else {
+      $( '#checkBox' ).prop( "checked", false )
+      $('#fas-id').toggleClass("rotate", true )
+}
+
 $(document).ready(function() {
 
             $(function () {
@@ -9,29 +32,6 @@ $(document).ready(function() {
             });
 
             $("#footer").load("footer.html");
-
-            //Color Mode
-            const themeSwitch = document.querySelector('input');
-            $('#body').toggleClass(window.localStorage.toggled);
-
-            themeSwitch.addEventListener('change', () => {
-
-              if (window.localStorage.toggled != "dark-theme" ) {
-                    $('#body').toggleClass("dark-theme", true )
-                    window.localStorage.toggled = "dark-theme";
-                 } else {
-                    $('#body').toggleClass("dark-theme", false );
-                    window.localStorage.toggled = "";
-                 }
-            });
-
-            if ($('body').hasClass('dark-theme')) {
-                  $( '#checkBox' ).prop( "checked", true )
-                  $('#fas-id').toggleClass("rotate", false )
-            } else {
-                  $( '#checkBox' ).prop( "checked", false )
-                  $('#fas-id').toggleClass("rotate", true )
-            }
 
             //Venobox
             $('.venobox').venobox();
