@@ -23,8 +23,10 @@ darkModeToggle.addEventListener('change', () => {
 
   if(darkMode !== 'enabled') {
     enableDarkMode();
+    $('#fas-id').toggleClass("rotate", false);
   } else {
     disableDarkMode();
+    $('#fas-id').toggleClass("rotate", true);
   }
 
 });
