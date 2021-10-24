@@ -37,14 +37,14 @@
 
   <body id="body" class="no-top-padding light-theme">
 
-    <nav class="navbar navbar-expand-md navbar-dark smart-scroll navbar-fixed-top navbar-main">
+    <nav class="navbar navbar-expand-md navbar-dark smart-scroll navbar-fixed-top navbar-index">
         <div class="container-fluid">
-            <a class="navbar-brand navmode abs" href="#"><h2 style="font-weight: 700;">rrc.</h2></a>
-              <label class="switch switch-main ms-3">
-                <i class="fas fas-main fa-adjust" id="fas-id" style="margin-right: 5px;"></i>
+            <a class="navbar-brand abs" href="#"><h2 style="font-weight: 700;">rrc.</h2></a>
+              <label class="switch ms-3">
+                <i class="fas fa-adjust" style="color:#ECF2FB; margin-right: 5px;"></i>
                 <div>
                   <input type="checkbox" id="checkBox"  />
-                  <span class="slider slider-main round"></span>
+                  <span class="slider round" style="background-color: #2D283E;"></span>
                 </div>
               </label>
 
@@ -54,10 +54,10 @@
             <div class="navbar-collapse collapse" id="collapseNavbar">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
-                        <a class="nav-link nav-link-main" href="pages/about">ABOUT</a>
+                        <a class="nav-link" href="pages/about">ABOUT</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link nav-link-main" href="pages/resume">RESUME</a>
+                        <a class="nav-link" href="pages/resume">RESUME</a>
                     </li>
                 </ul>
             </div>
@@ -66,7 +66,7 @@
 
   <section class="Banner" id="Ishan-Banner">
 
-    <div class="container h-100">
+    <div class="container h-100" id="NavStart">
       <div class="row h-100">
         <div class="col-lg-8 align-self-center rellax" data-rellax-speed="7" style="color: #fbfbfb;">
           <h1 style="font-size:3.5rem;">Ishan Dhwani</h1>
@@ -344,7 +344,7 @@
         </div>
 
         <div class="col-lg-6 ps-5 mt-5" data-aos-once="true" data-aos="fade-left">
-        <img loading="lazy" width="30%"  src='src/images/Ishan/Logo.svg' />
+        <img loading="lazy" width="30%" onload="SVGInject(this)" src='src/images/Ishan/Logo.svg' />
         </div>
 
         <div class="col-lg-4 ps-5 mt-5 section-title st-roff">
@@ -352,7 +352,7 @@
         </div>
 
         <div class="col-lg-6 ps-5 mt-5" data-aos-once="true" data-aos="fade-left">
-        <img loading="lazy" width="100%"  src='src/images/Ishan/Font.svg' />
+        <img loading="lazy" width="100%" onload="SVGInject(this)" src='src/images/Ishan/Font.svg' />
         </div>
 
         <div class="col-lg-4 ps-5 mt-5 section-title st-roff">
@@ -360,7 +360,7 @@
         </div>
 
         <div class="col-lg-8 ps-5 mt-5" data-aos-once="true" data-aos="fade-left">
-        <img loading="lazy" width="70%"  src='src/images/Ishan/Colour.svg' />
+        <img loading="lazy" width="70%" onload="SVGInject(this)" src='src/images/Ishan/Colour.svg' />
         </div>
 
         <div class="col-lg-4 ps-5 mt-5 section-title st-roff">
@@ -368,7 +368,7 @@
         </div>
 
         <div class="col-lg-8 ps-5 mt-5 mb-3" data-aos-once="true" data-aos="fade-left">
-        <img loading="lazy" width="70%"  src='src/images/Ishan/UI.svg' />
+        <img loading="lazy" width="70%" onload="SVGInject(this)" src='src/images/Ishan/UI.svg' />
         </div>
 
         <div class="col-lg-9 mt-5">
