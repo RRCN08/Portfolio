@@ -31,6 +31,7 @@
   --bodytext: var(--black);
   --btncolor: var(--violet1light);
   --projectbackground: var(--white);
+  --title: var(--violet1dark);
   --footer: var(--footerlight);
 
   --behance: url("/css/elements/social/Behance_dark.svg");
@@ -45,6 +46,7 @@
   --ixda: url("/css/elements/resume/IxDA_dark.svg");
 
   --circles: url("/css/elements/circles.png");
+  --circleswebp: url("/css/elements/circles.webp");
   --circlessans: url("/css/elements/circlessans.png");
   --switch: var(--violet1dark);
   --slider: var(--white);
@@ -65,6 +67,7 @@
   --bodytext: var(--white);
   --btncolor: var(--violet2dark);
   --projectbackground: var(--black);
+  --title: var(--violet3light);
   --footer: var(--footerdark);
 
   --behance: url("/css/elements/social/Behance.svg");
@@ -79,6 +82,7 @@
   --ixda: url("/css/elements/resume/IxDA.svg");
 
   --circles: url("/css/elements/circles_dark.png");
+  --circleswebp: url("/css/elements/circles_dark.webp");
   --circlessans: url("/css/elements/circlessans_dark.png");
   --switch: var(--white);
   --slider: var(--violet1dark);
@@ -150,6 +154,10 @@ body {
   background-color: var(--projectbackground);
 }
 
+.projecttitle {
+  color: var(--title);
+}
+
 .resume_title {
   color: var(--resume_title);
 }
@@ -196,7 +204,9 @@ body {
   content:var(--wearablegraph);
 }
 
-#Header { background-image: var(--circles); }
+.no-webp #Header { background-image: var(--circles); }
+
+.webp #Header { background-image: var(--circleswebp); }
 
 #roffui {
   content: var(--roffui);

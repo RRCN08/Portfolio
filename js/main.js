@@ -87,4 +87,14 @@ $(document).ready(function() {
             $("div.progress").css("width", percentage + "%")
             })
 
+            //Modernizr
+
+              Modernizr.on('webp', function (result) {
+                if (result) {
+                  // supported
+                } else {
+                  // not-supported
+                }
+              });
+
           });
