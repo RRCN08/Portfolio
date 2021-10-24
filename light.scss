@@ -127,6 +127,12 @@ body {
   color: var(--white) !important;
 }
 
+.btn-white:hover {
+  border-color: var(--white) !important;
+  background-color: var(--white) !important;
+  color: var(--black) !important;
+}
+
 .btn-resume {
   border-color: var(--btnresume) !important;
   color: var(--btnresume) !important;
@@ -138,6 +144,11 @@ body {
 }
 
 .btn-index {
+  color: var(--white);
+  border: 1px var(--white) solid;
+}
+
+.btn-white {
   color: var(--white);
   border: 1px var(--white) solid;
 }
@@ -225,6 +236,10 @@ body {
 
 .svgtext {
   fill: var(--bodytext);
+}
+
+.violetwanderer {
+  fill: var(--title);
 }
 
 .carousel .carousel-indicators button {
