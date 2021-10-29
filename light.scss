@@ -58,6 +58,7 @@
   --wearablegraph: url("../src/images/GeneFit/Graph.svg");
   --roffui: url("../src/images/Roff/UI.svg");
   --verticalline: rgba(74, 74, 77, 0.3);
+  --navtoggler: url("/css/elements/hamburger.svg");
 }
 
 .dark-theme {
@@ -93,6 +94,7 @@
   --svgia: url("../src/images/GeneFit/IA_dark.svg");
   --wearablegraph: url("../src/images/GeneFit/Graph_dark.svg");
   --roffui: url("../src/images/Roff/UI_dark.svg");
+  --navtoggler: url("/css/elements/hamburger_dark.svg");
   --verticalline: rgba(251, 251, 251, 0.4);
 }
 
@@ -107,6 +109,14 @@
 .nav-link-main.active {pointer-events: none; opacity: 1;}
 
 .navbar-brand:hover { color: var(--violet2dark) !important; }
+
+.navbar-toggler-icon {
+    background-image: url("/css/elements/hamburger_dark.svg") !important;
+}
+
+.navbar-main .navbar-toggler-icon {
+    background-image: var(--navtoggler) !important;
+}
 
 #Header { background-color: var(--header); }
 
