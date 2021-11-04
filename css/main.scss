@@ -34,6 +34,10 @@ black: #000000
   padding: 0;
 }
 
+p {
+  width: clamp (45ch, 50%, 75ch);
+}
+
 .switch {
   width: 65px;
   display: flex;
