@@ -255,6 +255,10 @@ body {
   stroke: var(--bodybg);
 }
 
+.svgstroke {
+  stroke: var(--bodytext);
+}
+
 .violetwanderer {
   fill: var(--title);
 }
@@ -269,3 +273,7 @@ body {
 .VerticalLine {
 border-color: var(--verticalline);
 }
+
+.tooltip-inner {
+    color: var(--bodybg);
+    background-color: var(--bodytext);}

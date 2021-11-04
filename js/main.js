@@ -17,6 +17,13 @@ $(document).ready(function() {
                 spinner    : 'cube-grid'
             });
 
+            //Tooltop
+            $(function () {
+              $('[data-toggle="tooltip-resume"]').tooltip({
+                placement: 'bottom'
+              })
+            })
+
 
             //Rellax Parallax Effect
             var rellax = new Rellax('.rellax');

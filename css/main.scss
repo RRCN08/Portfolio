@@ -874,3 +874,8 @@ body {
 cloudflare-app {
   background-color: rgba(65, 65, 65, 0.9);
 }
+
+//Tooltip
+.bs-tooltip-auto[data-popper-placement^=bottom] .tooltip-arrow::before, .bs-tooltip-bottom .tooltip-arrow::before {
+    border-bottom-color:  rgba(251, 251, 251, 0);
+}
