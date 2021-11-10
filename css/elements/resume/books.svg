@@ -4,7 +4,7 @@
 	 viewBox="0 0 192 192" style="enable-background:new 0 0 192 192;" xml:space="preserve">
 <style type="text/css">
 	.st0books{fill:none;}
-	.svgstroke{fill:none;stroke-width:12;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:3;}
+	.svgstroke{stroke-width:12;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:3;}
 </style>
 <rect class="st0books" width="192" height="192"/>
 <path class="svgstroke" d="M36,30h24c3.3,0,6,2.7,6,6v120c0,3.3-2.7,6-6,6H36c-3.3,0-6-2.7-6-6V36C30,32.7,32.7,30,36,30z"/>
