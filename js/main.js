@@ -1,9 +1,5 @@
 $(document).ready(function() {
 
-            $("body").children().each(function() {
-                $(this).html($(this).html().replace(/&#8232;/g," "));
-            });
-
             $(function () {
             $(document).scroll(function () {
               var $nav = $(".navbar-fixed-top");
