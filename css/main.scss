@@ -16,114 +16,8 @@ black: #000000
 
 //Font
 //@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;700;900&display=swap');
+@import url("https://use.typekit.net/sju3aga.css");
 
-@font-face {
-    font-family: 'Freight Sans Pro';
-    src: url('/src/fonts/FreightSansPro-Light.woff2') format('woff2'),
-        url('/src/fonts/FreightSansPro-Light.woff') format('woff');
-    font-weight: 300;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Freight Sans Pro';
-    src: url('/src/fonts/FreightSansPro-Semibold.woff2') format('woff2'),
-        url('/src/fonts/FreightSansPro-Semibold.woff') format('woff');
-    font-weight: 600;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Freight Sans Pro';
-    src: url('/src/fonts/FreightSansPro-SemiboldItalic.woff2') format('woff2'),
-        url('/src/fonts/FreightSansPro-SemiboldItalic.woff') format('woff');
-    font-weight: 600;
-    font-style: italic;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Freight Sans Pro';
-    src: url('/src/fonts/FreightSansPro-Medium.woff2') format('woff2'),
-        url('/src/fonts/FreightSansPro-Medium.woff') format('woff');
-    font-weight: 500;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Freight Sans Pro';
-    src: url('/src/fonts/FreightSansPro-LightItalic.woff2') format('woff2'),
-        url('/src/fonts/FreightSansPro-LightItalic.woff') format('woff');
-    font-weight: 300;
-    font-style: italic;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Freight Sans Pro';
-    src: url('/src/fonts/FreightSansPro-MediumItalic.woff2') format('woff2'),
-        url('/src/fonts/FreightSansPro-MediumItalic.woff') format('woff');
-    font-weight: 500;
-    font-style: italic;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Freight Sans Pro';
-    src: url('/src/fonts/FreightSansPro-BookItalic.woff2') format('woff2'),
-        url('/src/fonts/FreightSansPro-BookItalic.woff') format('woff');
-    font-weight: normal;
-    font-style: italic;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Freight Sans Pro';
-    src: url('/src/fonts/FreightSansPro-Bold.woff2') format('woff2'),
-        url('/src/fonts/FreightSansPro-Bold.woff') format('woff');
-    font-weight: bold;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Freight Sans Pro';
-    src: url('/src/fonts/FreightSansPro-Book.woff2') format('woff2'),
-        url('/src/fonts/FreightSansPro-Book.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Freight Sans Pro';
-    src: url('/src/fonts/FreightSansPro-BoldItalic.woff2') format('woff2'),
-        url('/src/fonts/FreightSansPro-BoldItalic.woff') format('woff');
-    font-weight: bold;
-    font-style: italic;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Freight Sans Pro';
-    src: url('/src/fonts/FreightSansPro-BlackItalic.woff2') format('woff2'),
-        url('/src/fonts/FreightSansPro-BlackItalic.woff') format('woff');
-    font-weight: 900;
-    font-style: italic;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Freight Sans Pro';
-    src: url('/src/fonts/FreightSansPro-Black.woff2') format('woff2'),
-        url('/src/fonts/FreightSansPro-Black.woff') format('woff');
-    font-weight: 900;
-    font-style: normal;
-    font-display: swap;
-}
 
 //Footer links
 #behance:hover{
@@ -143,7 +37,7 @@ black: #000000
 * {
   margin: 0;
   padding: 0;
-  font-family: 'Freight Sans Pro', sans-serif;
+  font-family: 'freight-sans-pro', sans-serif;
 }
 
 p {
@@ -260,7 +154,7 @@ grammarly-btn {display:none!important;}
 
 .title {
 
-    font-family: Freight Sans Pro;
+    font-family: freight-sans-pro;
     font-style: normal;
     font-weight: bold;
     font-size: calc(1.375rem + 2.5vw);
@@ -269,7 +163,7 @@ grammarly-btn {display:none!important;}
 
 .subtitle {
     position: absolute;
-    font-family: Freight Sans Pro;
+    font-family: freight-sans-pro;
     font-style: normal;
     font-weight: bold;
     font-size: calc(1.375rem + 5.5vw);
@@ -679,7 +573,7 @@ body {
     background-repeat: no-repeat;
     background-size: auto;
     color: color(white);
-    font-family: 'Freight Sans Pro', sans-serif;
+    font-family: 'freight-sans-pro', sans-serif;
     font-weight: normal;
     font-size: 1.1rem;
     letter-spacing: 0.02rem;
@@ -690,23 +584,23 @@ body {
       }
 
       a {
-        font-family: 'Freight Sans Pro', sans-serif;
+        font-family: 'freight-sans-pro', sans-serif;
         font-weight: 500;
         }
 
       .btn{
-        font-family: 'Freight Sans Pro', sans-serif;
+        font-family: 'freight-sans-pro', sans-serif;
         font-weight: 300;
         font-size: 1.25rem;
         }
 
       h1 {
-         font-family: 'Freight Sans Pro', sans-serif;
+         font-family: 'freight-sans-pro', sans-serif;
          font-weight: 900;
         }
 
       h2, h3, h4, h5, h6 {
-        font-family: 'Freight Sans Pro', sans-serif;
+        font-family: 'freight-sans-pro', sans-serif;
         font-weight: bold;
       }
 
@@ -871,7 +765,7 @@ body {
 }
 
 .font-weight-light {
-  font-family: 'Freight Sans Pro';
+  font-family: 'freight-sans-pro';
   font-weight: 300;
 }
 
