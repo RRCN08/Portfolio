@@ -40,6 +40,7 @@
   --instagram: url("/css/elements/social/Instagram_dark.svg");
 
   --nutanix: url("/css/elements/resume/Nutanix_dark.svg");
+  --microsoft: url("/css/elements/resume/MS_dark.svg");
   --io: url("/css/elements/resume/IO_dark.svg");
   --swc: url("/css/elements/resume/SWC_dark.svg");
   --techniche: url("/css/elements/resume/Techniche_dark.svg");
@@ -77,6 +78,7 @@
   --instagram: url("/css/elements/social/Instagram.svg");
 
   --nutanix: url("/css/elements/resume/Nutanix.svg");
+  --microsoft: url("/css/elements/resume/MS.svg");
   --io: url("/css/elements/resume/IO.svg");
   --swc: url("/css/elements/resume/SWC.svg");
   --techniche: url("/css/elements/resume/Techniche.svg");
@@ -214,6 +216,9 @@ body {
 
 #Nutanix{
 	content:var(--nutanix); height: 100%;}
+
+#Microsoft{
+    content:var(--microsoft); height: 100%;}
 
 #Techniche{
 	content:var(--techniche); height: 100%;}
