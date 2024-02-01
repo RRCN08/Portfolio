@@ -8,8 +8,6 @@ $(document).ready(function() {
             });
             });
 
-            $("#footer").load("footer.html"); 
-
             //Venobox
             $('.venobox').venobox();
             $('.venobox_custom').venobox({

@@ -1,27 +1,30 @@
+---
+layout: default
+---
+
 <!doctype html>
 <html lang="en">
   <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Portfolio of Rohit Ramachandran, Design student at IIT Guwahati."/>
-    <meta name="keywords" content="rohit,design,portfolio,ramachandran,internship"/>
+    <meta name="description" content="Portfolio of Rohit Ramachandran, Product designer at Microsoft."/>
+    <meta name="keywords" content="rohit,design,portfolio,ramachandran,internship,microsoft,iitg"/>
     <meta name="author" content="Rohit Ramachandran"/>
     <meta property="og:type" content="Portfolio">
     <meta name="image" property="og:image" content="css/elements/hotlink-ok/Snapshot.jpg">
 
     <link rel="icon" type="image/svg" href="css/elements/logo.png">
-    <link rel="prefetch" href="/css/elements/circles_dark.webp" />
-    <link rel="prefetch" href="/css/elements/circles.webp" />
     <title>Portfolio | Rohit Ramachandran</title>
     <base href="./" >
 
     <!-- CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
     <script src="https://kit.fontawesome.com/b562f2b867.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="css/main.min.css">
+    <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/navbar.css">
-    <link rel="stylesheet" href="light.min.css">
+    <link rel="stylesheet" href="css/darkmode.css">
+    <link rel="stylesheet" href="css/circles.css">
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-QYF8PYPF8W"></script>
@@ -34,69 +37,46 @@
     </script>
   </head>
 
+  <!-- Navbar -->
+  {% include navbar.html %}
+  <!-- Navbar -->
 
   <body class="light-theme">
-
-    <nav class="navbar navbar-expand-md navbar-dark smart-scroll navbar-fixed-top navbar-index">
-        <div class="container-fluid">
-            <a class="navbar-brand abs" href="#"><h2 style="font-weight: 700;">rrc.</h2></a>
-              <label class="switch ms-3">
-                <i class="fas fa-adjust" style="color:#ECF2FB; margin-right: 5px;"></i>
-                <div>
-                  <input type="checkbox" id="checkBox"  />
-                  <span class="slider round" style="background-color: #2D283E;"></span>
-                </div>
-              </label>
-
-            <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#collapseNavbar">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="navbar-collapse collapse" id="collapseNavbar">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href=#Projects>PROJECTS</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="pages/about">ABOUT</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="pages/resume">RESUME</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
+    
 
     <div class="parent">
+      
       <div class="container-fluid h-100 NavStart" id="NavStart">
         <div class="row child" id="Header">
           <div class="col-lg-1"></div>
-          <div class="col-lg-8 align-self-center rellax" data-rellax-speed="7" id="Hero">
-              <h1 class="mt-5" style="color: #ECF2FB; letter-spacing: 0.085em; font-weight: bold; font-size: calc(1.375rem + 2.5vw)">PORTFOLIO <span style="font-weight: 300;">OF</span></h1>
-              <h1 id ="name" style="letter-spacing: 0.085em; font-weight: bold; font-size: calc(1.375rem + 2.5vw);">ROHIT RAMACHANDRAN</h1>
-              <p class="mt-3" style="color: #ECF2FB; font-weight: 300; font-size: calc(1rem + 0.5vw);">Designer, currently Fluenting his way at Microsoft Studio +91</p>
+          <div class="col-lg-10 align-self-center text-center" id="Hero">
+              <div class="mt-5" style="font-weight: 300; font-size: 28px;">Portfolio of <span style="font-weight: 400;">Rohit Ramachandran</span></div>
+              <p class="mt-3" style="font-weight: 300; font-size: 18px;">Product designer at Studio<sup>+91</sup> in Microsoft.</p>
               <div>
-                <a class="btn btn-index js-scroll-trigger mt-3 me-2" id="projects" href=#Projects>view projects</a>
-                <a class="btn btn-index js-scroll-trigger mt-3 me-2" id="resume" href="pages/resume">&nbsp;view resume&nbsp;</a>
+                <a class="btn btn-index js-scroll-trigger mt-3 me-2" id="projects" href=#Projects>My work</a>
+                <a class="btn btn-index js-scroll-trigger mt-3 me-2" id="resume" href="pages/resume">Resume</a>
               </div>
         </div>
+        <div class="col-lg-1"></div>
       </div>
       </div>
+      
 
     <div class="container-fluid child" id="Projects">
 
-      <div class="row mt-5 justify-content-center">
+      <div class="row">
 
-        <div class="col-lg-12" style="margin-top:5%">
-            <h1 class="text-center">PROJECTS</h1>
-            <p class="mb-5 text-center">A collection of my best work so far. Feel free to explore.</p>
+        <div class="col-lg-2"></div>
+        <div class="col-lg-10">
+          <div class="mt-5" style="font-weight: 300; font-size: 28px;">My work</div>
+            <p class="mt-2 mb-5" style="font-weight: 300; font-size: 18px;">A collection of my best so far. Feel free to explore.</p>
+          </div>
+
       </div>
 
-    </div>
+    <div class="row justify-content-center" style="margin-bottom: 12px;">
 
-    <div class="row justify-content-center" style="margin-bottom:5%">
-
-      <div class="col-lg-5 mt-3">
+      <div class="col-lg-4 mt-3">
         <div class="hover hover-1" style="color: #3C3E40;">
           <a class="link" href="projects/genefit">
             <picture>
@@ -114,7 +94,7 @@
         </div>
       </div>
 
-      <div class="col-lg-5 mt-3">
+      <div class="col-lg-4 mt-3">
         <div class="hover hover-white hover-1"> <a class="link" href="projects/ishan">
           <picture>
             <source type="image/webp" srcset="src/images/bg/IshanDhvani.webp">
@@ -130,8 +110,11 @@
           </div>
         </div>
       </div>
+    </div>
 
-      <div class="col-lg-5 mt-3">
+    <div class="row justify-content-center" style="margin-bottom:5%">
+
+      <div class="col-lg-4 mt-3">
         <div class="hover hover-1" style="color: #3C3E40;"><a class="link" href="projects/roff"> <picture>
           <source type="image/webp" srcset="src/images/bg/Roff.webp">
           <source type="image/jpeg" srcset="src/images/bg/Roff.jpg">
@@ -146,7 +129,7 @@
         </div>
       </div>
 
-      <div class="col-lg-5 mt-3">
+      <div class="col-lg-4 mt-3">
         <div class="hover hover-white hover-1"> <a class="link" href="projects/nutanix">
           <picture>
             <source type="image/webp" srcset="src/images/bg/Nutanix.webp">
@@ -167,19 +150,32 @@
     </div>
 
     <!-- Footer -->
-    <div id="footer" style="margin-top: -3rem!important;"></div>
+    <div style="margin-top: -3rem!important;">{% include footer.html %}</div>
     <!-- Footer -->
+
+    <div class="circles">
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+		</div>
 
   </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="js/darkmode.js"></script>
-    <script src="https://cdn.jsdelivr.net/gh/dixonandmoe/rellax@master/rellax.min.js"></script>
     <script src="js/modernizr-custom.js"></script>
     <script src="js/main.js"></script>
-
-
 
 
   </body>
