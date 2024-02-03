@@ -34,17 +34,6 @@ $(document).ready(function() {
 
             var pro = 0;
 
-            //Easter Egg
-            $('#prohit').click(function() {
-              if (pro == 0) {
-                  $('#Hero > h1 > #prohit').text("PROHIT RAMACHANDRAN");
-                  pro = 1;
-              } else {
-                  $('#Hero > h1 > #prohit').text("ROHIT RAMACHANDRAN");
-                  pro = 0;
-              }
-            });
-
 
             // Add smooth scrolling to all links
             $("#projects").click(function() {
