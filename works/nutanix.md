@@ -1,10 +1,11 @@
 ---
 layout: project
 title: Nutanix Prism
-date: 2023-09-26
-image: /src/images/Nutanix/Banner.jpg
+image: /src/images/nutanix/Banner.jpg
 desc: Dashboard design for troubleshooting and monitoring server clusters in a large-scale enterprise.
-primary_color: "#034EA2" 
+primary_color: "#4ea2ff"
+role: UX, Research
+duration: 2 months 
 ---
 
 ### The challenge
@@ -17,7 +18,7 @@ During my two months over there, I worked on their flagship product, Prism, an e
 
 
 
-##### To create a dashboard and redesign a section to give IT administrators more visibility into their entire IT ecosystem beyond just infrastructure.
+##### TLDR, to create a dashboard and redesign a section to give IT administrators more visibility into their entire IT ecosystem beyond just infrastructure.
 
 <div class="mt-5"></div>
 

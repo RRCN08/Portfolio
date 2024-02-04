@@ -20,8 +20,8 @@
             <script src="https://kit.fontawesome.com/b562f2b867.js" crossorigin="anonymous"></script>
             <link rel="stylesheet" href="css/main.min.css">
             <link rel="stylesheet" href="css/navbar.css">
-            <link rel="stylesheet" href="css/venobox.css">
             <link rel="stylesheet" href="css/darkmode.min.css">
+            <link rel="stylesheet" href="css/venobox.css">
 
             <!-- Global site tag (gtag.js) - Google Analytics -->
             <script async src="https://www.googletagmanager.com/gtag/js?id=G-QYF8PYPF8W"></script>
@@ -56,21 +56,30 @@
   {% include navbar.html %}
   <!-- Navbar -->
 
-    <body id="body" class="no-top-padding light-theme">
+    <body class="no-top-padding light-theme">
 
         <section class="Banner">
-            <div class="container h-100" id="NavStart">
-                <div class="row h-100">
-                    <div class="col-lg-8 mx-auto align-self-center">
+            <div class="container h-100 NavStart">
+                <div class="row h-100" style="justify-content: center; align-content: center;">
+                    <div class="col-lg-8 mx-auto mb-5 align-self-center">
                         <h3>{{ page.title }}</h3>
                         <span class="mt-2">{{ page.desc }}</h5>
+                    </div>
+                    <div class="col-lg-8 mx-auto">
+                        <div class="row" style="    justify-content: center; align-content: space-around;">
+                            <div class="col-md-3">
+                                <h6>Role</h6>
+                                <span>{{ page.role }}</span>
+                            </div>
+                            <div class="col-md-3">
+                                <h6>Duration</h6>
+                                <span>{{ page.duration }}</span>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
-    
-        
-          </section>
 
           <section class="container mt-5 project-details">
             <div class="row">
@@ -86,5 +95,13 @@
     <div style="margin-top: -3rem!important;">{% include footer.html %}</div>
     <!-- Footer -->
 
-    </body>
-    </html>
+  </div>
+  
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="js/darkmode.js"></script>
+    <script src="js/modernizr-custom.js"></script>
+    <script src="js/main.js"></script>
+
+
+  </body>
+</html>

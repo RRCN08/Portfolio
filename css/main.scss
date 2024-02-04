@@ -48,16 +48,15 @@ p {
   width: 65px;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-evenly;
 }
 
 .switch div {
   position: relative;
   display: block;
   background: #eee;
-  width: 100%;
+  width: 50%;
   border-radius: 50px;
-  padding: 0 5px;
   box-sizing: border-box;
   cursor: pointer;
 }

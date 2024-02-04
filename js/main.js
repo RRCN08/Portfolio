@@ -1,12 +1,26 @@
 $(document).ready(function() {
 
             $(function () {
-            $(document).scroll(function () {
-              var $nav = $(".navbar-fixed-top");
-              var offsetHeight = document.getElementById('NavStart').offsetHeight+$nav.height();
-              $nav.toggleClass('scrolled', $(this).scrollTop() > offsetHeight);
-            });
-            });
+              $(document).scroll(function () {
+                  var $nav = $(".navbar-fixed-top");
+                  var $navStart = $(".NavStart");
+                  var offsetHeight = $navStart[0].offsetHeight + $nav.height();
+                  
+                  var isScrolled = $(this).scrollTop() > offsetHeight;
+                  
+                  $nav.toggleClass('scrolled', isScrolled);
+                  
+                  // Check if the #NavStart element has the class 'scrolled'
+                  if (isScrolled) {
+                      // Change the src attribute of the image
+                      $('#Signature').attr('src', 'css/elements/signature_dark.svg');
+                  } else {
+                      // Revert the src attribute of the image
+                      $('#Signature').attr('src', 'css/elements/signature.svg');
+                  }
+              });
+          });
+            
 
             //Venobox
             $('.venobox').venobox();
