@@ -23,11 +23,12 @@ $(document).ready(function() {
             
 
             //Venobox
-            $('.venobox').venobox();
-            $('.venobox_custom').venobox({
-                bgcolor    : '#efefef',
-                spinner    : 'cube-grid'
-            });
+            new VenoBox({
+              numeration: true,
+              infinigall: true,
+              bgcolor: '#EFEFEF',
+              spinner: 'swing'
+          });
 
             //Tooltop
             $(function () {
