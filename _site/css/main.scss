@@ -189,14 +189,20 @@ b, strong {
    text-align: right;
 }
 
-.navbar-brand.abs
+.navbar-brand.abs {
+  position: absolute;
+  width: auto;
+  left: 2%;
+  text-align: left; }
+
+ /* .navbar-brand.abs
     {
         position: absolute;
         width: auto;
         left: 50%;
         transform: translateX(-50%);
         text-align: center;
-    }
+    } */
 
 .navbar {
   background: rgba(0,0,0,0.0);
