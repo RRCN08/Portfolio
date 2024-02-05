@@ -1,2 +1,7 @@
 theme: null
 permalink: /:title/
+plugins:
+  - jekyll-postcss
+
+postcss:
+  cache: false

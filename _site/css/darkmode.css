@@ -42,7 +42,6 @@
   --svgia: url("../src/images/GeneFit/IA.svg");
   --wearablegraph: url("../src/images/GeneFit/Graph.svg");
   --roffui: url("../src/images/Roff/UI.svg");
-  --signature: url("/css/elements/signature.svg");
   --verticalline: rgba(74, 74, 77, 0.3);
   --navtoggler: url("/css/elements/hamburger.svg");
 }
@@ -60,7 +59,6 @@
   --facebook: url("/css/elements/social/Facebook.svg");
   --instagram: url("/css/elements/social/Instagram.svg");
   --nutanix: url("/css/elements/resume/Nutanix.svg");
-  --signature: url("/css/elements/signature_dark.svg");
   --microsoft: url("/css/elements/resume/MS.svg");
   --io: url("/css/elements/resume/IO.svg");
   --swc: url("/css/elements/resume/SWC.svg");
@@ -87,24 +85,27 @@
   background-color: var(--bodytext);
 }
 
-.slider {
-  background-color: var(--bodybg);
-}
-
 .navmode, .fas-main {
   color: var(--switch) !important;
 }
 
+#NavStart {
+  color: var(--black);
+}
+
 .nav-link {
-  color: var(--bodytext);
+  color: var(--black);
 }
 
-#Signature {
-  content: var(--signature);
+.switch {
+  color: var(--black);
 }
-
 .switch div {
-  background-color: var(--bodytext);
+  background-color: var(--black);
+}
+
+.slider {
+  background-color: var(--white);
 }
 
 .nav-link-main {
@@ -295,11 +296,11 @@ body {
 }
 
 .carousel .carousel-indicators button {
-  background-color: var(--bodytext) !important;
+  background-color: var(--white) !important;
 }
 
 .carousel-control-next, .carousel-control-prev {
-  color: var(--bodytext) !important;
+  color: var(--white) !important;
 }
 
 .VerticalLine {

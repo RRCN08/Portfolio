@@ -1,3 +1,9 @@
+---
+---
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 @import url("https://use.typekit.net/sju3aga.css");
 #behance:hover {
   content: url("elements/social/Behance_Colored.svg");
@@ -34,16 +40,15 @@ p {
   width: 65px;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-evenly;
 }
 
 .switch div {
   position: relative;
   display: block;
   background: #eee;
-  width: 100%;
+  width: 50%;
   border-radius: 50px;
-  padding: 0 5px;
   box-sizing: border-box;
   cursor: pointer;
 }
@@ -168,22 +173,31 @@ b, strong {
 .navbar-brand.abs {
   position: absolute;
   width: auto;
-  left: 50%;
-  transform: translateX(-50%);
-  text-align: center;
+  left: 2%;
+  text-align: left;
 }
 
+/* .navbar-brand.abs
+   {
+       position: absolute;
+       width: auto;
+       left: 50%;
+       transform: translateX(-50%);
+       text-align: center;
+   } */
 .navbar {
   background: rgba(0, 0, 0, 0);
 }
 
 .nav-link {
   color: #EFEFEF;
+  font-weight: 200;
 }
 
 .nav-link:hover {
   transition: all 0.35s;
   color: #2D283E;
+  opacity: 50%;
 }
 
 .navbar-fixed-top.scrolled {
@@ -196,6 +210,10 @@ b, strong {
 
 .navbar-fixed-top.scrolled .nav-link {
   color: #EFEFEF;
+}
+
+.logo {
+  width: 180px;
 }
 
 #soundsslike {
@@ -358,22 +376,19 @@ b, strong {
 }
 
 .carousel-control-prev {
-  left: -75px !important;
+  left: +5px !important;
+  bottom: 45px !important;
 }
 
 .carousel-control-next {
-  right: -75px !important;
+  right: +5px !important;
+  bottom: 45px !important;
 }
 
 .carousel-image {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
-}
-
-.carousel {
-  border-radius: 2vh 2vh 2vh 2vh;
-  overflow: hidden;
 }
 
 .carousel-item:after {
@@ -448,7 +463,6 @@ b, strong {
 }
 
 #Header {
-  background-color: #9183C1;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -456,10 +470,6 @@ b, strong {
   z-index: 99;
   top: 0;
   height: 100%;
-}
-
-#Projects {
-  padding-bottom: 1vh;
 }
 
 @media (max-width: 992px) {
@@ -507,6 +517,10 @@ html {
   scroll-behavior: smooth;
 }
 
+.project-description h3 {
+  font-weight: 300;
+}
+
 body {
   background-color: #111115;
   background-repeat: no-repeat;
@@ -527,7 +541,7 @@ body a {
   font-weight: 500;
 }
 body .btn {
-  font-family: "freight-sans-pro-lights", sans-serif;
+  font-family: "freight-sans-pro", sans-serif;
   font-weight: 300;
   font-size: 1.25rem;
 }
@@ -537,7 +551,7 @@ body h1 {
 }
 body h2, body h3, body h4, body h5, body h6 {
   font-family: "freight-sans-pro", sans-serif;
-  font-weight: bold;
+  font-weight: 500;
 }
 body h6 {
   font-size: 1.1rem;
@@ -622,16 +636,6 @@ body .btn-ishan:hover, body .btn-ishan:focus {
   }
 }
 
-.Banner {
-  height: 55vh;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
-  background-image: url("{{ site.baseurl }}{{ page.image }}");
-  text-align: center;
-}
-
 #Ishan-Banner {
   background-image: url("../src/images/bg/IshanDhvani.jpg");
   height: 35vh !important;
@@ -676,7 +680,7 @@ body .btn-ishan:hover, body .btn-ishan:focus {
 }
 
 .font-weight-light {
-  font-family: "freight-sans-pro-lights";
+  font-family: "freight-sans-pro";
   font-weight: 300;
 }
 
@@ -686,4 +690,4 @@ cloudflare-app {
 
 .bs-tooltip-auto[data-popper-placement^=bottom] .tooltip-arrow::before, .bs-tooltip-bottom .tooltip-arrow::before {
   border-bottom-color: rgba(251, 251, 251, 0);
-}
+}/*# sourceMappingURL=main.css.map */
