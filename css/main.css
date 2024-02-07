@@ -32,9 +32,29 @@
   font-family: "freight-sans-pro", sans-serif;
 }
 
+.full-width {
+  width: 70vw;
+  position: relative;
+  margin-left: -35vw;
+  left: 50%;
+}
+
 p {
   width: clamp 45ch, 50%, 75ch;
 }
+
+.project-description h3 {
+  margin-top: 3rem!important;
+}
+
+.project-description h5 {
+  margin-top: 1rem!important;
+}
+
+.project-description h6 {
+  margin-top: 2rem!important;
+}
+
 
 .switch {
   width: 65px;
@@ -105,9 +125,26 @@ grammarly-btn {
   height: 100vh;
 }
 
+.vertical-line-container {
+  display: flex;
+  margin-bottom: 1.5rem!important;
+  margin-top: 1.5rem!important;
+}
+
+.vertical-line-container p {
+  margin-top: 4px;
+  margin-bottom: 4px;
+}
+
+.vertical-line {
+  margin-right: 10px;
+  border-radius: 3px;
+}
+
 .vl {
-  border-left: 4px solid #EC8539;
-  height: 150px;
+  min-height: 100px; /* Ensure the line spans the full height of the container */
+  margin-right: 10px; /* Adjust spacing between line and text */
+  display: inline-block;
   border-radius: 3px;
 }
 
@@ -614,6 +651,11 @@ body .btn-genefit:hover, body .btn-genefit:focus {
 body .btn-roff:hover, body .btn-roff:focus {
   border-color: #799400;
   background-color: #799400;
+}
+body .btn-viva:hover, body .btn-viva:focus {
+  border-color: #3B5DB0;
+  background-color: #3B5DB0;
+  color: var(--white);
 }
 body .btn-ishan:hover, body .btn-ishan:focus {
   border-color: #DB2C47;

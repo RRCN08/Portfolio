@@ -44,7 +44,7 @@
                     text-align: center;
                 }
 
-                .project-description h5 {
+                .project-description h4 {
                     color: #3B5DB0;
                     }
             </style>
@@ -108,7 +108,7 @@
             </div>
         </section>
 
-          <section class="container mt-5 project-details">
+          <section class="container project-details">
             <div class="row">
                 <div class="col-lg-8 mx-auto">
                     <div class="project-description">
@@ -118,11 +118,16 @@
 
 <p>Partitions helps an administrator create a sub-workspace with support for targeted analyses and methods of sectioning off parts of their organisation for analysts to work on. We wanted to enable them to create such partitions in the most easy and effective way possible.</p>
 
-<div class="mt-5"></div>
+<p><a class="venobox" href="/src/images/partitions/homepage.png">
+  <img src="/src/images/partitions/homepage.png" alt="Partitions homepage" class="img-fluid mt-2 mb-2" /></a></p>
 
-<h5 id="tldr-to-enable-administrators-to-create-partitions-in-viva-insights-while-adhering-to-privacy-standards-and-platform-constraints">TLDR, to enable administrators to create partitions in Viva Insights while adhering to privacy standards and platform constraints.</h5>
+<p>As of Feb 2024, Partitions is now <b>generally available</b>, and it has helped unblock the migration of our strategic and active customers (1.5+ mn licenses) to the updated platform. At the time of writing, <b>70+ tenants</b> are using Partitions and have created more than <b>125 partitions</b>.</p>
 
-<div class="mt-5"></div>
+<div class="mt-3"></div>
+
+<h4 id="tldr-to-enable-administrators-to-create-partitions-in-viva-insights-while-adhering-to-privacy-standards-and-platform-constraints">TLDR, to enable administrators to create partitions in Viva Insights while adhering to privacy standards and platform constraints.</h4>
+
+<p><a href="works/partitions/#user-flow"><button class="btn mt-3 btn-viva">Skip to designs</button></a></p>
 
 <!-- ### Design process
 
@@ -141,51 +146,118 @@
     </div>
 </div> -->
 
-<div class="mt-5"></div>
-
 <h3 id="understanding-the-feature">Understanding the feature</h3>
 
-<p>I started off by looking at how Partitions worked in Workplace Analytics (WPA). This gave me a better understanding how an administrator approached this feature and what their painpoints were.</p>
+<p>I started off by looking at how Partitions worked in <b>Workplace Analytics (WPA)</b>. This gave me a better understanding how an administrator approached this feature and what their painpoints were.</p>
 
-<h6 id="user-journey">User journey</h6>
+<h5 id="user-journey">User journey</h5>
 <p>A typical partition assignment included 4 major steps. I was to focus on the CRUD experience of the feature, keeping usability and design finesse in mind.</p>
 
-<ol>
-  <li>
-    <p>Create partition:
-When a new analyst is joining the team, an admin wants to create a partition specific to them and only provide the required data to them such that they follow the privacy standards set by their firm.
-<a class="venobox" data-gall="gallerya" href="/src/images/partitions/userjourney1.png">
-   <img src="/src/images/partitions/userjourney1.png" alt="Create partition wizard" class="img-fluid" /></a></p>
-  </li>
-  <li>
-    <p>Select employees:
-The admin would want to filter the right employees so that it is easy for them to assign it to the analysts.
-<a class="venobox" data-gall="gallerya" href="/src/images/partitions/userjourney2.png">
-   <img src="/src/images/partitions/userjourney2.png" alt="Selecting employees" class="img-fluid" /></a></p>
-  </li>
-  <li>
-    <p>Select attributes:
-The admin would then select the right attributes and pick how that attribute should be shown to the analyst.
-<a class="venobox" data-gall="gallerya" href="/src/images/partitions/userjourney3.png">
-   <img src="/src/images/partitions/userjourney3.png" alt="Selecting attributes" class="img-fluid" /></a></p>
-  </li>
-  <li>
-    <p>Select analysts:
-The admin would want to filter the right analysts so that it is easy for them to select and assign partitions.
-<a class="venobox" data-gall="gallerya" href="/src/images/partitions/userjourney4.png">
-   <img src="/src/images/partitions/userjourney4.png" alt="Selecting analysts" class="img-fluid" /></a></p>
-  </li>
-</ol>
+<p><b>1. Create partition</b>:
+   When a new analyst is joining the team, an admin wants to create a customised partition and only provide the required data to them such that they follow the privacy standards set by their firm.
+   <a class="venobox" data-gall="gallerya" title="Create partition: When a new analyst is joining the team, an admin wants to create a partition specific to them and only provide the required data to them such that they follow the privacy standards set by their firm." href="/src/images/partitions/userjourney1a.png">
+      <img src="/src/images/partitions/userjourney1.png" alt="Create partition wizard" class="img-fluid mt-2" /></a>
+  <a class="venobox" data-gall="gallerya" title="Create partition: When a new analyst is joining the team, an admin wants to create a partition specific to them and only provide the required data to them such that they follow the privacy standards set by their firm." href="/src/images/partitions/userjourney1b.png" style="display: none;">
+      <img src="/src/images/partitions/homepage-ab.png" alt="Image 2" class="img-fluid" /></a></p>
 
-<div class="mt-2"></div>
+<div class="row" style="margin-bottom: 14px!important; margin-top: -16px!important;"> <div class="vertical-line-container col-lg-4">
+    <div class="vertical-line" style="border-left: 4px solid #3B5DB0;"></div>
+    <div class="text-container">
+      <p>The banner takes up around 20% of the screen.</p>
+    </div>
+  </div>
 
-<h6 id="measuring-usability">Measuring usability</h6>
-<p>One of the key decisions which we had to make was to go forward with the current step-by-step wizard or design a new single pane wizard. For this, we conducted an unmoderated user testing on Usertesting.com.</p>
+  <div class="vertical-line-container col-lg-4">
+    <div class="vertical-line" style="border-left: 4px solid #3B5DB0;"></div>
+    <div class="text-container">
+      <p>There is no search or filter options for partitions.</p>
+    </div>
+  </div>
 
-<div class="mt-2"></div>
+  <div class="vertical-line-container col-lg-4">
+    <div class="vertical-line" style="border-left: 4px solid #3B5DB0;"></div>
+    <div class="text-container">
+      <p>There is no sorting based on the tabs.</p>
+    </div>
+  </div>
+  <div class="col-lg-12" style="text-align: center;">
+        <hr style="width: 95%; display: inline-block; margin-left: auto; margin-right: auto;" /> 
+      </div>
+  </div>
 
-<h6 id="sus-testing">SUS testing</h6>
-<p>For evaluating this, we conducted a System Usability Scale testing. For the uninitiated, it’s a widely used method for evaluating the usability and user-friendliness of a system or software application. SUS testing involves surveying users and asking them to rate the system’s usability based on a standardised questionnaire. The results are then analysed to assess the overall user satisfaction and usability of the system.</p>
+<p><b>2. Select employees</b>:
+   To filter the right employees so that it is easy for the admin to section off to the analysts.
+   <a class="venobox" data-gall="gallerya" title="Select employees: The admin would want to filter the right employees so that it is easy for them to assign it to the analysts." href="/src/images/partitions/userjourney2.png">
+      <img src="/src/images/partitions/userjourney2.png" alt="Selecting employees" class="img-fluid mt-2" /></a></p>
+
+<div class="row" style="margin-bottom: 14px!important; margin-top: -16px!important;"> <div class="vertical-line-container col-lg-4">
+    <div class="vertical-line" style="border-left: 4px solid #3B5DB0;"></div>
+    <div class="text-container">
+      <p>The progress bar is static and we can’t navigate through the steps.</p>
+    </div>
+  </div>
+
+  <div class="vertical-line-container col-lg-4">
+    <div class="vertical-line" style="border-left: 4px solid #3B5DB0;"></div>
+    <div class="text-container">
+      <p>The visibility of filtered people is low.</p>
+    </div>
+  </div>
+  <div class="col-lg-12" style="text-align: center;">
+        <hr style="width: 95%; display: inline-block; margin-left: auto; margin-right: auto;" /> 
+      </div>
+  </div>
+
+<p><b>3. Select attributes</b>:
+   To select the right attributes and pick how that attribute should be shown to the analyst.
+   <a class="venobox" data-gall="gallerya" title="Select attributes: The admin would then select the right attributes and pick how that attribute should be shown to the analyst." href="/src/images/partitions/userjourney3.png">
+      <img src="/src/images/partitions/userjourney3.png" alt="Selecting attributes" class="img-fluid mt-2" /></a></p>
+
+<div class="row" style="margin-bottom: 14px!important; margin-top: -16px!important;"> <div class="vertical-line-container col-lg-12">
+  <div class="vertical-line" style="border-left: 4px solid #3B5DB0;"></div>
+    <div class="text-container">
+      <p>Visibility has only 3 options, and hence doesn’t require a dropdown to select it.</p>
+    </div>
+  </div>
+  <div class="col-lg-12" style="text-align: center;">
+        <hr style="width: 95%; display: inline-block; margin-left: auto; margin-right: auto;" /> 
+      </div>
+</div>
+
+<p><b>4. Select analysts</b>:
+   To find the right analysts and assign them the partition.
+   <a class="venobox" data-gall="gallerya" title="Select analysts: The admin would want to filter the right analysts so that it is easy for them to select and assign partitions." href="/src/images/partitions/userjourney4.png">
+      <img src="/src/images/partitions/userjourney4.png" alt="Selecting analysts" class="img-fluid mt-2" /></a></p>
+
+<div class="row" style="margin-top: -16px!important;"> <div class="vertical-line-container col-lg-4">
+    <div class="vertical-line" style="border-left: 4px solid #3B5DB0;"></div>
+    <div class="text-container">
+      <p>Searching for users in this list is difficult with no option to filter/sort.</p>
+    </div>
+  </div>
+
+  <div class="vertical-line-container col-lg-4">
+    <div class="vertical-line" style="border-left: 4px solid #3B5DB0;"></div>
+    <div class="text-container">
+      <p>Have to select “I confirm” at every page as a confirmation of the options they have picked.</p>
+    </div>
+  </div>
+
+  <div class="vertical-line-container col-lg-4">
+    <div class="vertical-line" style="border-left: 4px solid #3B5DB0;"></div>
+    <div class="text-container">
+      <p>Errors and limits are shown at the end of the wizard, which leads to doing this process once again.</p>
+    </div>
+  </div>
+  <div class="col-lg-12" style="text-align: center;">
+        <hr style="width: 95%; display: inline-block; margin-left: auto; margin-right: auto;" /> 
+      </div>
+  </div>
+
+<h6 id="measuring-usability-through-sus">Measuring usability through SUS</h6>
+<p>One of the key decisions which we had to make was to go forward with the current step-by-step wizard or design a new single pane wizard. For this, we conducted an <b>unmoderated user testing</b> on Usertesting.com.</p>
+
+<p>For evaluating this, we conducted a <b>System Usability Scale testing</b>. For the uninitiated, it’s a widely used method for evaluating the usability and user-friendliness of a system or software application. SUS testing involves surveying users and asking them to rate the system’s usability based on a standardised questionnaire. The results are then analysed to assess the overall user satisfaction and usability of the system.</p>
 
 <p><a class="venobox" data-gall="galleryb" href="/src/images/partitions/usertesting.png">
       <img src="/src/images/partitions/usertesting.png" alt="Usertesting" class="img-fluid" /></a></p>
@@ -198,13 +270,25 @@ The admin would want to filter the right analysts so that it is easy for them to
 
 <p>This pointed out that people preferred single pane wizard over the step-by-step and we proceeded with the newer designs.</p>
 
-<div class="mt-5"></div>
+<h6 id="partition-switcher">Partition switcher</h6>
+
+<p><a class="venobox" data-gall="galleryb" href="/src/images/partitions/switcher.png">
+      <img src="/src/images/partitions/switcher.png" alt="Usertesting" class="img-fluid" /></a></p>
+
+<p>When an analyst handles multiple partitions, they need an easy way to switch between them. Thus, we needed a switcher. Our surveys indicated the side navigation as the ideal location for the switcher. However, the challenge was to differentiate partition-specific pages from global pages to avoid user confusion.</p>
+
+<p>We had multiple iterations for this.</p>
+
+<p><a class="venobox" data-gall="galleryb" href="/src/images/partitions/sidebar.png">
+      <img src="/src/images/partitions/sidebar.png" alt="Usertesting" class="img-fluid" /></a></p>
+
+<p>In the end, we decided to go with a simple horizontal line between the pages to make it as simple and easy for the user to understand without complicating the navigation.</p>
 
 <h3 id="user-flow">User flow</h3>
 
 <div class="mt-2 mb-4"></div>
 
-<h5 id="homepage">Homepage</h5>
+<h6 id="homepage">Homepage</h6>
 
 <div class="row">
   <div class="col-md-6">
@@ -234,7 +318,8 @@ The admin would want to filter the right analysts so that it is easy for them to
 <p>This is the Partitions homepage. The admin would come here to manage their partitions, and see the health of all of their partitions.</p>
 
 <div class="mt-4"></div>
-<h5 id="create-partition-creating-filters">Create partition: Creating filters</h5>
+
+<h6 id="create-partition-creating-filters">Create partition: Creating filters</h6>
 
 <div class="row">
   <div class="col-md-6">
@@ -264,7 +349,8 @@ The admin would want to filter the right analysts so that it is easy for them to
 <p>This is the Create a partition page. The admin would come here to select filters to apply to the partition, which will define what type of users will go into the partition.</p>
 
 <div class="mt-4"></div>
-<h5 id="create-partition-selecting-attributes">Create partition: Selecting attributes</h5>
+
+<h6 id="create-partition-selecting-attributes">Create partition: Selecting attributes</h6>
 
 <div class="row">
   <div class="col-md-6">
@@ -297,7 +383,8 @@ The admin would want to filter the right analysts so that it is easy for them to
 <p>This is the attribute selection page. The admin would come here to select attributes which are applicable inside the partition, which will define what subset of attributes will be available in the partition.</p>
 
 <div class="mt-4"></div>
-<h5 id="create-partition-selecting-users">Create partition: Selecting users</h5>
+
+<h6 id="create-partition-selecting-users">Create partition: Selecting users</h6>
 
 <div class="row">
   <div class="col-md-6">
@@ -330,7 +417,8 @@ The admin would want to filter the right analysts so that it is easy for them to
 <p>This is the user selection page. The admin would come here to select which analysts can access the partition.</p>
 
 <div class="mt-4"></div>
-<h5 id="success-toasts">Success toasts</h5>
+
+<h6 id="success-toasts">Success toasts</h6>
 
 <div class="row">
   <div class="col-md-6">
@@ -360,7 +448,8 @@ The admin would want to filter the right analysts so that it is easy for them to
 <p>This is the success toasts.</p>
 
 <div class="mt-4"></div>
-<h5 id="error-scenarios">Error scenarios</h5>
+
+<h6 id="error-scenarios">Error scenarios</h6>
 
 <div class="row">
   <div class="col-md-6">
