@@ -66,6 +66,15 @@
   opacity: 1; /* Fade in hover image on hover */
 }
 
+.project-description h1 {
+  margin-top: 3rem!important;
+  margin-bottom: 3rem!important;
+  text-align: center;
+}
+
+.project-description b {
+  font-weight: 500;
+}
 
 .project-description p {
   margin-top: 1.5rem;
@@ -678,10 +687,6 @@ body .btn {
   cursor: pointer;
   transition: border 0.1s;
   padding: 0.5rem 2rem;
-}
-
-.project-description b {
-  font-weight: 500;
 }
 
 body .btn:hover {
