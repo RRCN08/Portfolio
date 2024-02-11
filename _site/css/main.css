@@ -30,12 +30,42 @@
   font-family: "freight-sans-pro", sans-serif;
 }
 
-.full-width {
+.ishan-iframe {
   width: 70vw;
   position: relative;
   margin-left: -35vw;
   left: 50%;
 }
+
+.full-width {
+  width: 100vw;
+  position: relative;
+  margin-left: -50vw;
+  left: 50%;
+}
+
+.image-container {
+  position: relative;
+}
+
+.image-container img {
+  position: absolute;
+  opacity: 1;
+  transition: opacity 0.5s ease; /* Smooth transition effect */
+}
+
+.image-container img.hover-image {
+  opacity: 0; /* Initially hide hover image */
+}
+
+.image-container:hover img.original-image {
+  opacity: 0; /* Fade out original image on hover */
+}
+
+.image-container:hover img.hover-image {
+  opacity: 1; /* Fade in hover image on hover */
+}
+
 
 .project-description p {
   margin-top: 1.5rem;
@@ -580,11 +610,7 @@ body {
   font-size: 1.1rem;
   letter-spacing: 0.02rem;
 }
-@media (max-width: 992px) {
-  body .container, body .container-fluid {
-    overflow-y: hidden;
-  }
-}
+
 body a {
   font-family: "freight-sans-pro", sans-serif;
   font-weight: 500;

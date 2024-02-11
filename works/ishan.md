@@ -12,7 +12,7 @@ duration: 5 months
 
 Take a spin around the project! It's completely interactive with audio intact.
 
-<div class="container-fluid full-width mt-5" style="border-radius:10px;overflow: hidden;">
+<div class="container-fluid ishan-iframe mt-5" style="border-radius:10px;overflow: hidden;">
 <iframe src="/works/IshanDhvani/iframe.html" width="100%" height="950px" allowfullscreen></iframe>
 </div>
 
