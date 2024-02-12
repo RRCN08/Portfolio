@@ -4,6 +4,7 @@ title: Partitions in Viva Insights
 image: /src/images/partitions/banner.jpg
 desc: Sub-workspaces empowering privacy
 primary_color: "#3B5DB0"
+secondary_color: "#E0DFE5"
 role: UX, Research
 duration: 3 months 
 ---
@@ -53,7 +54,7 @@ I started off by looking at how Partitions worked in <b>Workplace Analytics (WPA
 A typical partition assignment included 4 major steps. I was to focus on the CRUD experience of the feature, keeping usability and design finesse in mind.
 
 
-<div class="container-fluid full-width d-flex justify-content-center mt-5" style="border-radius:10px;overflow: hidden; align-items: center; background-color: #DCDCDC;">
+<div class="container-fluid full-width d-flex justify-content-center mt-5" style="border-radius:10px;overflow: hidden; align-items: center; background-color: #e0dfe5;">
 
 <div class='col-lg-3 pb-5'>
 
@@ -75,7 +76,7 @@ A typical partition assignment included 4 major steps. I was to focus on the CRU
 </div>
 </div>
 
-<div class="container-fluid full-width d-flex justify-content-center mt-1" style="border-radius:10px;overflow: hidden; align-items: center; background-color: #DCDCDC;">
+<div class="container-fluid full-width d-flex justify-content-center mt-1" style="border-radius:10px;overflow: hidden; align-items: center; background-color: #e0dfe5;">
 
 <div class='col-lg-3 pb-5'>
 <h5>2. Select employees</h5>
@@ -96,7 +97,7 @@ A typical partition assignment included 4 major steps. I was to focus on the CRU
 </div>
 </div>
 
-<div class="container-fluid full-width d-flex justify-content-center mt-1" style="border-radius:10px;overflow: hidden; align-items: center; background-color: #DCDCDC;">
+<div class="container-fluid full-width d-flex justify-content-center mt-1" style="border-radius:10px;overflow: hidden; align-items: center; background-color: #e0dfe5;">
 
 <div class='col-lg-3 pb-5'>
 <h5>3. Select attributes</h5>
@@ -117,7 +118,7 @@ A typical partition assignment included 4 major steps. I was to focus on the CRU
 </div>
 </div>
 
-<div class="container-fluid full-width d-flex justify-content-center mt-1" style="border-radius:10px;overflow: hidden; align-items: center; background-color: #DCDCDC;">
+<div class="container-fluid full-width d-flex justify-content-center mt-1" style="border-radius:10px;overflow: hidden; align-items: center; background-color: #e0dfe5;">
 
 <div class='col-lg-3 pb-5'>
 <h5>4. Select analysts</h5>
@@ -235,7 +236,7 @@ Educating our admins about this change without adding too much friction (so that
 
 # Final designs
 
-<div class="container-fluid full-width d-flex justify-content-center mt-1" style="border-radius:10px;overflow: hidden; align-items: center; background-color: #DCDCDC;">
+<div class="container-fluid full-width d-flex justify-content-center mt-1" style="border-radius:10px;overflow: hidden; align-items: center; background-color: #e0dfe5;">
 
 <div class='col-lg-2 pb-5'>
 <h5>Homepage</h5>
@@ -257,7 +258,7 @@ Educating our admins about this change without adding too much friction (so that
   </div>
 </div>
 
-<div class="container-fluid full-width d-flex justify-content-center mt-1" style="border-radius:10px;overflow: hidden; align-items: center; background-color: #DCDCDC;">
+<div class="container-fluid full-width d-flex justify-content-center mt-1" style="border-radius:10px;overflow: hidden; align-items: center; background-color: #e0dfe5;">
 
 <div class='col-lg-2 pb-5'>
 <h5>Creating filters</h5>
@@ -279,7 +280,7 @@ Educating our admins about this change without adding too much friction (so that
   </div>
 </div>
 
-<div class="container-fluid full-width d-flex justify-content-center mt-1" style="border-radius:10px;overflow: hidden; align-items: center; background-color: #DCDCDC;">
+<div class="container-fluid full-width d-flex justify-content-center mt-1" style="border-radius:10px;overflow: hidden; align-items: center; background-color: #e0dfe5;">
 
 <div class='col-lg-2 pb-5'>
 <h5>Selecting attributes</h5>
@@ -301,7 +302,7 @@ Educating our admins about this change without adding too much friction (so that
   </div>
 </div>
 
-<div class="container-fluid full-width d-flex justify-content-center mt-1" style="border-radius:10px;overflow: hidden; align-items: center; background-color: #DCDCDC;">
+<div class="container-fluid full-width d-flex justify-content-center mt-1" style="border-radius:10px;overflow: hidden; align-items: center; background-color: #e0dfe5;">
 
 <div class='col-lg-2 pb-5'>
 <h5>Selecting users</h5>
