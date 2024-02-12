@@ -334,9 +334,10 @@ A <b>dropdown</b> was the best option as it easily lays out multiple items in a 
 
 <p>This brought us to the final experience which got shipped. Over here, the user has to navigate to <b>Privacy settings</b> and toggle on Partitions to enable it for their tenant. Once toggled, the user will be presented with a info modal, which explains how it will affect the tenant. <br /><br />Finally, as an additional measure, the user has to click on ‘Save changes’ to confirm the enablement of the feature.</p>
 
-<div class="container-fluid full-width secondary d-flex justify-content-center mt-5" style="overflow: hidden; align-items: center;">
-    <div class="col-lg-4 text-center">
-      <h1> FINAL DESIGNS </h1>
+<div class="container-fluid full-width secondary d-flex mt-5" style="overflow: hidden;">
+    <div class="col-lg-2"></div><div class="col-lg-5">
+      <h3>Final designs</h3>
+      It took almost close to 3 months to create, iterate and deliver these designs. The development took close to 18 months to finish. Partitions taught me a lot about how things work inside Microsoft, and more so about the industry.
     </div>
 </div>
 
@@ -344,7 +345,8 @@ A <b>dropdown</b> was the best option as it easily lays out multiple items in a 
 
 <div class="col-lg-2 pb-5">
 <h5>Homepage</h5>
-   The admin would come here to manage see the health of all of their partitions.
+   The homepage encompasses the list of all the partitions created by the admin. The banner takes only adequate space and leaves room for the admin to focus on the list of partitions created by them. The admin can also filter different partitions using the pills above the list, and he can also sort the list from the table. A search is also provided to the admin in case there's a huge list of partitions and he has to find the right now.
+   <br /><br />If the admin wants to create a new partition, he can click on the button above the Search and get started with the Wizard.
 </div>
 
   <div class="col-md-6">
@@ -374,8 +376,8 @@ A <b>dropdown</b> was the best option as it easily lays out multiple items in a 
     </a>
 
   <div class="col-lg-2">
-    <h5>Creating filters</h5>
-   This is the Create a partition page. The admin would come here to select filters to apply to the partition, which will define what type of users will go into the partition.
+    <h5>Filtering employees</h5>
+   Since from the SUS testing, we found out that a single page experience is better, our Create a Parititon wizard is made to be scrollable. <br /><br />The filters pane now improved, by adding a nesting selector. The visibility of the measured population is also drastically improved by grouping it under the filters itself. The user can also rearrange each filter, which was previously not possible.
   </div>
 
   <div class="col-md-6">
@@ -391,7 +393,7 @@ A <b>dropdown</b> was the best option as it easily lays out multiple items in a 
 
 <div class="col-lg-2 pb-5">
 <h5>Selecting attributes</h5>
-   This is the attribute selection page. The admin would come here to select attributes which are applicable inside the partition, which will define what subset of attributes will be available in the partition.
+   The attributes are now shown in pills, through which the admin can easily see what they have selected without having to scroll an endless list.<br /><br />Clicking on 'Add attributes' opens a flyout where they can easily find the right attribute he's looking for.
 </div>
 
     <a class="venobox" data-gall="attr" href="/src/images/partitions/attr-a.png" style="display: none;">
@@ -412,8 +414,8 @@ A <b>dropdown</b> was the best option as it easily lays out multiple items in a 
 <div class="container-fluid full-width d-flex justify-content-center" style="overflow: hidden; align-items: center;">
 
   <div class="col-lg-2 pb-5">
-    <h5>Selecting users</h5>
-    This is the user selection page. The admin would come here to select which analysts can access the partition.
+    <h5>Assigning analysts</h5>
+    The last step of the wizard is to select the analysts which will have access to this partition. The pills here is different from the attribute pills to show that these are people pills. <br /><br />Similar to the attributes flyout, the user flyout helps the admin find the right analysts for the partition, by providing identifiable elements like avatars and email addresses.
   </div>
 
   <div class="col-md-6">
