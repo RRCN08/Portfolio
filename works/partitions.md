@@ -4,6 +4,7 @@ title: Partitions in Viva Insights
 image: /src/images/partitions/banner.jpg
 desc: Sub-workspaces empowering privacy
 primary_color: "#3B5DB0"
+secondary_color: "#e6e2e6"
 role: UX, Research
 duration: 3 months 
 ---
@@ -53,7 +54,7 @@ I started off by looking at how Partitions worked in <b>Workplace Analytics (WPA
 A typical partition assignment included 4 major steps. I was to focus on the CRUD experience of the feature, keeping usability and design finesse in mind.
 
 
-<div class="container-fluid full-width d-flex justify-content-center mt-5" style="border-radius:10px;overflow: hidden; align-items: center; background-color: #DCDCDC;">
+<div class="container-fluid full-width basic d-flex justify-content-center mt-5" style="overflow: hidden; align-items: center;">
 
 <div class='col-lg-3 pb-5'>
 
@@ -63,7 +64,7 @@ A typical partition assignment included 4 major steps. I was to focus on the CRU
    <br><br><b><i> Hover over the image to see insights.</i></b>
 </div>
 
-<div class="col-lg-7">
+<div class="col-lg-6">
 <a class="venobox" data-gall="gallerya" href="/src/images/partitions/userjourney1.png">
   <div class="image-container">
     <img src="/src/images/partitions/userjourney1.png" alt="Create partition wizard" class="img-fluid original-image">
@@ -75,7 +76,7 @@ A typical partition assignment included 4 major steps. I was to focus on the CRU
 </div>
 </div>
 
-<div class="container-fluid full-width d-flex justify-content-center mt-1" style="border-radius:10px;overflow: hidden; align-items: center; background-color: #DCDCDC;">
+<div class="container-fluid full-width basic d-flex justify-content-center mt-1" style="overflow: hidden; align-items: center;">
 
 <div class='col-lg-3 pb-5'>
 <h5>2. Select employees</h5>
@@ -84,7 +85,7 @@ A typical partition assignment included 4 major steps. I was to focus on the CRU
    <br><br><b><i> Hover over the image to see insights.</i></b>
 </div>
 
-<div class="col-lg-7">
+<div class="col-lg-6">
 <a class="venobox" data-gall="gallerya" href="/src/images/partitions/userjourney2.png">
   <div class="image-container">
     <img src="/src/images/partitions/userjourney2.png" alt="Create partition wizard" class="img-fluid original-image">
@@ -96,7 +97,7 @@ A typical partition assignment included 4 major steps. I was to focus on the CRU
 </div>
 </div>
 
-<div class="container-fluid full-width d-flex justify-content-center mt-1" style="border-radius:10px;overflow: hidden; align-items: center; background-color: #DCDCDC;">
+<div class="container-fluid full-width basic d-flex justify-content-center mt-1" style="overflow: hidden; align-items: center;">
 
 <div class='col-lg-3 pb-5'>
 <h5>3. Select attributes</h5>
@@ -105,7 +106,7 @@ A typical partition assignment included 4 major steps. I was to focus on the CRU
    <br><br><b><i> Hover over the image to see insights.</i></b>
 </div>
 
-<div class="col-lg-7">
+<div class="col-lg-6">
 <a class="venobox" data-gall="gallerya" href="/src/images/partitions/userjourney3.png">
   <div class="image-container">
     <img src="/src/images/partitions/userjourney3.png" alt="Create partition wizard" class="img-fluid original-image">
@@ -117,7 +118,7 @@ A typical partition assignment included 4 major steps. I was to focus on the CRU
 </div>
 </div>
 
-<div class="container-fluid full-width d-flex justify-content-center mt-1" style="border-radius:10px;overflow: hidden; align-items: center; background-color: #DCDCDC;">
+<div class="container-fluid full-width basic d-flex justify-content-center mt-1" style="overflow: hidden; align-items: center;">
 
 <div class='col-lg-3 pb-5'>
 <h5>4. Select analysts</h5>
@@ -126,7 +127,7 @@ A typical partition assignment included 4 major steps. I was to focus on the CRU
    <br><br><b><i> Hover over the image to see insights.</i></b>
 </div>
 
-<div class="col-lg-7">
+<div class="col-lg-6">
 <a class="venobox" data-gall="gallerya" href="/src/images/partitions/userjourney4.png">
   <div class="image-container">
     <img src="/src/images/partitions/userjourney4.png" alt="Create partition wizard" class="img-fluid original-image">
@@ -146,7 +147,7 @@ For evaluating this, we conducted a <b>System Usability Scale testing</b>. For t
 The user testing concluded with the following results:
 
 
-<div class="container-fluid full-width d-flex justify-content-center" style="border-radius:10px;overflow: hidden; align-items: center;">
+<div class="container-fluid full-width d-flex justify-content-center" style="overflow: hidden; align-items: center; background-color: var(--white);">
 
 <div class="col-lg-7">
 <a class="venobox" href="/src/images/partitions/SUS.png">
@@ -182,87 +183,74 @@ The final part of our puzzle was figuring out how to let admins enable Partition
 
 Educating our admins about this change without adding too much friction (so that our admins don't get scared of the feature and decide not to use it :3 ) was our final hurdle before GA.
 
-<div class="container-fluid full-width d-flex justify-content-center mt-1" style="border-radius:10px;overflow: hidden; align-items: center;">
+<div class="container-fluid full-width d-flex justify-content-center" style="overflow: hidden; align-items: center; background-color: var(--white);">
 
-    <div class='col-lg-3 pb-5'>
-
-    We first tried out a <b>modal experience</b> when the user first landed in the page. This explains what partitions is and how the analyst onboarding experience has been changed. We realised from our user testing that they rarely read the body text, especially when its this long. 
-    
-    <br><br>Moreover, the info is only conveyed to the admin if he enters the 'Partitions' homepage. This would lead to confusion to admins who may have not visited the page.
-    </div>
-
-    <div class="col-md-7">
+<div class="col-md-7">
       <a class="venobox" data-gall="gallery3" href="/src/images/partitions/onboarding1.png">
         <img src="/src/images/partitions/onboarding1.png" alt="Image 1" class="img-fluid">
       </a>
     </div>
-
-</div>
-
-<div class="container-fluid full-width d-flex justify-content-center mt-1" style="border-radius:10px;overflow: hidden; align-items: center;">
-
-    <div class='col-lg-3 pb-5'>
-
-    We then explored an experience where the admin can enable the setting through the <b>Partitions homepage</b>. This gives the admin an explicit message on what will happen when Partitions is enabled for their tenant. 
-    
-    <br><br>The problem with this approach was since Partitions is an opt-in feature and is a highly data-sensitive one at it, the team did not prefer the idea of keeping the Partitions tab easily accessible.
-    
     </div>
 
-    <div class="col-md-7">
+
+ We first tried out a <b>modal experience</b> when the user first landed in the page. This explains what partitions is and how the analyst onboarding experience has been changed. We realised from our user testing that they rarely read the body text, especially when its this long. 
+    
+Moreover, the info is only conveyed to the admin if he enters the 'Partitions' homepage. This would lead to confusion to admins who may have not visited the page.
+
+<div class="container-fluid full-width d-flex justify-content-center" style="overflow: hidden; align-items: center; background-color: var(--white);">
+
+<div class="col-md-7">
       <a class="venobox" data-gall="gallery3" href="/src/images/partitions/onboarding2.png">
         <img src="/src/images/partitions/onboarding2.png" alt="Image 1" class="img-fluid">
       </a>
     </div>
-
-</div>
-
-<div class="container-fluid full-width d-flex justify-content-center mt-1" style="border-radius:10px;overflow: hidden; align-items: center;">
-
-    <div class='col-lg-3 pb-5'>
-
-    This brought us to the final experience which got shipped. Over here, the user has to navigate to <b>Privacy settings</b> and toggle on Partitions to enable it for their tenant. Once toggled, the user will be presented with a info modal, which explains how it will affect the tenant. <br><br>Finally, as an additional measure, the user has to click on 'Save changes' to confirm the enablement of the feature.
-
     </div>
 
-    <div class="col-md-7">
+
+We then explored an experience where the admin can enable the setting through the <b>Partitions homepage</b>. This gives the admin an explicit message on what will happen when Partitions is enabled for their tenant. 
+    
+The problem with this approach was since Partitions is an opt-in feature and is a highly data-sensitive one at it, the team did not prefer the idea of keeping the Partitions tab easily accessible.
+
+<div class="container-fluid full-width d-flex justify-content-center" style="overflow: hidden; align-items: center; background-color: var(--white);">
+
+<div class="col-md-7">
       <a class="venobox" data-gall="gallery3" href="/src/images/partitions/onboarding3.png">
         <img src="/src/images/partitions/onboarding3.png" alt="Image 1" class="img-fluid">
       </a>
     </div>
+    </div>
 
+
+This brought us to the final experience which got shipped. Over here, the user has to navigate to <b>Privacy settings</b> and toggle on Partitions to enable it for their tenant. Once toggled, the user will be presented with a info modal, which explains how it will affect the tenant. <br><br>Finally, as an additional measure, the user has to click on 'Save changes' to confirm the enablement of the feature.
+
+<div class="container-fluid full-width secondary d-flex justify-content-center mt-5" style="overflow: hidden; align-items: center;">
+    <div class="col-lg-4 text-center">
+      <h1> FINAL DESIGNS </h1>
+    </div>
 </div>
 
-# Final designs
-
-<div class="container-fluid full-width d-flex justify-content-center mt-1" style="border-radius:10px;overflow: hidden; align-items: center; background-color: #DCDCDC;">
+<div class="container-fluid full-width secondary d-flex justify-content-center" style="overflow: hidden; align-items: center;">
 
 <div class='col-lg-2 pb-5'>
 <h5>Homepage</h5>
    The admin would come here to manage see the health of all of their partitions.
 </div>
 
-    <a class="venobox" data-gall="homepage" href="/src/images/partitions/homepage-a.png" style="display: none;">
+  <div class="col-md-6">
+    
+      <a class="venobox" data-gall="homepage" href="/src/images/partitions/homepage-b.png">
+      <img src="/src/images/partitions/homepage-b.png" alt="Image 2" class="img-fluid">
+    </a>
+     <a class="venobox" data-gall="homepage" href="/src/images/partitions/homepage-a.png" style="display: none;">
       <img src="/src/images/partitions/homepage-a.png" alt="Image 1" class="img-fluid">
     </a>
     <a class="venobox" data-gall="homepage" href="/src/images/partitions/homepage-b.png" style="display: none;">
       <img src="/src/images/partitions/homepage-b.png" alt="Image 2" class="img-fluid">
     </a>
-
-  <div class="col-md-9">
-    
-      <a class="venobox" data-gall="homepage" href="/src/images/partitions/homepage-ab.png">
-      <img src="/src/images/partitions/homepage-ab.png" alt="Image 2" class="img-fluid">
-    </a>
   </div>
 </div>
 
-<div class="container-fluid full-width d-flex justify-content-center mt-1" style="border-radius:10px;overflow: hidden; align-items: center; background-color: #DCDCDC;">
-
-<div class='col-lg-2 pb-5'>
-<h5>Creating filters</h5>
-   This is the Create a partition page. The admin would come here to select filters to apply to the partition, which will define what type of users will go into the partition.
-</div>
+<div class="container-fluid full-width d-flex justify-content-center" style="overflow: hidden; align-items: center;">
 
     <a class="venobox" data-gall="filters" href="/src/images/partitions/filters-a.png" style="display: none;">
       <img src="/src/images/partitions/attr-a.png" alt="Image 1" class="img-fluid">
@@ -270,16 +258,25 @@ Educating our admins about this change without adding too much friction (so that
     <a class="venobox" data-gall="filters" href="/src/images/partitions/filters-b.png" style="display: none;">
       <img src="/src/images/partitions/attr-b.png" alt="Image 2" class="img-fluid">
     </a>
+    <a class="venobox" data-gall="filters" href="/src/images/partitions/filters-ab.png" style="display: none;">
+      <img src="/src/images/partitions/attr-b.png" alt="Image 2" class="img-fluid">
+    </a>
 
-  <div class="col-md-9">
+  <div class='col-lg-2'>
+    <h5>Creating filters</h5>
+   This is the Create a partition page. The admin would come here to select filters to apply to the partition, which will define what type of users will go into the partition.
+  </div>
+
+  <div class="col-md-6">
     
-      <a class="venobox" data-gall="filters" href="/src/images/partitions/filters-ab.png">
-      <img src="/src/images/partitions/filters-ab.png" alt="Image 2" class="img-fluid">
+      <a class="venobox" data-gall="filters" href="/src/images/partitions/filters-b.png">
+      <img src="/src/images/partitions/filters-b.png" alt="Image 2" class="img-fluid">
     </a>
   </div>
+
 </div>
 
-<div class="container-fluid full-width d-flex justify-content-center mt-1" style="border-radius:10px;overflow: hidden; align-items: center; background-color: #DCDCDC;">
+<div class="container-fluid full-width d-flex justify-content-center" style="overflow: hidden; align-items: center;">
 
 <div class='col-lg-2 pb-5'>
 <h5>Selecting attributes</h5>
@@ -293,20 +290,26 @@ Educating our admins about this change without adding too much friction (so that
       <img src="/src/images/partitions/attr-b.png" alt="Image 2" class="img-fluid">
     </a>
 
-  <div class="col-md-9">
+  <div class="col-md-6">
     
-      <a class="venobox" data-gall="attr" href="/src/images/partitions/attr-ab.png">
-      <img src="/src/images/partitions/attr-ab.png" alt="Image 2" class="img-fluid">
+      <a class="venobox" data-gall="attr" href="/src/images/partitions/attr-b.png">
+      <img src="/src/images/partitions/attr-b.png" alt="Image 2" class="img-fluid">
     </a>
   </div>
 </div>
 
-<div class="container-fluid full-width d-flex justify-content-center mt-1" style="border-radius:10px;overflow: hidden; align-items: center; background-color: #DCDCDC;">
+<div class="container-fluid full-width d-flex justify-content-center" style="overflow: hidden; align-items: center;">
 
-<div class='col-lg-2 pb-5'>
-<h5>Selecting users</h5>
-   This is the user selection page. The admin would come here to select which analysts can access the partition.
-</div>
+  <div class='col-lg-2 pb-5'>
+    <h5>Selecting users</h5>
+    This is the user selection page. The admin would come here to select which analysts can access the partition.
+  </div>
+
+  <div class="col-md-6">
+    
+      <a class="venobox" data-gall="users" href="/src/images/partitions/users-b.png">
+      <img src="/src/images/partitions/users-b.png" alt="Image 2" class="img-fluid">
+    </a>
 
     <a class="venobox" data-gall="users" href="/src/images/partitions/users-a.png" style="display: none;">
       <img src="/src/images/partitions/users-a.png" alt="Image 1" class="img-fluid">
@@ -314,11 +317,6 @@ Educating our admins about this change without adding too much friction (so that
     <a class="venobox" data-gall="users" href="/src/images/partitions/users-b.png" style="display: none;">
       <img src="/src/images/partitions/users-b.png" alt="Image 2" class="img-fluid">
     </a>
-
-  <div class="col-md-9">
-    
-      <a class="venobox" data-gall="users" href="/src/images/partitions/users-ab.png">
-      <img src="/src/images/partitions/users-ab.png" alt="Image 2" class="img-fluid">
-    </a>
   </div>
+
 </div>
