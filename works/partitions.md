@@ -5,6 +5,7 @@ image: /src/images/partitions/banner.jpg
 desc: Sub-workspaces empowering privacy
 primary_color: "#3B5DB0"
 secondary_color: "#e6e2e6"
+teritiary_color: "#d8d9dd"
 role: UX, Research
 duration: 3 months 
 ---
@@ -56,7 +57,7 @@ A typical partition assignment included 4 major steps. I was to focus on the CRU
 
 <div class="container-fluid full-width basic d-flex justify-content-center mt-5" style="overflow: hidden; align-items: center;">
 
-<div class='col-lg-3 pb-5'>
+<div class='col-lg-2 pb-5'>
 
 <h5>1. Create partition</h5>
    When a new analyst is joining the team, an admin wants to create a customised partition and only provide the required data to them such that they follow the privacy standards set by their firm.
@@ -76,9 +77,9 @@ A typical partition assignment included 4 major steps. I was to focus on the CRU
 </div>
 </div>
 
-<div class="container-fluid full-width basic d-flex justify-content-center mt-1" style="overflow: hidden; align-items: center;">
+<div class="container-fluid full-width basic d-flex justify-content-center" style="overflow: hidden; align-items: center;">
 
-<div class='col-lg-3 pb-5'>
+<div class='col-lg-2 pb-5'>
 <h5>2. Select employees</h5>
    To filter the right employees so that it is easy for the admin to section off to the analysts.
 
@@ -97,9 +98,9 @@ A typical partition assignment included 4 major steps. I was to focus on the CRU
 </div>
 </div>
 
-<div class="container-fluid full-width basic d-flex justify-content-center mt-1" style="overflow: hidden; align-items: center;">
+<div class="container-fluid full-width basic d-flex justify-content-center" style="overflow: hidden; align-items: center;">
 
-<div class='col-lg-3 pb-5'>
+<div class='col-lg-2 pb-5'>
 <h5>3. Select attributes</h5>
    To select the right attributes and pick how that attribute should be shown to the analyst.
 
@@ -118,7 +119,7 @@ A typical partition assignment included 4 major steps. I was to focus on the CRU
 </div>
 </div>
 
-<div class="container-fluid full-width basic d-flex justify-content-center mt-1" style="overflow: hidden; align-items: center;">
+<div class="container-fluid full-width basic d-flex justify-content-center" style="overflow: hidden; align-items: center;">
 
 <div class='col-lg-3 pb-5'>
 <h5>4. Select analysts</h5>
@@ -140,22 +141,36 @@ A typical partition assignment included 4 major steps. I was to focus on the CRU
 </div>
 
 ### Measuring usability through SUS
-One of the key decisions which we had to make was to go forward with the current step-by-step wizard or design a new single pane wizard. For this, we conducted an <b>unmoderated user testing</b> on Usertesting.com.
+One of the key decisions which we had to make was to go forward with the current <b>step-by-step wizard</b> or design a new <b>single pane wizard</b>.
 
-For evaluating this, we conducted a <b>System Usability Scale testing</b>. For the uninitiated, it's a widely used method for evaluating the usability and user-friendliness of a system or software application. SUS testing involves surveying users and asking them to rate the system's usability based on a standardised questionnaire. The results are then analysed to assess the overall user satisfaction and usability of the system.
+<div class="container-fluid full-width d-flex justify-content-center" style="overflow: hidden; align-items: center; background-color: var(--white);">
 
-The user testing concluded with the following results:
+<div class="col-lg-7">
+<a class="venobox" href="/src/images/partitions/illustration.png">
+    <img src="/src/images/partitions/illustration.png" alt="Illustration" class="img-fluid"> </a>
+</div>
+</div>
+
+For evaluating this, we conducted an <b>unmoderated user testing</b> on Usertesting.com and used <b>System Usability Scale testing</b>. For the uninitiated, it's a widely used method for evaluating the usability and user-friendliness of a system or software application. SUS testing involves surveying users and asking them to rate the system's usability based on a standardised questionnaire. The results are then analysed to assess the overall user satisfaction and usability of the system.
 
 
 <div class="container-fluid full-width d-flex justify-content-center" style="overflow: hidden; align-items: center; background-color: var(--white);">
 
 <div class="col-lg-7">
 <a class="venobox" href="/src/images/partitions/SUS.png">
-    <img src="/src/images/partitions/SUS.png" alt="Usertesting" class="img-fluid"> </a>
+    <img src="/src/images/partitions/SUS.png" alt="SUS" class="img-fluid"> </a>
 </div>
 </div>
 
-This pointed out that people preferred single pane wizard over the step-by-step and we proceeded with the newer designs.
+The test had 10 questions laid out, where they had to mark between 5 points from Strongly agree to Strongly disagree. 
+
+For odd-numbered, positively worded questions,<br>1 is subtracted from the respondent’s score.
+
+For even-numbered, negatively worded questions,<br>the score is equal to 5 minus the score given by the respondent.
+
+Finally, this total is multiplied by 2.5 to obtain an average SUS score between 0 and 100.
+
+From the above sheet, you can see that people <b>preferred single pane wizard</b> over the step-by-step wizard.
 
 ### Partition switcher
 
