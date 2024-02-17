@@ -238,7 +238,7 @@ The problem with this approach was since Partitions is an opt-in feature and is 
 
 This brought us to the final experience which got shipped. Over here, the user has to navigate to <b>Privacy settings</b> and toggle on Partitions to enable it for their tenant. Once toggled, the user will be presented with a info modal, which explains how it will affect the tenant. <br><br>Finally, as an additional measure, the user has to click on 'Save changes' to confirm the enablement of the feature.
 
-<div class="container-fluid full-width secondary d-flex mt-5" style="overflow: hidden;">
+<div class="container-fluid full-width secondary d-flex mt-5" id='final-designs' style="overflow: hidden;">
     <div class='col-lg-2'></div><div class="col-lg-5">
       <h3>Final designs</h3>
       It took almost close to 3 months to create, iterate and deliver these designs. The development took close to 18 months to finish. Partitions taught me a lot about how things work inside Microsoft, and more so about the industry.
