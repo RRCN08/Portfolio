@@ -45,7 +45,7 @@
                 }
 
                 .project-description h4 {
-                    color: #4ea2ff;
+                    color: #6589c3;
                     }
 
                 .full-width {
@@ -57,7 +57,7 @@
                     }
 
                 .project-description h1 {
-                    color: #4ea2ff;
+                    color: #6589c3;
                     }
 
                 
@@ -68,7 +68,7 @@
   <!-- Navbar -->
   <nav class="navbar navbar-expand-md smart-scroll navbar-fixed-top navbar-index">
     <div class="container-fluid">
-        <a class="navbar-brand abs smart-scroll" href="#"><img id="Signature" src="css/elements/signature.svg" height=40px></a>
+        <a class="navbar-brand abs"><img id="Signature" src="css/elements/signature.svg" height=40px></a>
           <!-- <label class="switch ms-3">
             <i class="fas fa-adjust"></i>
             <div>
@@ -84,9 +84,6 @@
             <ul class="navbar-nav ms-auto">
                 <li class="nav-item">
                     <a class="nav-link" href=#Projects>PROJECTS</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="pages/about">ABOUT</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="/src/resume.pdf">RESUME</a>
@@ -130,13 +127,58 @@
 
 <p>Nutanix provides a leading next-generation enterprise cloud platform that converges traditional silos of server, virtualisation and storage into one integrated solution that connects to public cloud services.</p>
 
-<p>During my two months over there, I worked on their flagship product, Prism, an end-to-end management solution for IT administrators to centrally manage their entire hardware stack, including storage, compute and virtual machines (VMs), all from a single tab.</p>
+<p>During my two months over there, I worked on their flagship product, Prism, an end-to-end management solution for IT administrators to centrally manage their entire hardware stack, including storage, compute and virtual machines (VMs), all from a single tab. Prism has a tool, xAnalyze, which is used to ease the day-to-day operations of a system administrator. This tool is also used to pinpoint if any system is running rogue and move faster to the <b>root cause</b> of the issue.</p>
 
 <div class="mt-5"></div>
 
-<h5 id="tldr-to-create-a-dashboard-and-redesign-a-section-to-give-it-administrators-more-visibility-into-their-entire-it-ecosystem-beyond-just-infrastructure">TLDR, to create a dashboard and redesign a section to give IT administrators more visibility into their entire IT ecosystem beyond just infrastructure.</h5>
+<h4 id="tldr-to-elevate-the-role-of-an-admin-and-help-them-monitor-their-systems-and-help-them-troubleshoot-faster-and-easier">TLDR, to elevate the role of an admin and help them monitor their systems and help them troubleshoot faster and easier.</h4>
 
 <div class="mt-5"></div>
+
+<h3 id="timeline">Timeline</h3>
+
+<div class="container-fluid full-width d-flex justify-content-center" style="overflow: hidden; align-items: center; background-color: var(--white);">
+
+<div class="col-lg-9">
+<a class="venobox" href="/src/images/nutanix/timeline.png">
+    <img src="/src/images/nutanix/timeline.png" alt="Timeline" class="img-fluid" /> </a>
+</div>
+</div>
+
+<h3 id="xanalysis">xAnalysis</h3>
+<p>xAnalysis is a tool under Prism used to ease the day to day operations of a system administration. The tool gives useful information to the user to understand how the entities are functioning. It provides a way to pinpoint if any system is running rogue or hogging up resources, by providing information to move faster to the root cause of the issue.</p>
+
+<h3 id="intent">Intent</h3>
+<p>To understand how the Analysis section is used by the sysadmins. Research on how the users utilise the various features in it to pinpoint to the problem.
+To understand if there is any delay in getting the user to the cause and if there is any room for improvement.
+To identify if there’s any new feature which can be implemented within the section which will cater to the user and improve the whole experience.
+Work on prototypes and implement these new changes.</p>
+
+<h3 id="current-experience">Current experience</h3>
+<p>See an warning or a critical alert on the dashboard.
+Navigate to the analysis page.
+Set the time period to scan for spikes in the charts (Memory, CPU, IOPS)
+See where the spikes occur.
+Set up a troubleshooting session with related charts and metrics.
+Try to rectify using known methods.
+Providing the node with additional resources via the Prism Panel.
+Add a new node to add more resources to the cluster.
+Identify any rogue applications and rectify it.</p>
+
+<h3 id="avenues-to-focus">Avenues to focus</h3>
+<p>Application Metrics
+In the current version of Prism, we can view the metrics only up to the level of VMs.
+Adding metrics on an appplication level would give sysadmins more information on why their systems are hogging up.
+Adding a chart with comparisons with other entities would help identifications of affected clusters.
+Would open a business angle as we can collaborate with third party application developers.
+Visual Representation of VM Contention
+Finding relationships between different entities.
+Would aid in ease of diagnosis.
+Topology view
+Predictive Warnings
+Warning users about potential effects in the near future when any issue occurs
+Can use the timeline to inform the user
+Help admins easily predict certain issues</p>
 
 <h3 id="my-learnings">My learnings</h3>
 

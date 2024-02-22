@@ -26,7 +26,16 @@ The project was based on an ongoing research project at the time, under Dr Priya
 
 <div class="mt-2"></div>
 
-##### TLDR, to create a soundscape interface derived from the data from a research project for anyone to access and interpret.
+#### TLDR, to create a soundscape interface derived from the data from a research project for anyone to access and interpret.
+
+<p class="text-center">
+  <a href="works/ishan/#final-designs">
+    <button class="btn mt-3 btn-ishan">Skip to designs</button>
+  </a>
+  <a href="src/2020_STP_RohitRamachandran_v1_0.pdf">
+    <button class="btn mt-3 btn-ishan">Read the report</button>
+  </a>
+</p>
 
 <div class="mt-5"></div>
 
