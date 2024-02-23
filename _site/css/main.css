@@ -256,6 +256,10 @@ b, strong {
   padding-right: 1.5vw;
 }
 
+.Banner .NavStart {
+  color: var(--white); 
+}
+
 .nav-item {
   text-align: right;
 }
