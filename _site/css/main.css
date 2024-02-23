@@ -310,6 +310,16 @@ b, strong {
   width: 180px;
 }
 
+.upper-stroke {
+  position: absolute;
+  top: 0;
+  left: 50%; /* Position the stroke at the horizontal center */
+  transform: translateX(-50%); /* Move the stroke back by half of its width */
+  width: 95%; /* Span the full width of the container */
+  height: 1px;
+  background-color: rgba(0, 0, 0, .125);
+}
+
 #soundsslike {
   background: url(../src/images/Ishan/Soundsslike.png) center center no-repeat;
   background-size: contain;
