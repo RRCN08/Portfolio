@@ -4,6 +4,8 @@ title: Ishan Dhwani
 image: /src/images/ishandhwani/banner.jpg
 desc: Soundscape for Assamese dialects.
 primary_color: "#DB2C47"
+secondary_color: "#111115"
+teritiary_color: "#d8d9dd"
 role: UX, Research
 duration: 5 months
 ---
@@ -41,82 +43,121 @@ The project was based on an ongoing research project at the time, under Dr Priya
 
 ### Research
 
-##### Understanding the brief
-This was the first time I had heard of soundscapes, and it was an exciting topic. I spent the initial weeks trying to gather knowledge about soundscapes and how they work.
-
-I also spent time on the basics of data visualisation, because at the core, a soundscape is an auditory depiction of data.
-
-##### Other soundscapes
-After the preliminary research, I was to find and analyse the existing designs out there.
-
-I came across 2 of them, which seemed interesting.
-
-<span color: {{ page.primary_color }};> Hover over the images to see the key points. </span>
-
-I also spent time on the basics of data visualisation, because at the core, a soundscape is an auditory depiction of data.
-
-###### Soundsslike Project
-They used small dots as identifiers for sounds. On click, it plays the audio along with details about the place.
-
-###### Soundscape World
-They had a different approach. It consists of a player with multiple buttons and a lot more control of the audio. These were categorised into the nature of the sound. This design was completely different from Soundsslike.
-
-<div class="mt-5"></div>
-
-### Setting the premise
-
-##### The research report
+#####  The research report
 
 The original report from the research is now published and available over at [ResearchGate](https://www.researchgate.net/publication/293544030_A_Sociolinguistic_study_of_Lexical_variation_in_Assamese).
 
-I spent around a couple of weeks going through this report multiple times, understanding phonetics and how linguistics works. There were a few things that could be easily represented for the end-user.
+I spent around a couple of weeks going through this report multiple times, understanding phonetics and how linguistics works. There were a few things that could be easily represented for the end-user, including:
 
-##### The concept
+<div class='row justify-content-center text-center'>
+
+<div class='col-lg-3 px-5'>
+<h6> Audio recordings </h6>
+<img class='img-fluid' src='/src/images/ishandhwani/Mic.svg'>
+</div>
+
+<div class='col-lg-3 px-5'>
+<h6> Dialect mapping </h6>
+<img class='img-fluid' src='/src/images/ishandhwani/Translate.svg'>
+</div>
+
+<div class='col-lg-3 px-5'>
+<h6> Level of pride data </h6>
+<img class='img-fluid' src='/src/images/ishandhwani/Pride.svg'>
+</div>
+
+<div class='col-lg-3 px-5'>
+<h6> Lexical variations </h6>
+<img class='img-fluid' src='/src/images/ishandhwani/Distribution.svg'>
+</div>
+
+</div>
+
+##### Soundscapes
+A term first coined by the Canadian composer R. Murray Schafer, a soundscape is a sonic landscape. It is the total acoustic values related to a specific place.
+Soundscapes can be understood only through peoples’ perceptions. Information can easily be interpreted when we create an abstraction with the sounds from the soundscape. Data is inherently difficult for the human brain to understand and retain. Most adults can store between 5 and 9 items in their short-term memory.
+
+I also spent time on the basics of data visualisation, because at the core, a soundscape is an auditory depiction of data.
+
+##### Existing designs
+I came across 2 soundscapes which had good interactions and depicted auditory information in a creative design.
+
+<div class="container-fluid full-width basic d-flex justify-content-center mt-5" style="overflow: hidden; align-items: center;">
+
+<div class='col-lg-3 px-5 pb-5'>
+
+<h5>Soundsslike Project</h5>
+   Soundsslike used small dots as identifiers for sounds. On click, it plays the audio along with details about the place.
+
+   <br><br><b><i> Hover over the image to see insights.</i></b>
+</div>
+
+<div class="col-lg-6">
+<a class="venobox" data-gall="gallerya" href="/src/images/ishandhwani/Soundsslike.png">
+  <div class="image-container">
+    <img src="/src/images/ishandhwani/Soundsslike.png" alt="Create partition wizard" class="img-fluid original-image">
+    <img src="/src/images/ishandhwani/Soundsslike_Hover.png" alt="Image 2" class="img-fluid hover-image">
+  </div>
+</a>
+  <img src="/src/images/ishandhwani/Soundsslike.png" alt="Create partition wizard" class="img-fluid">
+  
+</div>
+</div>
+
+<div class="container-fluid full-width basic d-flex justify-content-center" style="overflow: hidden; align-items: center;">
+
+<div class='col-lg-3 px-5 pb-5'>
+
+<h5>Soundscape World</h5>
+   They had a different approach. It consists of a player with multiple buttons and a lot more control of the audio. These were categorised into the nature of the sound. This design was completely different from Soundsslike.
+
+   <br><br><b><i> Hover over the image to see insights.</i></b>
+</div>
+
+<div class="col-lg-6">
+<a class="venobox" data-gall="gallerya" href="/src/images/ishandhwani/SoundscapeWorld.png">
+  <div class="image-container">
+    <img src="/src/images/ishandhwani/SoundscapeWorld.png" alt="Create partition wizard" class="img-fluid original-image">
+    <img src="/src/images/ishandhwani/SoundscapeWorld_Hover.png" alt="Image 2" class="img-fluid hover-image">
+  </div>
+</a>
+  <img src="/src/images/ishandhwani/SoundscapeWorld.png" alt="Create partition wizard" class="img-fluid">
+  
+</div>
+</div>
+
+### The concept
 
 I decided to divide the design into three sections. These had different colours, indicating the data is different from one another. I started with some concept sketches.
 
 <div class="mt-4"></div>
 ###### Dialects tab
+The user can listen to speech recordings from various districts of Assam. These, when clicked, show a pop-up with multiple play buttons placed accurately.
 
 ![Zoom screenshot](/src/images/ishandhwani/dialects.jpg){:class="img-fluid"}
 
-The user can listen to speech recordings from various districts of Assam. These, when clicked, show a pop-up with multiple play buttons placed accurately.
-
 <div class="mt-4"></div>
 ###### Listen tab
+Shows the different dialects across the state. One can hover over a region to see what variety they speak, their popularity and how proud they are of their language.
 
 ![Zoom screenshot](/src/images/ishandhwani/listen.jpg){:class="img-fluid"}
 
-Shows the different dialects across the state. One can hover over a region to see what variety they speak, their popularity and how proud they are of their language.
-
 <div class="mt-4"></div>
 ###### Words tab
+Shows the distribution of lexical terms. Twelve terms were selected, which had multiple synonyms to study the usage of these words in different regions. We put these terms in a grid, and we showed the distribution using a gradient. The darker the shade, the more frequent the word was used in that region.
 
 ![Zoom screenshot](/src/images/ishandhwani/words.jpg){:class="img-fluid"}
 
-Shows the distribution of lexical terms. Twelve terms were selected, which had multiple synonyms to study the usage of these words in different regions. We put these terms in a grid, and we showed the distribution using a gradient. The darker the shade, the more frequent the word was used in that region.
-
-<div class="mt-4"></div>
-
-###### Design language
-
-As I converged on to my final design, I needed to set a design language to be followed throughout the entire page.
-
-Cod Gray is the primary background colour to be easy on the eye.
-
-Torch Red was used as the primary colour for Listen tab to invoke stimulation since the page’s function is auditory.
-
-Jade Green was used to showcase the words to represent information.
-
-Azure Blue was encompassed in dialects to show the abundance of varieties.
 
 <div class="mt-5"></div>
 
 ### Final designs
 The platform was developed using HTML5, with Bootstrap 4 as the front-end framework for CSS. JavaScript, accompanied by the jQuery library, was used to handle the back-end of the website. It is currently hosted on GitHub pages.
 
+<div class="container-fluid full-width basic d-flex justify-content-center mt-5" style="overflow: hidden; align-items: center;">
+
 <!--Carousel Wrapper-->
-<div id="final-wireframes" class="carousel slide mt-5" data-ride="carousel">
+<div id="final-wireframes" class=" col-lg-9 carousel slide mt-5" data-ride="carousel">
 
 <!--Slides-->
 <div class="carousel-inner">
@@ -161,6 +202,8 @@ The platform was developed using HTML5, with Bootstrap 4 as the front-end framew
 
 </div>
 <!--/.Carousel Wrapper-->
+
+</div>
 
 ### Reflections
 This project was a game-changer for me. I had always wanted to start with WebD, and this project was enough motivation to get started with. I have come a long way since then, creating my website entirely from scratch.
