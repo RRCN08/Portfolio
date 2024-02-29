@@ -6,7 +6,7 @@ ruby File.read(".ruby-version").strip
 gem 'nokogiri'
 gem 'jekyll', '3.9.3'
 gem 'faraday', '~> 2.7', '>= 2.7.11'
-gem 'rack', '~> 2.2.4'
+gem 'rack', '~> 2.2.8'
 gem 'rspec'
 gem 'github-pages'
 gem 'jekyll-webp'
