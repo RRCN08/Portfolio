@@ -3,7 +3,7 @@ name: Deploy to GitHub Pages
 on:
   push:
     branches:
-      - main  # Change this to your default branch if different
+      - master
 
 jobs:
   build:
@@ -21,13 +21,8 @@ jobs:
 
       - name: Install dependencies
         run: |
-          gem install bundler -v 2.2.33  # Specify Bundler version
+          gem install bundler
           bundle install
-
-      - name: Debug Gemfile
-        run: |
-          cat Gemfile
-          cat Gemfile.lock
 
       - name: Build site
         run: |
