@@ -24,7 +24,7 @@ jobs:
       - name: Setup Ruby
         uses: ruby/setup-ruby@v1
         with:
-          ruby-version: 'latest'  # Use the latest stable Ruby version
+          ruby-version: '3.2'  # Use latest patch of Ruby 3.2
           bundler-cache: true
           cache-version: 0
 
