@@ -1,13 +1,5 @@
 theme: null
 permalink: /:title/
-plugins:
-  - jekyll-postcss
-  
-postcss:
-  cache: false
-  use: [
-    "autoprefixer"
-  ]
 
 ############################################################
 # Site configuration for the WebP Generator Plugin
