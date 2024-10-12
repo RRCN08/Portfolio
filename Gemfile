@@ -3,13 +3,12 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby File.read(".ruby-version").strip
 
+gem 'jekyll'
+gem 'faraday'
+gem 'rack'
+gem 'webrick'
 gem 'nokogiri'
-gem 'jekyll', '3.9.3'
-gem 'faraday', '~> 2.7', '>= 2.7.11'
-gem 'rack', '~> 2.2.4'
+gem 'jekyll-postcss'
 gem 'rspec'
 gem 'github-pages'
 gem 'jekyll-webp'
-
-gem "webrick", "~> 1.8"
-gem 'jekyll-postcss'
