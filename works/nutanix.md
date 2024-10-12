@@ -3,7 +3,9 @@ layout: project
 title: Nutanix Prism
 image: /src/images/nutanix/banner.jpg
 desc: Dashboard design for troubleshooting and monitoring server clusters in a large-scale enterprise.
-primary_color: "#6589c3"
+primary_color: "#427564"
+secondary_color: "#111115"
+teritiary_color: "#d8d9dd"
 role: UX, Research
 duration: 2 months 
 ---

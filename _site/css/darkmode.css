@@ -292,11 +292,11 @@ body {
 }
 
 .carousel .carousel-indicators button {
-  background-color: var(--white) !important;
+  filter: invert(100%);
 }
 
 .carousel-control-next, .carousel-control-prev {
-  color: var(--white) !important;
+  filter: invert(100%);
 }
 
 .VerticalLine {
